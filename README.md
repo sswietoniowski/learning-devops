@@ -8,7 +8,7 @@ This repository contains the following sub-directories:
 
 - [pluralsight](pluralsight/) contains resources for the _Pluralsight_ paths:
   - Docker:
-    - [Docker Fundamentals for Developers](https://app.pluralsight.com/paths/skills/docker-fundamentals-for-developers), 
+    - [Docker Fundamentals for Developers](https://app.pluralsight.com/paths/skills/docker-fundamentals-for-developers),
     - [Managing Docker in Production](https://app.pluralsight.com/paths/skill/managing-docker-in-production),
   - Kubernates:
     - [Using Kubernetes as a Developer](https://app.pluralsight.com/paths/skills/using-kubernetes-as-a-developer),
