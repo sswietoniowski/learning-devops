@@ -1,0 +1,3 @@
+chgrp -R 0 /var/opt/mssql
+chmod -R g=u /var/opt/mssql
+chown -R 10001:0 /var/opt/mssql

@@ -1,0 +1,18 @@
+Deploying SQL Server Containers in Microsoft Azure
+https://app.pluralsight.com/library/courses/microsoft-azure-deploying-sql-server-containers
+Introduction to Big Data Cluster on Sql Server 2019
+https://www.youtube.com/watch?v=q7mxWcYqBMMsss
+Introducing Microsoft SQL Server 2019 Big Data Clusters
+https://cloudblogs.microsoft.com/sqlserver/2018/09/25/introducing-microsoft-sql-server-2019-big-data-clusters/
+Distributed Computing Principles and SQL-on-Hadoop Systems
+https://www.sqlservercentral.com/articles/distributed-computing-principles-and-sql-on-hadoop-systems
+What are SQL Server Big Data Clusters?
+https://docs.microsoft.com/en-us/sql/big-data-cluster/big-data-cluster-overview?view=sql-server-ver15
+What is PolyBase?
+https://docs.microsoft.com/en-us/sql/relational-databases/polybase/polybase-guide?view=sql-server-ver15
+Big Data: The Big Picture (Andrew Brusts’s course)
+https://app.pluralsight.com/library/courses/bigdata-bigpicture
+SQL on Linux – How?
+https://cloudblogs.microsoft.com/sqlserver/2016/12/16/sql-server-on-linux-how-introduction
+Integration Testing Flyway Migrations
+https://dev.to/frosnerd/testing-your-database-migrations-with-flyway-and-testcontainers-44fc

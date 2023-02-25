@@ -1,0 +1,30 @@
+https://docs.microsoft.com/en-us/sql/linux/sql-server-linux-configure-environment-variables?view=sql-server-ver15
+https://bit.ly/39PSbrG
+
+https://docs.microsoft.com/en-us/sql/linux/sql-server-linux-active-directory-authentication?view=sql-server-ver15#additionalconfig 
+(The simplest way)
+https://bit.ly/3aDmUaI
+
+https://www.varonis.com/blog/kerberos-authentication-explained 
+(How Kerberos works) 
+https://bit.ly/3q27YK1
+
+https://social.technet.microsoft.com/wiki/contents/articles/36470.active-directory-using-kerberos-keytabs-to-integrate-non-windows-systems.aspx#ktpass_exe_Keytab_Generation_Example 
+(Generating a Keytab on Windows)
+https://bit.ly/3tuPLqg
+
+https://docs.microsoft.com/en-us/azure/active-directory-domain-services/tutorial-create-instance
+(Setting up an AD domain)
+https://bit.ly/2Mroc0J
+
+https://docs.microsoft.com/en-us/azure/active-directory-domain-services/join-ubuntu-linux-vm 
+(If you really want to join the container to the domain)
+https://bit.ly/3rrueNF
+
+https://www.codeproject.com/Articles/1272546/Authenticate-Net-Core-client-of-SQL-Server-with-In
+(Application example)
+https://bit.ly/3auu410
+
+https://www.mobilize.net/blog/docker-container-with-windows-authentication
+(Existing domain example)
+https://bit.ly/3ttbGOz

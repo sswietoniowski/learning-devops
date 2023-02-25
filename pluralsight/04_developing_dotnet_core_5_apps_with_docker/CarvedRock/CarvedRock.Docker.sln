@@ -1,0 +1,63 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31025.218
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarvedRock.Api", "CarvedRock.Api\CarvedRock.Api.csproj", "{2AE76C79-655C-43A2-B27F-A9E68A23DC4E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{421391C7-DC1C-4E35-B848-0088E409DA37}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarvedRock.InvoiceGenerator", "CarvedRock.InvoiceGenerator\CarvedRock.InvoiceGenerator.csproj", "{BBAB211F-3DF8-4543-A880-888C6DE1AB71}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarvedRock.OrderProcessor", "CarvedRock.OrderProcessor\CarvedRock.OrderProcessor.csproj", "{C65F0576-DD10-417E-BC9D-47A6C8092A81}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarvedRock.App", "CarvedRock.App\CarvedRock.App.csproj", "{0FF39336-76A8-4628-81F8-6CD464E6258C}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{833B1284-995B-40F4-9979-A7FDED266FF9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "sql", "sql", "{57876F6D-9260-4AE4-B269-7D60033727D5}"
+	ProjectSection(SolutionItems) = preProject
+		sql\entrypoint.sh = sql\entrypoint.sh
+		sql\InitializeDatabase.sql = sql\InitializeDatabase.sql
+		sql\setup.sh = sql\setup.sh
+		sql\sql.Dockerfile = sql\sql.Dockerfile
+		sql\wait-for-it.sh = sql\wait-for-it.sh
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2AE76C79-655C-43A2-B27F-A9E68A23DC4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2AE76C79-655C-43A2-B27F-A9E68A23DC4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2AE76C79-655C-43A2-B27F-A9E68A23DC4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2AE76C79-655C-43A2-B27F-A9E68A23DC4E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BBAB211F-3DF8-4543-A880-888C6DE1AB71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBAB211F-3DF8-4543-A880-888C6DE1AB71}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBAB211F-3DF8-4543-A880-888C6DE1AB71}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBAB211F-3DF8-4543-A880-888C6DE1AB71}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C65F0576-DD10-417E-BC9D-47A6C8092A81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C65F0576-DD10-417E-BC9D-47A6C8092A81}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C65F0576-DD10-417E-BC9D-47A6C8092A81}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C65F0576-DD10-417E-BC9D-47A6C8092A81}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0FF39336-76A8-4628-81F8-6CD464E6258C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0FF39336-76A8-4628-81F8-6CD464E6258C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0FF39336-76A8-4628-81F8-6CD464E6258C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0FF39336-76A8-4628-81F8-6CD464E6258C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{833B1284-995B-40F4-9979-A7FDED266FF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{833B1284-995B-40F4-9979-A7FDED266FF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{833B1284-995B-40F4-9979-A7FDED266FF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{833B1284-995B-40F4-9979-A7FDED266FF9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3B70D770-9FB9-4247-B3DD-FFBB277D2414}
+	EndGlobalSection
+EndGlobal
