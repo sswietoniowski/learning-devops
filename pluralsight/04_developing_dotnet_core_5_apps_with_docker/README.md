@@ -57,4 +57,48 @@ Protect your secrets:
 
 ## Building Docker Images for .NET Core Apps
 
+![Images, Containers, Registers](img/images_containers_registers.jpg)
+
+![Layers and Building Container Images](img/layers_and_building_container_images.JPG)
+
+![Build .NET Images](img/building_dotnet_images.jpg)
+
+Process:
+
+- set up base image with aspnetcore runtime,
+- use full sdk as build stage,
+- restore packages and build project,
+- alias build as publish and run dotnet publish,
+- copy publish files into final image with just the runtime on it.
+
 ## Simplify Complex Solutions with Docker Compose
+
+Docker Compose:
+
+- container orchestration tool,
+- "define and share multi-container apps",
+- simplify what we need to keep track of,
+- developer set-up (and tear-down) is easy!
+
+Traditional setup vs. Docker Compose.
+
+| Traditional                             | Docker Compose                   |
+| --------------------------------------- | -------------------------------- |
+| Get source code                         | Get source code                  |
+| Find way to run Seq                     | Run solution (docker-compose up) |
+| Find way to run SQL Server              | -                                |
+| Run database setup/initial data scripts | -                                |
+| Find way to run RabbitMQ                | -                                |
+| Verify connection strings               | -                                |
+| Verify website setup                    | -                                |
+| Run solution (set startup projects)     | -                                |
+
+SQL in Docker Compose:
+
+- startup is a challenge,
+- wait for it to be started and listening then run setup logic,
+- use custom Dockerfile and entrypoint logic.
+
+Sample App (Carved Rock) Architecture
+
+![Carved Rock Architecture](img/carved_rock_architecture.jpg)
