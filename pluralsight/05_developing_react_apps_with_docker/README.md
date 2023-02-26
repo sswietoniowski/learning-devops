@@ -14,11 +14,13 @@ Scenario:
 - the company decided to hire a consultant to help them with the transition to a microservices architecture,
 - part of that switch would be to use Docker to containerize the applications.
 
-To build the image, run the following command:
+To build the image, run the following command (inside "v1\Globomantics" directory):
+
+````cmd
 
 ```cmd
 docker build -f .\Dockerfile -t sswietoniowski/globomantics .
-```
+````
 
 To run the container, run the following command:
 
@@ -58,6 +60,12 @@ docker run -d -p 3000:3000 --name globomantics sswietoniowski/globomantics
 Where `-p` is a port mapping option. It maps the port 3000 on the host machine to the port 3000 on the container.
 
 ## Building a Multi-container Application Using Docker Compose
+
+Now we're trying to build a multi-container application using Docker Compose.
+
+We would have the client application (React), an API server (Express) and a database (Redis) (the new version of the system can be found inside "v2\Globomantics" directory).
+
+While configuring Express you might find useful [this](https://dev.to/kevinqtogitty/how-to-set-up-an-express-server-with-typescript-and-es6-import-statements-using-vite-9l6) and [this](https://blog.logrocket.com/configuring-nodemon-with-typescript/) articles.
 
 ## Enhancing the Multi-container Application
 
