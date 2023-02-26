@@ -17,7 +17,7 @@ Scenario:
 To build the image, run the following command:
 
 ```cmd
-docker build -f .\Dockerfile -t sswietoniowski/globomantics --no-cache .
+docker build -f .\Dockerfile -t sswietoniowski/globomantics .
 ```
 
 To run the container, run the following command:
@@ -41,13 +41,7 @@ Questions to answer:
 - what is the IP address provided by the Docker run?
 - why I can't access the application from the browser (at localhost:3000)?
 
-To reduce the build time, we can use the following command:
-
-```cmd
-docker build -f .\Dockerfile -t sswietoniowski/globomantics --no-cache --build-arg NODE_ENV=production .
-```
-
-We can also use `.dockerignore` file to exclude files and directories from the build context. Sample content of the file:
+To reduce the build time, we can use `.dockerignore` file to exclude files and directories from the build context. Sample content of the file:
 
 ```text
 node_modules
