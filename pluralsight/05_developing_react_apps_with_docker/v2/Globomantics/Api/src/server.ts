@@ -19,11 +19,8 @@ try {
   console.log(err);
 }
 
-// For simplicity, we'll allow CORS from all origins in this example.
-// app.use(
-//   cors({ origin: ['http://localhost:3000', 'http://globomantics-client:3000'] })
-// );
-app.use(cors());
+app.use(cors({ origin: ['http://localhost:3000', 'http://client:3000'] }));
+// app.use(cors());
 
 app.get('/api/inventory', async (_: Request, res: Response) => {
   try {
