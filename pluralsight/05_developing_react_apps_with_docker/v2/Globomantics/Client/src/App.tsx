@@ -1,7 +1,24 @@
 import 'bootstrap/dist/css/bootstrap.css';
+import { useEffect, useState } from 'react';
 import './App.css';
 
 const App = () => {
+  const [count, setCount] = useState<number>(0);
+
+  const fetchData = async () => {
+    const response = await fetch('/api/inventory');
+    const data = await response.json();
+    setCount(parseInt(data));
+  };
+
+  useEffect(() => {
+    fetchData();
+  }, []);
+
+  const onAddInventory = async () => {
+    await fetchData();
+  };
+
   return (
     <div className='App'>
       <header>
@@ -18,7 +35,8 @@ const App = () => {
             <div className='col-md-3 col-sm-3'>
               <button
                 type='button'
-                className='btn btn-secondary btn-lg disabled'
+                className='btn btn-secondary btn-lg'
+                onClick={onAddInventory}
               >
                 Add Inventory
               </button>
@@ -43,7 +61,7 @@ const App = () => {
 
           <div className='row well mb-3'>
             <div className='col-md-6'>
-              <h5>There are 8 items in the inventory!!</h5>
+              <h5>There are {count} items in the inventory!!</h5>
             </div>
           </div>
         </div>
