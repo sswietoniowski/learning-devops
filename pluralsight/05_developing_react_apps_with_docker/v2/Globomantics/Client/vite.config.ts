@@ -6,7 +6,13 @@ export default defineConfig({
   plugins: [react()],
   server: {
     host: true,
+    hmr: {
+      clientPort: 3000,
+    },
     port: 3000,
+    watch: {
+      usePolling: true,
+    },
     proxy: {
       '/api': {
         target: 'http://api:3001/api',

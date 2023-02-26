@@ -6,7 +6,13 @@ import { VitePluginNode } from 'vite-plugin-node';
 export default defineConfig({
   server: {
     host: true,
+    hmr: {
+      clientPort: 3001,
+    },
     port: 3001,
+    watch: {
+      usePolling: true,
+    },
   },
   plugins: [
     ...VitePluginNode({

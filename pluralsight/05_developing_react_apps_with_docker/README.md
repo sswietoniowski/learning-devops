@@ -156,6 +156,8 @@ or if we were still using `docker run` command:
 docker run -d -p 3000:3000 --network globomantics --name globomantics-client -v ${PWD}/Client:/app sswietoniowski/globomantics-client
 ```
 
+To use the hot reloading with Vite, please read [this](https://patrickdesjardins.com/blog/docker-vitejs-hot-reload) article.
+
 ## Enhancing the Multi-container Application
 
 ## Debugging and Getting the Multi-container Application Ready for Production
