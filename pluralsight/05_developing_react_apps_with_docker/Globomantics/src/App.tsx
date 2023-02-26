@@ -4,7 +4,15 @@ import './App.css';
 const App = () => {
   return (
     <div className='App'>
-      <body>
+      <header>
+        <img
+          src='globo.png'
+          height='180'
+          alt='Globomantics'
+          className='img-fluid'
+        />
+      </header>
+      <main>
         <div className='container'>
           <div className='row well mb-3'>
             <div className='col-md-3 col-sm-3'>
@@ -39,7 +47,7 @@ const App = () => {
             </div>
           </div>
         </div>
-      </body>
+      </main>
     </div>
   );
 };
