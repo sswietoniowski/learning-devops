@@ -118,7 +118,7 @@ use `proxy` option in the `vite.config.js` file. More on that can be found [here
 Alternatively we can add proxy configuration to the `package.json` file (inside the "Client" directory):
 
 ```json
-  "proxy": "http://api:3001"
+  "proxy": "http://api:3001",
 ```
 
 To start the application, run the following command:
