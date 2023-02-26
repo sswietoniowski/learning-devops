@@ -73,6 +73,34 @@ To run the database using Redis, just run the following command:
 docker run -d -p 6379:6379 --name redis redis
 ```
 
+To run the API server, run the following command:
+
+```cmd
+docker build -f .\Dockerfile -t sswietoniowski/globomantics-api .
+```
+
+```cmd
+docker run -d -p 3001:3001 --name api sswietoniowski/globomantics-api
+```
+
+To establish a connection between the API server and the database, we need to create a network. To do that, run the following command:
+
+```cmd
+docker network create globomantics
+```
+
+To connect the API server to the network, run the following command:
+
+```cmd
+docker network connect globomantics api
+```
+
+To connect the database to the network, run the following command:
+
+```cmd
+docker network connect globomantics redis
+```
+
 ## Enhancing the Multi-container Application
 
 ## Debugging and Getting the Multi-container Application Ready for Production
