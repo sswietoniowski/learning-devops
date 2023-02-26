@@ -135,6 +135,27 @@ To stop the application, run the following command:
 docker-compose down
 ```
 
+To show all the layers of the image, run the following command:
+
+```cmd
+docker image history sswietoniowski/globomantics-client
+```
+
+To use hot reloading, we need to add the following line to the `docker-compose.yml` file (example for the client application):
+
+````yaml
+
+```yaml
+volumes:
+  - ./Client/src:/app/src
+````
+
+or if we were still using `docker run` command:
+
+```cmd
+docker run -d -p 3000:3000 --network globomantics --name globomantics-client -v ${PWD}/Client:/app sswietoniowski/globomantics-client
+```
+
 ## Enhancing the Multi-container Application
 
 ## Debugging and Getting the Multi-container Application Ready for Production
