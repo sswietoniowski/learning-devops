@@ -15,7 +15,7 @@ services:
     container_name: globomantics-api
     restart: on-failure
     build:
-      context: ./globomantics-api
+      context: ./Api
       dockerfile: Dockerfile
     ports:
       - '3001:3001'
@@ -28,7 +28,7 @@ services:
     container_name: globomantics-client
     restart: on-failure
     build:
-      context: ./globomantics-client
+      context: ./Client
       dockerfile: Dockerfile
     ports:
       - '3000:3000'

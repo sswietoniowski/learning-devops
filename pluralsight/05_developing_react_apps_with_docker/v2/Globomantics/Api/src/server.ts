@@ -6,7 +6,7 @@ const app: Express = express();
 const port: number = 3001;
 
 const client = createClient({
-  url: 'redis://redis:6379', // to work inside container: https://stackoverflow.com/questions/71717395/getting-error-connect-econnrefused-127-0-0-16379-in-docker-compose-while-conne
+  url: 'redis://redis', // to work inside container: https://stackoverflow.com/questions/71717395/getting-error-connect-econnrefused-127-0-0-16379-in-docker-compose-while-conne
   port: 6379,
 } as any);
 
