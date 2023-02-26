@@ -14,6 +14,27 @@ Scenario:
 - the company decided to hire a consultant to help them with the transition to a microservices architecture,
 - part of that switch would be to use Docker to containerize the applications.
 
+To build the image, run the following command:
+
+```cmd
+docker build -f .\Dockerfile -t sswietoniowski/globomantics --no-cache .
+```
+
+To run the container, run the following command:
+
+```cmd
+docker run -d -p 3000:3000 --name globomantics sswietoniowski/globomantics
+```
+
+We must change Vite configuration to make it work with Docker. To do that, we need to add the following line to the `vite.config.js` file:
+
+```javascript
+server: {
+  host: true, // THIS IS CRITICAL!
+  port: 3000,
+}
+```
+
 ## Building a Multi-container Application Using Docker Compose
 
 ## Enhancing the Multi-container Application
