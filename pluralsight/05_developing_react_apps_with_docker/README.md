@@ -112,7 +112,8 @@ To add CORS configuration to the Express server read [this](https://www.section.
 While above commands are working, they are not the best way to run the application. To run the application we
 should use Docker Compose. To do that, we need to create a `docker-compose.yml` file in the root directory of the project.
 
-While using Vite you might encounter strange errors related to CORS. It appears that Vite requires us to use `proxy` option in the `vite.config.js` file. More on that can be found [here](https://rubenr.dev/cors-vite-vue/).
+While using Vite you might encounter strange errors related to CORS. It appears that Vite requires us to
+use `proxy` option in the `vite.config.js` file. More on that can be found [here](https://rubenr.dev/cors-vite-vue/).
 
 ## Enhancing the Multi-container Application
 
