@@ -143,8 +143,6 @@ docker image history sswietoniowski/globomantics-client
 
 To use hot reloading, we need to add the following line to the `docker-compose.yml` file (example for the client application):
 
-````yaml
-
 ```yaml
 volumes:
   - ./Client/src:/app/src
