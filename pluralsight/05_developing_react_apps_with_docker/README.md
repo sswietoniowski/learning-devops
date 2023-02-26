@@ -67,6 +67,12 @@ We would have the client application (React), an API server (Express) and a data
 
 While configuring Express you might find useful [this](https://dev.to/kevinqtogitty/how-to-set-up-an-express-server-with-typescript-and-es6-import-statements-using-vite-9l6) and [this](https://blog.logrocket.com/configuring-nodemon-with-typescript/) articles.
 
+To run the database using Redis, just run the following command:
+
+```cmd
+docker run -d -p 6379:6379 --name redis redis
+```
+
 ## Enhancing the Multi-container Application
 
 ## Debugging and Getting the Multi-container Application Ready for Production
