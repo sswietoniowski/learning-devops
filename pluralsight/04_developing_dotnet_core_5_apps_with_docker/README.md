@@ -1,5 +1,7 @@
 # Developing .NET Core 5 Apps with Docker
 
+This course is about developing .NET Core 5 apps with Docker.
+
 ## Getting Started with .NET Core and Docker
 
 Basic introduction to .NET Core and Docker.
@@ -102,3 +104,5 @@ SQL in Docker Compose:
 Sample App (Carved Rock) Architecture
 
 ![Carved Rock Architecture](img/carved_rock_architecture.jpg)
+
+Now you are ready to start developing .NET Core 5 apps with Docker :-).
