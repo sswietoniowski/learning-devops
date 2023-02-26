@@ -1,11 +1,12 @@
 import express, { Express, Request, Response } from 'express';
 import { createClient } from 'redis';
+import cors from 'cors';
 
 const app: Express = express();
 const port: number = 3001;
 
 const client = createClient({
-  host: 'redis',
+  url: 'redis://redis:6379', // to work inside container: https://stackoverflow.com/questions/71717395/getting-error-connect-econnrefused-127-0-0-16379-in-docker-compose-while-conne
   port: 6379,
 } as any);
 
@@ -17,6 +18,10 @@ try {
 } catch (err) {
   console.log(err);
 }
+
+app.use(
+  cors({ origin: ['http://localhost:3000', 'http://globomantics-client:3000'] })
+);
 
 app.get('/api/inventory', async (_: Request, res: Response) => {
   try {

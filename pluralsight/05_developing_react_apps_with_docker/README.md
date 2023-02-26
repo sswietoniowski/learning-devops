@@ -105,6 +105,10 @@ docker build -f .\Client\Dockerfile -t sswietoniowski/globomantics-client .\Clie
 docker run -d -p 3000:3000 --network globomantics --name globomantics-client sswietoniowski/globomantics-client
 ```
 
+Useful [article](https://maximorlov.com/4-reasons-why-your-docker-containers-cant-talk-to-each-other/) if your containers can't talk to each other.
+
+To add CORS configuration to the Express server read [this](https://www.section.io/engineering-education/how-to-use-cors-in-nodejs-with-express/) article.
+
 ## Enhancing the Multi-container Application
 
 ## Debugging and Getting the Multi-container Application Ready for Production
