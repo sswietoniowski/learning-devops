@@ -35,6 +35,34 @@ server: {
 }
 ```
 
+Questions to answer:
+
+- how to reduce the build time?
+- what is the IP address provided by the Docker run?
+- why I can't access the application from the browser (at localhost:3000)?
+
+To reduce the build time, we can use the following command:
+
+```cmd
+docker build -f .\Dockerfile -t sswietoniowski/globomantics --no-cache --build-arg NODE_ENV=production .
+```
+
+We can also use `.dockerignore` file to exclude files and directories from the build context. Sample content of the file:
+
+```text
+node_modules
+.git
+.vscode
+```
+
+To expose the application to the host machine, we need to use the following command:
+
+```cmd
+docker run -d -p 3000:3000 --name globomantics sswietoniowski/globomantics
+```
+
+Where `-p` is a port mapping option. It maps the port 3000 on the host machine to the port 3000 on the container.
+
 ## Building a Multi-container Application Using Docker Compose
 
 ## Enhancing the Multi-container Application
