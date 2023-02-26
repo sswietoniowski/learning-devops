@@ -1,0 +1,35 @@
+version: '3.8'
+services:
+  redis:
+    image: redis
+    container_name: redis
+    restart: on-failure
+    ports:
+      - '6379:6379'
+    volumes:
+      - ./Db:/data
+    networks:
+      - globomantics
+  globomantics-api:
+    image: sswietoniowski/globomantics-api
+    container_name: globomantics-api
+    restart: on-failure
+    ports:
+      - '3001:3001'
+    depends_on:
+      - redis
+    networks:
+      - globomantics
+  globomantics-client:
+    image: sswietoniowski/globomantics-client
+    container_name: globomantics-client
+    restart: on-failure
+    ports:
+      - '3000:3000'
+    depends_on:
+      - globomantics-api
+    networks:
+      - globomantics
+networks:
+  globomantics:
+    driver: bridge
