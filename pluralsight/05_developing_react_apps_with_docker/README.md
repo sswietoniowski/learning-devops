@@ -115,6 +115,8 @@ should use Docker Compose. To do that, we need to create a `docker-compose.yml` 
 While using Vite you might encounter strange errors related to CORS. It appears that Vite requires us to
 use `proxy` option in the `vite.config.js` file. More on that can be found [here](https://rubenr.dev/cors-vite-vue/).
 
+
+
 ## Enhancing the Multi-container Application
 
 ## Debugging and Getting the Multi-container Application Ready for Production

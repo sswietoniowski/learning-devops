@@ -14,6 +14,9 @@ services:
     image: sswietoniowski/globomantics-api
     container_name: globomantics-api
     restart: on-failure
+    build:
+      context: ./globomantics-api
+      dockerfile: Dockerfile
     ports:
       - '3001:3001'
     depends_on:
@@ -24,6 +27,9 @@ services:
     image: sswietoniowski/globomantics-client
     container_name: globomantics-client
     restart: on-failure
+    build:
+      context: ./globomantics-client
+      dockerfile: Dockerfile
     ports:
       - '3000:3000'
     depends_on:
