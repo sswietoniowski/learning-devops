@@ -63,7 +63,7 @@ Now we're trying to build a multi-container application using Docker Compose.
 
 We would have the client application (React), an API server (Express) and a database (Redis) (the new version of the system can be found inside "v2\Globomantics" directory).
 
-While configuring Express you might find useful [this](https://dev.to/kevinqtogitty/how-to-set-up-an-express-server-with-typescript-and-es6-import-statements-using-vite-9l6) and [this](https://blog.logrocket.com/configuring-nodemon-with-typescript/) articles.
+While configuring Express and using Vite and Nodemon you might find useful [this](https://dev.to/kevinqtogitty/how-to-set-up-an-express-server-with-typescript-and-es6-import-statements-using-vite-9l6) and [this](https://blog.logrocket.com/configuring-nodemon-with-typescript/) articles.
 
 All commands run from the "v2\Globomantics" directory.
 
