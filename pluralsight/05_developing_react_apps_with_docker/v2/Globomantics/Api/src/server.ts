@@ -9,11 +9,14 @@ const client = createClient({
   port: 6379,
 } as any);
 
-client.connect();
-
 const REDIS_INVENTORY_KEY = 'inventory_count';
 
-await client.set(REDIS_INVENTORY_KEY, 0);
+try {
+  await client.connect();
+  await client.set(REDIS_INVENTORY_KEY, 0);
+} catch (err) {
+  console.log(err);
+}
 
 app.get('/api/inventory', async (_: Request, res: Response) => {
   try {
@@ -29,6 +32,11 @@ app.get('/api/inventory', async (_: Request, res: Response) => {
   }
 });
 
-app.listen(port, () => {
-  console.log(`Server is listening on port ${port}`);
-});
+// @ts-ignore
+if (import.meta.env.PROD) {
+  app.listen(port, () => {
+    console.log(`Server is listening on port ${port}`);
+  });
+}
+
+export const viteNodeApp = app;

@@ -67,38 +67,44 @@ We would have the client application (React), an API server (Express) and a data
 
 While configuring Express you might find useful [this](https://dev.to/kevinqtogitty/how-to-set-up-an-express-server-with-typescript-and-es6-import-statements-using-vite-9l6) and [this](https://blog.logrocket.com/configuring-nodemon-with-typescript/) articles.
 
-To run the database using Redis, just run the following command:
+All commands run from the "v2\Globomantics" directory.
 
-```cmd
-docker run -d -p 6379:6379 --name redis redis
-```
-
-To run the API server, run the following command:
-
-```cmd
-docker build -f .\Dockerfile -t sswietoniowski/globomantics-api .
-```
-
-```cmd
-docker run -d -p 3001:3001 --name api sswietoniowski/globomantics-api
-```
-
-To establish a connection between the API server and the database, we need to create a network. To do that, run the following command:
+To establish a connection between the client, the API server and the database, we need to create a network. To do that, run the following command:
 
 ```cmd
 docker network create globomantics
 ```
 
-To connect the API server to the network, run the following command:
+To run the database using Redis, just run the following command:
 
 ```cmd
-docker network connect globomantics api
+docker run -d -p 6379:6379 --network globomantics --name redis redis
 ```
 
-To connect the database to the network, run the following command:
+Alternatively, we could run the following command (to connect the database to the network):
 
 ```cmd
 docker network connect globomantics redis
+```
+
+To run the API server, run the following command:
+
+```cmd
+docker build -f .\Api\Dockerfile -t sswietoniowski/globomantics-api .\Api
+```
+
+```cmd
+docker run -d -p 3001:3001 --network globomantics --name globomantics-api sswietoniowski/globomantics-api
+```
+
+Finally, to run the client application, run the following command:
+
+```cmd
+docker build -f .\Client\Dockerfile -t sswietoniowski/globomantics-client .\Client
+```
+
+```cmd
+docker run -d -p 3000:3000 --network globomantics --name globomantics-client sswietoniowski/globomantics-client
 ```
 
 ## Enhancing the Multi-container Application

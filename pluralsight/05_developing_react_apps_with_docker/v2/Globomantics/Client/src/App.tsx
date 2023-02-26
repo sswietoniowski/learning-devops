@@ -6,9 +6,13 @@ const App = () => {
   const [count, setCount] = useState<number>(0);
 
   const fetchData = async () => {
-    const response = await fetch('/api/inventory');
-    const data = await response.json();
-    setCount(parseInt(data));
+    try {
+      const response = await fetch('globomantics-api:3001/api/inventory');
+      const data = await response.json();
+      setCount(parseInt(data));
+    } catch (error) {
+      console.log(error);
+    }
   };
 
   useEffect(() => {
