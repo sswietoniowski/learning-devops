@@ -115,6 +115,18 @@ should use Docker Compose. To do that, we need to create a `docker-compose.yml` 
 While using Vite you might encounter strange errors related to CORS. It appears that Vite requires us to
 use `proxy` option in the `vite.config.js` file. More on that can be found [here](https://rubenr.dev/cors-vite-vue/).
 
+Alternatively we can add proxy configuration to the `package.json` file (inside the "Client" directory):
+
+```json
+  "proxy": {
+    "/api": {
+      "target": "http://api:3001/api",
+      "changeOrigin": true,
+      "secure": false
+    }
+  },
+```
+
 To start the application, run the following command:
 
 ```cmd
