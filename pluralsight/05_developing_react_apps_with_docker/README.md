@@ -109,6 +109,9 @@ Useful [article](https://maximorlov.com/4-reasons-why-your-docker-containers-can
 
 To add CORS configuration to the Express server read [this](https://www.section.io/engineering-education/how-to-use-cors-in-nodejs-with-express/) article.
 
+While above commands are working, they are not the best way to run the application. To run the application we
+should use Docker Compose. To do that, we need to create a `docker-compose.yml` file in the root directory of the project.
+
 ## Enhancing the Multi-container Application
 
 ## Debugging and Getting the Multi-container Application Ready for Production
