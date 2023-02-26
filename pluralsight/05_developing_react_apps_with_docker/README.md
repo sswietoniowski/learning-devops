@@ -16,11 +16,9 @@ Scenario:
 
 To build the image, run the following command (inside "v1\Globomantics" directory):
 
-````cmd
-
 ```cmd
 docker build -f .\Dockerfile -t sswietoniowski/globomantics .
-````
+```
 
 To run the container, run the following command:
 
