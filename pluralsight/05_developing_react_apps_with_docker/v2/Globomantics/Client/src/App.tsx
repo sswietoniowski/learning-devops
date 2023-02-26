@@ -7,9 +7,7 @@ const App = () => {
 
   const fetchData = async () => {
     try {
-      const response = await fetch(
-        'http://globomantics-api:3001/api/inventory'
-      );
+      const response = await fetch('/api/inventory');
       const data = await response.json();
       setCount(parseInt(data));
     } catch (error) {
