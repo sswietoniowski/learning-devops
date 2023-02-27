@@ -17,7 +17,7 @@ const dbOptions: DbOptions = {
   port: 5432,
   database: 'globomantics',
   user: 'postgres',
-  password: 'postgres',
+  password: 'P@ssw0rd',
 };
 
 const inventoryService = new InventoryService(dbOptions, cacheOptions);

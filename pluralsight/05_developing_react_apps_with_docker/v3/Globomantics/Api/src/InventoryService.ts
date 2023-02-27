@@ -24,6 +24,7 @@ class InventoryService {
     let count = await this.getCount();
     count++;
     await this.setCount(count);
+    console.log(`[SERVICE] increment and get inventory count: ${count}`);
     return count;
   }
 
@@ -44,7 +45,9 @@ class InventoryService {
       'SELECT price FROM inventory WHERE sku = $1',
       [this._INVENTORY_SKU]
     );
-    const price = parseFloat(result[this._INVENTORY_PRICE_COLUMN].price);
+    const price = parseFloat(
+      result.rows[0][this._INVENTORY_PRICE_COLUMN].price
+    );
     console.log(`[DB] get price: ${price}`);
     return price;
   }
