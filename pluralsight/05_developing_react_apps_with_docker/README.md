@@ -207,6 +207,8 @@ Useful information about how to create database objects inside PostgreSQL contai
 
 Interesting explanation of how to handle currency in JavaScript can be found [here](https://www.honeybadger.io/blog/currency-money-calculations-in-javascript/).
 
+A few useful information about how to use NGINX as a reverse proxy for Node.js can be found [here](https://blog.logrocket.com/how-to-run-a-node-js-server-with-nginx/) and [here](https://www.prasanna.dev/posts/start-nginx-when-upstream-unavailable).
+
 ## Debugging and Getting the Multi-container Application Ready for Production
 
 Now you are ready to start developing React apps with Docker :-).
