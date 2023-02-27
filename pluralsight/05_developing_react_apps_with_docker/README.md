@@ -201,6 +201,8 @@ As a next step we would enhance the multi-container application by adding perman
 
 ![Globomantics v3 Architecture](img/globomantics_v3_architecture.jpg)
 
+Useful information about how to create database objects inside PostgreSQL container can be found [here](https://stackoverflow.com/questions/26598738/how-to-create-user-database-in-script-for-docker-postgres).
+
 ## Debugging and Getting the Multi-container Application Ready for Production
 
 Now you are ready to start developing React apps with Docker :-).

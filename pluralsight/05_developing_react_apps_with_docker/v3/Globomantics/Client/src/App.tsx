@@ -5,7 +5,7 @@ import './App.css';
 const App = () => {
   const [count, setCount] = useState<number>(0);
 
-  const fetchData = async () => {
+  const getInventory = async () => {
     try {
       const response = await fetch('/api/inventory');
       const data = await response.json();
@@ -16,12 +16,12 @@ const App = () => {
   };
 
   useEffect(() => {
-    fetchData();
+    getInventory();
   }, []);
 
   const onAddInventory = async () => {
     console.log('Add Inventory');
-    await fetchData();
+    await getInventory();
   };
 
   return (
