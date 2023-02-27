@@ -5,6 +5,8 @@ import { CacheOptions } from './cache';
 import { DbOptions } from './db';
 import InventoryService from './InventoryService';
 
+// All options can be read from environment variables
+
 const cacheOptions: CacheOptions = {
   host: 'redis',
   port: 6379,
@@ -27,18 +29,29 @@ try {
 }
 
 const app: Express = express();
-const port: number = 3001;
 
 app.use(cors({ origin: ['http://localhost:3000', 'http://client:3000'] }));
 // app.use(cors());
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
-app.get('/api/inventory', async (_: Request, res: Response) => {
+
+app.get('/api/inventory/count', async (_: Request, res: Response) => {
   try {
-    const count = await inventoryService.getIncrementedInventoryCount();
-    res.json(count);
-    res.status(200);
+    const count = await inventoryService.incrementAndGetInventoryCount();
+
+    res.status(200).json(count);
+  } catch (err) {
+    console.log(err);
+    res.status(500).send('Error...');
+  }
+});
+
+app.get('/api/inventory/amount', async (_: Request, res: Response) => {
+  try {
+    const amount = await inventoryService.getInventoryAmount();
+
+    res.status(200).json(amount);
   } catch (err) {
     console.log(err);
     res.status(500).send('Error...');
@@ -47,6 +60,8 @@ app.get('/api/inventory', async (_: Request, res: Response) => {
 
 // @ts-ignore
 if (import.meta.env.PROD) {
+  const port: number = 3001;
+
   app.listen(port, () => {
     console.log(`Server is listening on port ${port}`);
   });

@@ -7,7 +7,7 @@ const App = () => {
 
   const getInventory = async () => {
     try {
-      const response = await fetch('/api/inventory');
+      const response = await fetch('/api/inventory/count');
       const data = await response.json();
       setCount(parseInt(data));
     } catch (error) {

@@ -19,7 +19,7 @@ class InventoryService {
     await this._db.connect();
   }
 
-  public async getIncrementedInventoryCount(): Promise<number> {
+  public async incrementAndGetInventoryCount(): Promise<number> {
     let count = await this.getCount();
     count++;
     await this.setCount(count);
