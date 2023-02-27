@@ -1,6 +1,8 @@
 import express, { Express, Request, Response } from 'express';
 import { createClient } from 'redis';
 import cors from 'cors';
+import bodyParser from 'body-parser';
+import { Pool } from 'pg';
 
 const app: Express = express();
 const port: number = 3001;
@@ -19,9 +21,19 @@ try {
   console.log(err);
 }
 
+const pool = new Pool({
+  user: 'postgres',
+  host: 'postgres',
+  database: 'globomantics',
+  password: 'postgres',
+  port: 5432,
+});
+
 app.use(cors({ origin: ['http://localhost:3000', 'http://client:3000'] }));
 // app.use(cors());
 
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
 app.get('/api/inventory', async (_: Request, res: Response) => {
   try {
     let value = (await client.get(REDIS_INVENTORY_KEY)) ?? '0';
