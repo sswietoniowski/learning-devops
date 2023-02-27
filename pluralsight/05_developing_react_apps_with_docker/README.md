@@ -197,6 +197,8 @@ Sometimes we want to clear up the Docker environment. To do that, we can use the
 
 ## Enhancing the Multi-container Application
 
+As a next step we would enhance the multi-container application by adding permanent storage for the database (Postgres) while keeping Redis as a cache. We would also add a proxy server to the application (Nginx) to handle the traffic. (the new version of the system can be found inside "v3\Globomantics" directory).
+
 ## Debugging and Getting the Multi-container Application Ready for Production
 
 Now you are ready to start developing React apps with Docker :-).
