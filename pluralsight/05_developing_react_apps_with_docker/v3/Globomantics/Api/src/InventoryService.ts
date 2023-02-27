@@ -3,7 +3,6 @@ import Db, { DbOptions } from './Db';
 
 class InventoryService {
   private readonly _INVENTORY_COUNT_KEY: string = 'inventory_count';
-  private readonly _INVENTORY_PRICE_COLUMN: string = 'price';
   private readonly _INVENTORY_SKU: number = 1;
 
   private _cache: Cache;
@@ -45,9 +44,7 @@ class InventoryService {
       'SELECT price FROM inventory WHERE sku = $1',
       [this._INVENTORY_SKU]
     );
-    const price = parseFloat(
-      result.rows[0][this._INVENTORY_PRICE_COLUMN]
-    );
+    const price = parseFloat(result.rows[0].price);
     console.log(`[DB] get price: ${price}`);
     return price;
   }
