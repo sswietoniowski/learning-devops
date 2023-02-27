@@ -219,9 +219,9 @@ restart: always
 
 Docker restart policy:
 
-- `no` - (default) never restart the container,
-- `on-failure` - restart the container if it fails,
-- `always` - always restart the container.
+- `no` - (default) never restart the container automatically,
+- `on-failure` - restart the container if it fails with a non-zero exit code,
+- `always` - always restart the container even if it exits with a zero exit code.
 
 ## Debugging and Getting the Multi-container Application Ready for Production
 
