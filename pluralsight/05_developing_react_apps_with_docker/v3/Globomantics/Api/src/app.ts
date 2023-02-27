@@ -1,33 +1,33 @@
 import express, { Express, Request, Response } from 'express';
-import { createClient } from 'redis';
 import cors from 'cors';
 import bodyParser from 'body-parser';
-import { Pool } from 'pg';
+import { CacheOptions } from './cache';
+import { DbOptions } from './db';
+import InventoryService from './InventoryService';
 
-const app: Express = express();
-const port: number = 3001;
-
-const client = createClient({
-  url: 'redis://redis', // to work inside container: https://stackoverflow.com/questions/71717395/getting-error-connect-econnrefused-127-0-0-16379-in-docker-compose-while-conne
+const cacheOptions: CacheOptions = {
+  host: 'redis',
   port: 6379,
-} as any);
+};
 
-const REDIS_INVENTORY_KEY = 'inventory_count';
+const dbOptions: DbOptions = {
+  host: 'postgres',
+  port: 5432,
+  database: 'globomantics',
+  user: 'postgres',
+  password: 'postgres',
+};
+
+const inventoryService = new InventoryService(dbOptions, cacheOptions);
 
 try {
-  await client.connect();
-  await client.set(REDIS_INVENTORY_KEY, 0);
+  await inventoryService.connect();
 } catch (err) {
   console.log(err);
 }
 
-const pool = new Pool({
-  user: 'postgres',
-  host: 'postgres',
-  database: 'globomantics',
-  password: 'postgres',
-  port: 5432,
-});
+const app: Express = express();
+const port: number = 3001;
 
 app.use(cors({ origin: ['http://localhost:3000', 'http://client:3000'] }));
 // app.use(cors());
@@ -36,10 +36,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.get('/api/inventory', async (_: Request, res: Response) => {
   try {
-    let value = (await client.get(REDIS_INVENTORY_KEY)) ?? '0';
-    let count = parseInt(value) + 1;
-    console.log(`Inventory count: ${count}`);
-    await client.set(REDIS_INVENTORY_KEY, count);
+    const count = await inventoryService.getIncrementedInventoryCount();
     res.json(count);
     res.status(200);
   } catch (err) {

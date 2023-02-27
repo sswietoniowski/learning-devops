@@ -4,7 +4,6 @@ import './App.css';
 
 const App = () => {
   const [count, setCount] = useState<number>(0);
-  const [amount, setAmount] = useState<number>(0);
 
   const getInventory = async () => {
     try {
