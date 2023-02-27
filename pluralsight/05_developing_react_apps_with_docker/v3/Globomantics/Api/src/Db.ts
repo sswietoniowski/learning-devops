@@ -22,6 +22,7 @@ class Db {
   }
 
   public async connect(): Promise<void> {
+    console.log('[DB] connect');
     await this._pool.connect();
   }
 
@@ -32,6 +33,7 @@ class Db {
   }
 
   public async disconnect(): Promise<void> {
+    console.log('[DB] disconnect');
     await this._pool.end();
   }
 }

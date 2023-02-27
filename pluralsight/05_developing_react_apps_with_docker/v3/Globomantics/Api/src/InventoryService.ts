@@ -15,6 +15,7 @@ class InventoryService {
   }
 
   public async connect(): Promise<void> {
+    console.log('[SERVICE] connect');
     await this._cache.connect();
     await this._db.connect();
   }
@@ -43,7 +44,7 @@ class InventoryService {
       'SELECT price FROM inventory WHERE sku = $1',
       [this._INVENTORY_SKU]
     );
-    const price = result[this._INVENTORY_PRICE_COLUMN].price;
+    const price = parseFloat(result[this._INVENTORY_PRICE_COLUMN].price);
     console.log(`[DB] get price: ${price}`);
     return price;
   }
@@ -57,6 +58,7 @@ class InventoryService {
   }
 
   public async disconnect(): Promise<void> {
+    console.log('[SERVICE] disconnect');
     await this._cache.disconnect();
     await this._db.disconnect();
   }

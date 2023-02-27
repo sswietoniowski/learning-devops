@@ -16,6 +16,7 @@ class Cache {
   }
 
   public async connect(): Promise<void> {
+    console.log('[CACHE] connect');
     await this._client.connect();
   }
 
@@ -28,6 +29,7 @@ class Cache {
   }
 
   public async disconnect(): Promise<void> {
+    console.log('[CACHE] disconnect');
     await this._client.disconnect();
   }
 }
