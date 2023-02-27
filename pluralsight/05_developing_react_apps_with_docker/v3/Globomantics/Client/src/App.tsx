@@ -80,7 +80,7 @@ const App = () => {
           <div className='row well mb-3'>
             <div className='col-md-6'>
               <h5>
-                There are {count} items in the inventory worth{' '}
+                There are {count} items in the inventory and they are worth $
                 {amount.toFixed(2)}!
               </h5>
             </div>
