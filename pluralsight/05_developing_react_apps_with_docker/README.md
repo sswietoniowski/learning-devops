@@ -146,7 +146,7 @@ To use hot reloading, we need to add the following line to the `docker-compose.y
 ```yaml
 volumes:
   - ./Client/src:/app/src
-````
+```
 
 or if we were still using `docker run` command:
 
@@ -174,6 +174,17 @@ Other useful `docker-compose` commands:
 - `docker-compose down` - stops and removes the containers,
 - `docker-compose down -v` - stops and removes the containers and volumes,
 - `docker-compose down -v --rmi all` - stops and removes the containers, volumes and images.
+
+Sometimes we want to clear up the Docker environment. To do that, we can use the following commands:
+
+- `docker images ls` - shows all the images,
+- `docker images ls -a` - shows all the images including the intermediate ones,
+- `docker images rm <image_id>` - removes the image,
+- `docker images rm $(docker images -a -q)` - removes all the images,
+- `docker images prune` - removes all unused images,
+- `docker system prune` - removes all stopped containers,
+- `docker system prune -a` - removes all stopped containers and unused images,
+- `docker system prune -a --volumes` - removes all stopped containers, unused images and volumes.
 
 ## Enhancing the Multi-container Application
 
