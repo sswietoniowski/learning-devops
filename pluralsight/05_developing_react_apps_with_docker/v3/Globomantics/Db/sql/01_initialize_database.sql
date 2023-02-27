@@ -4,7 +4,5 @@ CREATE TABLE IF NOT EXISTS inventory
     amount INT 
 );
 
-INSERT INTO inventory (amount, sku)
-VALUES (1, 200)
-ON CONFLICT (sku) DO NOTHING;
+INSERT INTO inventory (amount, sku) VALUES (1, 200) ON CONFLICT (sku) DO NOTHING;
 
