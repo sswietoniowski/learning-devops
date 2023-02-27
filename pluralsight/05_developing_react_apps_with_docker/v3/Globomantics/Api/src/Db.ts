@@ -30,9 +30,9 @@ class Db {
     const result = await this._pool.query(query, values);
 
     console.log('[DB] query', query, values);
-    console.log('[DB] result', result.rows);
+    console.log('[DB] result', result);
 
-    return result.rows;
+    return result;
   }
 
   public async disconnect(): Promise<void> {

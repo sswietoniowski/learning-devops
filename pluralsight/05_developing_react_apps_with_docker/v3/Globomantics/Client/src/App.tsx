@@ -4,6 +4,7 @@ import './App.css';
 
 const App = () => {
   const [count, setCount] = useState<number>(0);
+  const [amount, setAmount] = useState<number>(0);
 
   const getInventory = async () => {
     try {
@@ -15,13 +16,25 @@ const App = () => {
     }
   };
 
+  const getAmount = async () => {
+    try {
+      const response = await fetch('/api/inventory/amount');
+      const data = await response.json();
+      setAmount(parseFloat(data));
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
   useEffect(() => {
     getInventory();
+    getAmount();
   }, []);
 
   const onAddInventory = async () => {
     console.log('Add Inventory');
     await getInventory();
+    await getAmount();
   };
 
   return (
@@ -66,7 +79,10 @@ const App = () => {
 
           <div className='row well mb-3'>
             <div className='col-md-6'>
-              <h5>There are {count} items in the inventory!!</h5>
+              <h5>
+                There are {count} items in the inventory worth{' '}
+                {amount.toFixed(2)}!
+              </h5>
             </div>
           </div>
         </div>

@@ -205,6 +205,8 @@ Useful information about how to create database objects inside PostgreSQL contai
 
 [Here](https://blog.logrocket.com/crud-rest-api-node-js-express-postgresql/) you will find information about how to connect to the PostgreSQL database from Node.js (Express) application.
 
+Interesting explanation of how to handle currency in JavaScript can be found [here](https://www.honeybadger.io/blog/currency-money-calculations-in-javascript/).
+
 ## Debugging and Getting the Multi-container Application Ready for Production
 
 Now you are ready to start developing React apps with Docker :-).

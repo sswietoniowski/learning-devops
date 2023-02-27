@@ -1,3 +1,4 @@
+import currency from 'currency.js';
 import Cache, { CacheOptions } from './Cache';
 import Db, { DbOptions } from './Db';
 
@@ -44,9 +45,9 @@ class InventoryService {
       'SELECT price FROM inventory WHERE sku = $1',
       [this._INVENTORY_SKU]
     );
-    const price = parseFloat(result.rows[0].price);
+    const price = currency(result.rows[0].price);
     console.log(`[DB] get price: ${price}`);
-    return price;
+    return price.value;
   }
 
   public async getInventoryAmount(): Promise<number> {
