@@ -197,7 +197,9 @@ Sometimes we want to clear up the Docker environment. To do that, we can use the
 
 ## Enhancing the Multi-container Application
 
-As a next step we would enhance the multi-container application by adding permanent storage for the database (Postgres) while keeping Redis as a cache. We would also add a proxy server to the application (Nginx) to handle the traffic. (the new version of the system can be found inside "v3\Globomantics" directory).
+As a next step we would enhance the multi-container application by adding permanent storage for the database (Postgres) while keeping Redis as a cache. We would also add a proxy server to the application (Nginx) to handle the traffic (both to the client and to the API). The new version of the system can be found inside "v3\Globomantics" directory.
+
+![Globomantics v3 Architecture](./img/globomantics_v3_architecture.jpg)
 
 ## Debugging and Getting the Multi-container Application Ready for Production
 
