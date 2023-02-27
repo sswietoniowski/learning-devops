@@ -143,8 +143,6 @@ docker image history sswietoniowski/globomantics-client
 
 To use hot reloading, we need to add the following line to the `docker-compose.yml` file (example for the client application):
 
-````yaml
-
 ```yaml
 volumes:
   - ./Client/src:/app/src
@@ -153,7 +151,7 @@ volumes:
 or if we were still using `docker run` command:
 
 ```cmd
-docker run -d -p 3000:3000 --network globomantics --name globomantics-client -v ${PWD}/Client:/app sswietoniowski/globomantics-client
+docker run -d -p 3000:3000 --network globomantics --name globomantics-client -v ${PWD}/Client/src:/app/src sswietoniowski/globomantics-client
 ```
 
 To use the hot reloading with Vite, please read [this](https://patrickdesjardins.com/blog/docker-vitejs-hot-reload) article.
