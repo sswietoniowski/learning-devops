@@ -158,6 +158,25 @@ docker run -d -p 3000:3000 --network globomantics --name globomantics-client -v 
 
 To use the hot reloading with Vite, please read [this](https://patrickdesjardins.com/blog/docker-vitejs-hot-reload) article.
 
+Other useful `docker-compose` commands:
+
+- `docker-compose ps` - shows the status of the containers,
+- `docker-compose up -d` option - runs the containers in the background,
+- `docker-compose logs` - shows the logs of the containers,
+- `docker-compose logs <service_name>` - shows the logs of the specific container,
+- `docker-compose images` - shows the images used by the containers.
+- `docker-compose exec <service_name> <command>` - executes a command inside the container,
+- `docker-compose exec <service_name> sh` - opens a shell inside the container.
+- `docker-compose stop` - stops the containers,
+- `docker-compose stop <service_name>` - stops the specific container,
+- `docker-compose restart` - restarts the containers,
+- `docker-compose restart <service_name>` - restarts the specific container,
+- `docker-compose start` - starts the containers,
+- `docker-compose start <service_name>` - starts the specific container,
+- `docker-compose down` - stops and removes the containers,
+- `docker-compose down -v` - stops and removes the containers and volumes,
+- `docker-compose down -v --rmi all` - stops and removes the containers, volumes and images.
+
 ## Enhancing the Multi-container Application
 
 ## Debugging and Getting the Multi-container Application Ready for Production
