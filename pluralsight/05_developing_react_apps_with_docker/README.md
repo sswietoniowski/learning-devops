@@ -187,6 +187,10 @@ Sometimes we want to clear up the Docker environment. To do that, we can use the
 - `docker container rm <container_id>` - removes the container,
 - `docker container rm $(docker container ls -a -q)` - removes all the containers,
 - `docker container prune` - removes all stopped containers,
+- `docker volume ls` - shows all the volumes,
+- `docker volume rm <volume_name>` - removes the volume,
+- `docker volume rm $(docker volume ls -q)` - removes all the volumes,
+- `docker volume prune` - removes all unused volumes,
 - `docker system prune` - removes all stopped containers,
 - `docker system prune -a` - removes all stopped containers and unused images,
 - `docker system prune -a --volumes` - removes all stopped containers, unused images and volumes.
