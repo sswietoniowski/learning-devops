@@ -203,6 +203,8 @@ As a next step we would enhance the multi-container application by adding perman
 
 Useful information about how to create database objects inside PostgreSQL container can be found [here](https://stackoverflow.com/questions/26598738/how-to-create-user-database-in-script-for-docker-postgres).
 
+[Here](https://blog.logrocket.com/crud-rest-api-node-js-express-postgresql/) you will find information about how to connect to the PostgreSQL database from Node.js (Express) application.
+
 ## Debugging and Getting the Multi-container Application Ready for Production
 
 Now you are ready to start developing React apps with Docker :-).
