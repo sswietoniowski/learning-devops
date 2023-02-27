@@ -46,7 +46,7 @@ class InventoryService {
       [this._INVENTORY_SKU]
     );
     const price = parseFloat(
-      result.rows[0][this._INVENTORY_PRICE_COLUMN].price
+      result.rows[0][this._INVENTORY_PRICE_COLUMN]
     );
     console.log(`[DB] get price: ${price}`);
     return price;

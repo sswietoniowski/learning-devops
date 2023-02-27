@@ -4,4 +4,4 @@ CREATE TABLE IF NOT EXISTS inventory
     price MONEY NOT NULL
 );
 
-INSERT INTO inventory (amount, sku) VALUES (1, 3.99) ON CONFLICT (sku) DO NOTHING;
+INSERT INTO inventory (sku, price) VALUES (1, 3.99) ON CONFLICT (sku) DO NOTHING;

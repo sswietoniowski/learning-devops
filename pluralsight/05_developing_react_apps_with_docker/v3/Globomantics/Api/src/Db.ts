@@ -29,6 +29,9 @@ class Db {
   public async query(query: string, values?: any[]): Promise<any> {
     const result = await this._pool.query(query, values);
 
+    console.log('[DB] query', query, values);
+    console.log('[DB] result', result.rows);
+
     return result.rows;
   }
 
