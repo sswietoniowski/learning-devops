@@ -32,7 +32,7 @@ const App = () => {
   }, []);
 
   const onAddInventory = async () => {
-    console.log('Add Inventory');
+    console.log('[CLIENT] add inventory');
     await getInventory();
     await getAmount();
   };
