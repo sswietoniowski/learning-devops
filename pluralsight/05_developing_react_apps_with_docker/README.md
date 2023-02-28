@@ -249,4 +249,22 @@ Docker network types:
 - `host` - uses the host network stack inside the container (shares TCP/IP stack and namespace with the host),
 - `none` - removes the network stack from the container (no network access).
 
+To get an information about the network type of the container, run the following command:
+
+```cmd
+docker network ls
+```
+
+```cmd
+docker network inspect <network_name>
+```
+
+To remove dangling networks, run the following command:
+
+```cmd
+docker network prune
+```
+
+Best practices:
+
 Now you are ready to start developing React apps with Docker :-).
