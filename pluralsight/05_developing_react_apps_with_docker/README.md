@@ -265,6 +265,13 @@ To remove dangling networks, run the following command:
 docker network prune
 ```
 
-Best practices:
+Docker best practices:
+
+- ensure your docker images are as small as possible, use .dockerignore file to exclude unnecessary files,
+- specify USER property in your Dockerfile, if not specified, the default user is root,
+- use official images, reduces burden of maintenance,
+- never store sensitive data in your images, use Docker secrets instead, they are encrypted at rest and only decrypted in memory,
+- use logging and monitoring tools like Splunk, Kibana, Prometheus, etc.,
+- when you refactor a monolith application, refactor and build one microservice at a time.
 
 Now you are ready to start developing React apps with Docker :-).
