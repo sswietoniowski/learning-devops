@@ -226,4 +226,8 @@ Docker restart policy:
 
 ## Debugging and Getting the Multi-container Application Ready for Production
 
+To debug the system with VS Code, we need to install the following extensions:
+
+- [Remote - Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers),
+
 Now you are ready to start developing React apps with Docker :-).
