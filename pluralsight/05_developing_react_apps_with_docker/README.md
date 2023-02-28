@@ -235,6 +235,12 @@ For that I've created two new files:
 - `Dockerfile.prod` - for the production build,
 - `docker-compose.prod.yml` - for the production build.
 
+To start this configuration, run the following command:
+
+```cmd
+docker-compose --file docker-compose.prod.yml up -d --build
+```
+
 In this version our client (React) application is using the production build (look inside `Dockerfile.prod` for the details).
 
 Now you are ready to start developing React apps with Docker :-).
