@@ -1,0 +1,74 @@
+version: '3.8'
+services:
+  redis:
+    image: redis
+    # container_name: redis
+    restart: on-failure
+    ports:
+      - '6379:6379'
+    volumes:
+      - ./Db:/data
+    networks:
+      - globomantics
+  postgres:
+    image: postgres
+    # container_name: postgres
+    restart: on-failure
+    ports:
+      - '5432:5432'
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=P@ssw0rd
+      - POSTGRES_DB=globomantics
+    volumes:
+      - postgres:/var/lib/postgresql/data
+      - ./Db/sql:/docker-entrypoint-initdb.d
+    networks:
+      - globomantics
+  api:
+    build:
+      context: ./Api
+      dockerfile: Dockerfile
+    # container_name: globomantics-api
+    restart: on-failure
+    ports:
+      - '3001:3001'
+    volumes:
+      - ./Api/src:/app/src
+    networks:
+      - globomantics
+    depends_on:
+      - redis
+  client:
+    build:
+      context: ./Client
+      dockerfile: Dockerfile.prod
+    # container_name: globomantics-client
+    restart: on-failure
+    ports:
+      - '3000:80'
+    stdin_open: true
+    volumes:
+      - ./Client/src:/app/src
+    networks:
+      - globomantics
+    depends_on:
+      - api
+  proxy:
+    build:
+      context: ./Proxy
+      dockerfile: Dockerfile
+    restart: on-failure
+    ports:
+      - 8080:80
+    networks:
+      - globomantics
+    depends_on:
+      - client
+      - api
+networks:
+  globomantics:
+    driver: bridge
+
+volumes:
+  postgres:

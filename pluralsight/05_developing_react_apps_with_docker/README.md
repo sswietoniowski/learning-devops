@@ -228,4 +228,13 @@ Docker restart policy:
 
 Support for debugging while using Vite, TypeScript, Node.js and Docker can be tricky :-).
 
+To create a production build of the React app we should change our Docker file and our docker-compose file.
+
+For that I've created two new files:
+
+- `Dockerfile.prod` - for the production build,
+- `docker-compose.prod.yml` - for the production build.
+
+In this version our client (React) application is using the production build (look inside `Dockerfile.prod` for the details).
+
 Now you are ready to start developing React apps with Docker :-).
