@@ -238,7 +238,7 @@ For that I've created two new files:
 To start this configuration, run the following command:
 
 ```cmd
-docker-compose --file docker-compose.prod.yml up -d --build
+docker-compose --file docker-compose.prod.yaml up -d --build
 ```
 
 In this version our client (React) application is using the production build (look inside `Dockerfile.prod` for the details).
