@@ -243,4 +243,10 @@ docker-compose --file docker-compose.prod.yaml up -d --build
 
 In this version our client (React) application is using the production build (look inside `Dockerfile.prod` for the details).
 
+Docker network types:
+
+- `bridge` - (default) creates a virtual private network for the container (port mapping to network with external containers),
+- `host` - uses the host network stack inside the container (shares TCP/IP stack and namespace with the host),
+- `none` - removes the network stack from the container (no network access).
+
 Now you are ready to start developing React apps with Docker :-).
