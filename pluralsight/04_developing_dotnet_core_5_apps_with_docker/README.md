@@ -6,7 +6,7 @@ This course is about developing .NET Core 5 apps with Docker.
 
 Basic introduction to .NET Core and Docker.
 
-It is pretty easy to add Docker support to a .NET Core project, especially if you use Visual Studio.
+It is pretty easy to add Docker support to a .NET Core project, especially if you use Visual Studio or VS Code (remember to use extensions).
 
 ## Logging in Docker-based .NET Core Apps
 
