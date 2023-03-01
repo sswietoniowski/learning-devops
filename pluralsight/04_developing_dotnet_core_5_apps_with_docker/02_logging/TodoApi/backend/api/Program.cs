@@ -9,9 +9,13 @@ using Polly;
 using Serilog;
 using Serilog.Events;
 
+var assemblyName = typeof(Program).Assembly.GetName().Name;
+
 Log.Logger = new LoggerConfiguration()
     .MinimumLevel.Override("Microsoft", LogEventLevel.Information)
     .Enrich.FromLogContext()
+    .Enrich.WithMachineName()
+    .Enrich.WithProperty("Assembly", assemblyName)
     .WriteTo.Console()
     .CreateLogger();
 
