@@ -12,9 +12,9 @@ public class TodoService : ITodoService
 
     public TodoService(BaseTodoContext todoContext, IMapper mapper, ILogger<TodoService> logger)
     {
-        _todoContext = todoContext;
-        _mapper = mapper;
-        _logger = logger;
+        _todoContext = todoContext ?? throw new ArgumentNullException(nameof(todoContext));
+        _mapper = mapper ?? throw new ArgumentNullException(nameof(mapper));
+        _logger = logger ?? throw new ArgumentNullException(nameof(logger));
     }
 
     public async Task<TodoDto> CreateTodoAsync(TodoForCreationDto todoForCreation)

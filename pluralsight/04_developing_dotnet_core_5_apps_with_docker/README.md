@@ -28,6 +28,23 @@ Level up with Serilog:
 - Serilog is leading the pack:
   - NLog and Log4Net are also popular.
 
+Tip for VSCode, we can hide "bin", "obj" and "node_modules" folders in the Explorer view. To do so, open the Command Palette (Ctrl+Shift+P) and type "settings" and select "Preferences: Open Settings (JSON)". Then add the following line:
+
+```json
+"files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/bin": true,
+    "**/obj": true,
+    "**/node_modules": true
+}
+```
+
+Or just enter Ctrl+, to open the settings.json file, then look for "hide", and you will find the option to hide the folders (for the current workspace or for the user).
+
 ## Configuration in Docker-based .NET Core Apps
 
 Types of configuration:

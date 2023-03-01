@@ -13,8 +13,8 @@ public class TodoController : ControllerBase
 
     public TodoController(ITodoService todosService, ILogger<TodoController> logger)
     {
-        _todosService = todosService;
-        _logger = logger;
+        _todosService = todosService ?? throw new ArgumentNullException(nameof(todosService));
+        _logger = logger ?? throw new ArgumentNullException(nameof(logger));
     }
 
     [HttpGet]
