@@ -2,6 +2,8 @@ using backend.api;
 
 using Microsoft.AspNetCore.Mvc;
 
+using Serilog;
+
 namespace api.Controllers;
 
 [ApiController]
@@ -20,14 +22,15 @@ public class TodoController : ControllerBase
     [HttpGet]
     public async Task<ActionResult<IEnumerable<Todo>>> GetTodos()
     {
-        _logger.LogInformation("Getting all todos");
+        Log.Information("Getting all todos"); // we can use Serilog directly or use the ILogger<T> interface
         return Ok(await _todosService.GetTodosAsync());
     }
 
     [HttpGet("{id}")]
     public async Task<ActionResult<Todo>> GetTodoById(int id)
     {
-        _logger.LogInformation($"Getting todo with id {id}");
+        Log.ForContext("TodoId", id) // we can add context to the logger
+            .Information($"Getting todo");
         var todo = await _todosService.GetTodoAsync(id);
 
         if (todo == null)

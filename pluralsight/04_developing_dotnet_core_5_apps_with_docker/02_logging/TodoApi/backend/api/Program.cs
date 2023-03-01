@@ -1,3 +1,4 @@
+using api.Configurations.Extensions;
 using api.Configurations.Middleware;
 
 using backend.api;
@@ -16,6 +17,10 @@ Log.Logger = new LoggerConfiguration()
     .Enrich.FromLogContext()
     .Enrich.WithMachineName()
     .Enrich.WithProperty("Assembly", assemblyName)
+    // available sinks: https://github.com/serilog/serilog/wiki/Provided-Sinks
+    // Seq: https://datalust.co/seq
+    // Seq with Docker: https://docs.datalust.co/docs/getting-started-with-docker
+    .WriteTo.Seq(serverUrl: "http://seq:5341")
     .WriteTo.Console()
     .CreateLogger();
 
@@ -68,9 +73,15 @@ try
         app.UseSwaggerUI();
     }
 
-    app.UseHttpsRedirection();
+    app.UseCustomRequestLogging();
 
-    app.MapControllers();
+    app.UseHttpsRedirection();
+    app.UseRouting();
+    app.UseAuthorization();
+    app.UseEndpoints(endpoints =>
+    {
+        endpoints.MapControllers();
+    });
 
     const int MAX_RETRIES = 7;
     const int RETRY_DELAY_IN_SECONDS = 15;

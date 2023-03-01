@@ -1,5 +1,15 @@
 version: "3.8"
 services:
+  seq:
+    image: datalust/seq
+    container_name: seq
+    environment:
+      - ACCEPT_EULA=Y
+    ports:
+      - "5341:5341"
+      - "8080:80"
+    networks:
+      - todoapp
   db:
     image: mcr.microsoft.com/mssql/server:2022-latest
     container_name: db
