@@ -19,7 +19,7 @@ public class TodoService : ITodoService
 
     public async Task<TodoDto> CreateTodoAsync(TodoForCreationDto todoForCreation)
     {
-        _logger.LogInformation($"Creating todo with title {todoForCreation.Title}");
+        _logger.LogInformation("Creating todo with title {title}", todoForCreation.Title); // instead of using string interpolation we can use the logger's built-in support for structured logging
 
         var todo = _mapper.Map<TodoForCreationDto, Todo>(todoForCreation);        
 
