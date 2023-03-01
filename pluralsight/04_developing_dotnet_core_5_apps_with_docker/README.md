@@ -28,6 +28,11 @@ Level up with Serilog:
 - Serilog is leading the pack:
   - NLog and Log4Net are also popular.
 
+Log vs ILogger:
+
+- `ILogger` is a standard interface injected into classes that need to log (this way we can swap the implementation),
+- (Serilog) `Log` is a static class that wraps ILogger (no need to perform dependency injection but changing the implementation is more difficult).
+
 Tip for VSCode, we can hide "bin", "obj" and "node_modules" folders in the Explorer view. To do so, open the Command Palette (Ctrl+Shift+P) and type "settings" and select "Preferences: Open Settings (JSON)". Then add the following line:
 
 ```json
