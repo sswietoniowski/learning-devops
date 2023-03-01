@@ -3,8 +3,17 @@ using backend.api;
 
 using Microsoft.EntityFrameworkCore;
 using api.Configurations.Middleware;
+using Serilog;
+
+Log.Logger = new LoggerConfiguration()
+            .MinimumLevel.Debug()
+            .WriteTo.Console()
+            .WriteTo.File("Logs/logs.txt", rollingInterval: RollingInterval.Day)
+            .CreateLogger();
 
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Host.UseSerilog();
 
 var databaseEngine = builder.Configuration.GetValue<DatabaseEngine>("DatabaseEngine");
 
