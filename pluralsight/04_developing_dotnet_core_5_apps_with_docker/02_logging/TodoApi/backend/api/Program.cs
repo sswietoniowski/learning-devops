@@ -2,6 +2,7 @@ using Polly;
 using backend.api;
 
 using Microsoft.EntityFrameworkCore;
+using api.Configurations.Middleware;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -30,6 +31,8 @@ else
 
 builder.Services.AddAutoMapper(typeof(TodoProfile));
 builder.Services.AddScoped<ITodoService, TodoService>();
+
+builder.Services.AddTransient<GlobalExceptionHandlingMiddleware>();
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
