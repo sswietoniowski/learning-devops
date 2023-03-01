@@ -19,28 +19,35 @@ public class TodoService : ITodoService
 
     public async Task<TodoDto> CreateTodoAsync(TodoForCreationDto todoForCreation)
     {
-        var todo = _mapper.Map<TodoForCreationDto, Todo>(todoForCreation);
+        _logger.LogInformation($"Creating todo with title {todoForCreation.Title}");
+
+        var todo = _mapper.Map<TodoForCreationDto, Todo>(todoForCreation);        
 
         await _todoContext.Todos.AddAsync(todo);
         await _todoContext.SaveChangesAsync();
+
+        _logger.LogInformation($"Todo with id {todo.Id} created");
 
         return _mapper.Map<Todo, TodoDto>(todo);
     }
 
     public async Task<TodoDto?> GetTodoAsync(int id)
     {
+        _logger.LogInformation($"Getting todo with id {id}");
         var todo = await _todoContext.Todos.FindAsync(id);
 
         if (todo == null)
         {
+            _logger.LogWarning($"Todo with id {id} not found");
             return null;
-        }
+        }        
 
         return _mapper.Map<Todo, TodoDto>(todo);
     }
 
     public async Task<IEnumerable<TodoDto>> GetTodosAsync()
     {
+        _logger.LogInformation("Getting all todos");
         var todos = await _todoContext.Todos.ToListAsync();
 
         return _mapper.Map<IEnumerable<Todo>, IEnumerable<TodoDto>>(todos);
@@ -48,10 +55,12 @@ public class TodoService : ITodoService
 
     public async Task<TodoDto?> UpdateTodoAsync(int id, TodoForUpdateDto todoForUpdate)
     {
+        _logger.LogInformation($"Updating todo with id {id}");
         var todo = await _todoContext.Todos.FindAsync(id);
 
         if (todo == null)
         {
+            _logger.LogWarning($"Todo with id {id} not found");
             return null;
         }
 
@@ -59,20 +68,26 @@ public class TodoService : ITodoService
         
         await _todoContext.SaveChangesAsync();
 
+        _logger.LogInformation($"Todo with id {todo.Id} updated");
+
         return _mapper.Map<Todo, TodoDto>(todo);
     }
 
     public async Task<bool> DeleteTodoAsync(int id)
     {
+        _logger.LogInformation($"Deleting todo with id {id}");
         var todo = await _todoContext.Todos.FindAsync(id);
 
         if (todo == null)
         {
+            _logger.LogWarning($"Todo with id {id} not found");
             return false;
         }
 
         _todoContext.Todos.Remove(todo);
         await _todoContext.SaveChangesAsync();
+
+        _logger.LogInformation($"Todo with id {todo.Id} deleted");
 
         return true;
     }
