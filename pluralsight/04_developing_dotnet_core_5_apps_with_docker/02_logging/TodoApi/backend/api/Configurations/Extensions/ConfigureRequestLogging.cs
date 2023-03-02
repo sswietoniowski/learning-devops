@@ -22,7 +22,7 @@ public static class ConfigureRequestLogging
 
     }
 
-    private static LogEventLevel ExcludeHealthChecks(HttpContext ctx, double _, Exception ex) =>
+    private static LogEventLevel ExcludeHealthChecks(HttpContext ctx, double _, Exception? ex) =>
         ex != null
             ? LogEventLevel.Error
             : ctx.Response.StatusCode > 499
@@ -33,8 +33,10 @@ public static class ConfigureRequestLogging
 
     private static bool IsHealthCheckEndpoint(HttpContext ctx)
     {
+        if (ctx == null) throw new ArgumentNullException(nameof(ctx));
+
         var userAgent = ctx.Request.Headers["User-Agent"].FirstOrDefault() ?? "";
-        return ctx.Request.Path.Value.EndsWith("health", StringComparison.CurrentCultureIgnoreCase) ||
+        return ctx!.Request!.Path.Value!.EndsWith("health", StringComparison.CurrentCultureIgnoreCase) ||
                userAgent.Contains("HealthCheck", StringComparison.InvariantCultureIgnoreCase);
     }
 }

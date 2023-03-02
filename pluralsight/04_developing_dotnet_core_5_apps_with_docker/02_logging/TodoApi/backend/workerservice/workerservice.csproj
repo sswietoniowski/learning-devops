@@ -4,7 +4,6 @@
     <TargetFramework>net7.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
-    <UserSecretsId>dotnet-api.workerservice-90f5d5d7-125f-4130-9e86-503dae51ff95</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>

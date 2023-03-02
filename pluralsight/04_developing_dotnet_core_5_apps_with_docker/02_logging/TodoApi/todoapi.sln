@@ -5,9 +5,9 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "api", "backend\api\api.csproj", "{AB0A6DA9-3DB8-4DB1-B09D-D30EDF7FDAF1}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "api.workerservice", "backend\workerservice\api.workerservice.csproj", "{28409662-D5E5-472A-9C95-2BAC5149FF29}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "workerservice", "backend\workerservice\workerservice.csproj", "{28409662-D5E5-472A-9C95-2BAC5149FF29}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "api.console", "backend\console\api.console.csproj", "{B86747DE-3A4A-4A00-88E1-938BA30DC6A1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "console", "backend\console\console.csproj", "{B86747DE-3A4A-4A00-88E1-938BA30DC6A1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

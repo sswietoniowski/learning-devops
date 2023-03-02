@@ -16,7 +16,7 @@ Log.Logger = new LoggerConfiguration()
     .MinimumLevel.Override("Microsoft", LogEventLevel.Information)
     .Enrich.FromLogContext()
     .Enrich.WithMachineName()
-    .Enrich.WithProperty("Assembly", assemblyName)
+    .Enrich.WithProperty("Assembly", assemblyName!)
     // available sinks: https://github.com/serilog/serilog/wiki/Provided-Sinks
     // Seq: https://datalust.co/seq
     // Seq with Docker: https://docs.datalust.co/docs/getting-started-with-docker
@@ -78,10 +78,7 @@ try
     app.UseHttpsRedirection();
     app.UseRouting();
     app.UseAuthorization();
-    app.UseEndpoints(endpoints =>
-    {
-        endpoints.MapControllers();
-    });
+    app.MapControllers();
 
     const int MAX_RETRIES = 7;
     const int RETRY_DELAY_IN_SECONDS = 15;
