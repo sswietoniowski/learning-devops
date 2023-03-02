@@ -40,16 +40,16 @@ services:
       - seq
     networks:
       - todoapp
-  # console:
-  #   container_name: console
-  #   image: sswietoniowski/todoconsole
-  #   build:
-  #     context: ./backend/console/
-  #     dockerfile: ./Dockerfile
-  #   depends_on:
-  #     - seq
-  #   networks:
-  #     - todoapp
+  console:
+    container_name: console
+    image: sswietoniowski/todoconsole
+    build:
+      context: ./backend/console/
+      dockerfile: ./Dockerfile
+    depends_on:
+      - seq
+    networks:
+      - todoapp
   # workerservice:
   #   container_name: workerservice
   #   image: sswietoniowski/todoworkerservice
