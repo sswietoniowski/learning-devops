@@ -50,16 +50,16 @@ services:
       - seq
     networks:
       - todoapp
-  # workerservice:
-  #   container_name: workerservice
-  #   image: sswietoniowski/todoworkerservice
-  #   build:
-  #     context: ./backend/workerservice/
-  #     dockerfile: ./Dockerfile
-  #   depends_on:
-  #     - seq
-  #   networks:
-  #     - todoapp
+  workerservice:
+    container_name: workerservice
+    image: sswietoniowski/todoworkerservice
+    build:
+      context: ./backend/workerservice/
+      dockerfile: ./Dockerfile
+    depends_on:
+      - seq
+    networks:
+      - todoapp
 networks:
   todoapp:
     driver: bridge

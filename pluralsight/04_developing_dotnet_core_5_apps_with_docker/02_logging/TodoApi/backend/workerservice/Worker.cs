@@ -1,4 +1,4 @@
-namespace api.workerservice;
+namespace workerservice;
 
 public class Worker : BackgroundService
 {
@@ -11,6 +11,7 @@ public class Worker : BackgroundService
 
     protected override async Task ExecuteAsync(CancellationToken stoppingToken)
     {
+        _logger.LogInformation("Worker started");
         while (!stoppingToken.IsCancellationRequested)
         {
             _logger.LogInformation("Worker running at: {time}", DateTimeOffset.Now);
