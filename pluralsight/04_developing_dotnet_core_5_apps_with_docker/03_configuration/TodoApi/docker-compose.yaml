@@ -1,0 +1,67 @@
+version: '3.8'
+services:
+  seq:
+    image: datalust/seq
+    container_name: seq
+    environment:
+      - ACCEPT_EULA=Y
+    ports:
+      - '5341:5341'
+      - '8080:80'
+    networks:
+      - todoapp
+  db:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: db
+    restart: on-failure
+    environment:
+      ACCEPT_EULA: 'Y'
+      SA_PASSWORD: 'Password123!'
+      MSSQL_PID: 'Developer'
+    volumes:
+      - sqlvolume:/var/opt/mssql
+    ports:
+      - '2433:1433'
+    networks:
+      - todoapp
+  api:
+    container_name: api
+    image: sswietoniowski/todoapi-mssql
+    build:
+      context: ./backend/api/
+      dockerfile: ./Dockerfile.mssql
+    environment:
+      DatabaseEngine: 'Mssql'
+      'ConnectionStrings:MssqlConnection': 'Server=db,1433;Database=todos;User=sa;Password=Password123!;TrustServerCertificate=true'
+    ports:
+      - '5000:5000'
+    depends_on:
+      - db
+      - seq
+    networks:
+      - todoapp
+  console:
+    container_name: console
+    image: sswietoniowski/todoconsole
+    build:
+      context: ./backend/console/
+      dockerfile: ./Dockerfile
+    depends_on:
+      - seq
+    networks:
+      - todoapp
+  workerservice:
+    container_name: workerservice
+    image: sswietoniowski/todoworkerservice
+    build:
+      context: ./backend/workerservice/
+      dockerfile: ./Dockerfile
+    depends_on:
+      - seq
+    networks:
+      - todoapp
+networks:
+  todoapp:
+    driver: bridge
+volumes:
+  sqlvolume:

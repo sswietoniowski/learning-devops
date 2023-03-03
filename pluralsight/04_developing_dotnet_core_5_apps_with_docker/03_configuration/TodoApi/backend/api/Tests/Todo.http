@@ -1,0 +1,14 @@
+# More examples at: https://plawgo.pl/2021/04/13/visual-studio-code-rest-client/
+
+### Get all todos
+GET http://localhost:5000/api/todos HTTP/1.1
+
+### Create a new todo
+POST http://localhost:5000/api/todos HTTP/1.1
+Content-Type: application/json
+
+{
+    "title": "Todo Docker",
+    "description": "Todo from Docker",
+    "isCompleted": true
+}
