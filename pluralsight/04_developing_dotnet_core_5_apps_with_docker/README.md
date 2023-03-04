@@ -140,4 +140,6 @@ Sample App (Carved Rock) Architecture
 
 ![Carved Rock Architecture](img/carved_rock_architecture.jpg)
 
+Visual Studio & VS Code booth have Docker Compose support.
+
 Now you are ready to start developing .NET Core 5 apps with Docker :-).
