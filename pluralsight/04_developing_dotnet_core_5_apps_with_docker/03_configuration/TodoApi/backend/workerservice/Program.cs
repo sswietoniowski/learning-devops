@@ -29,6 +29,8 @@ try
 
     var debugView = (configuration as IConfigurationRoot).GetDebugView();
 
+    // Usefule while developing to see the configuration
+    // but not in production as it can leak secrets
     Log.ForContext("DebugView", debugView)
         .Information("Configuration dump");
 
