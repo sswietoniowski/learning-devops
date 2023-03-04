@@ -99,6 +99,8 @@ Process:
 - alias build as publish and run dotnet publish,
 - copy publish files into final image with just the runtime on it.
 
+Great if the above process is automated, so we can build and push images to a registry automatically (for example with the help of GitHub Actions).
+
 ## Simplify Complex Solutions with Docker Compose
 
 Docker Compose:
