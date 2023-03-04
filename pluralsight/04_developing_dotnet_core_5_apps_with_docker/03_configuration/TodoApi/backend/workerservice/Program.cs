@@ -27,6 +27,11 @@ try
 
     IConfiguration configuration = host.Services.GetRequiredService<IConfiguration>();
 
+    var debugView = (configuration as IConfigurationRoot).GetDebugView();
+
+    Log.ForContext("DebugView", debugView)
+        .Information("Configuration dump");
+
     Log.Information("Starting worker");
 
     var simpleProperty = configuration.GetValue<string>("SimpleProperty");
