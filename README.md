@@ -97,6 +97,7 @@ Some useful tools & other resources:
 - [Visual Studio Code Dev Containers](https://code.visualstudio.com/docs/devcontainers/create-dev-container),
 - [The Ultimate Docker Cheat Sheet](https://dockerlabs.collabnix.com/docker/cheatsheet/),
 - [Testcontainers](https://github.com/testcontainers/testcontainers-dotnet),
+- [wait-for-it](https://github.com/vishnubob/wait-for-it),
 - [Azure CLI](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli),
 - [Killercoda](https://killercoda.com/playgrounds/scenario/kubernetes) [:file_folder:](https://github.com/killercoda/scenario-examples),
 - [Play with Kubernetes](https://labs.play-with-k8s.com/),
