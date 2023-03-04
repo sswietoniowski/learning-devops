@@ -70,7 +70,12 @@
       "type": "docker-run",
       "label": "docker-run: debug",
       "dependsOn": ["docker-build: debug"],
-      "dockerRun": {},
+      "dockerRun": {
+        "env": {
+          "ASPNETCORE_ENVIRONMENT": "Development",
+          "SimpleProperty": "SimpleValue"
+        }
+      },
       "netCore": {
         "appProject": "${workspaceFolder}/workerservice.csproj",
         "enableDebugging": true

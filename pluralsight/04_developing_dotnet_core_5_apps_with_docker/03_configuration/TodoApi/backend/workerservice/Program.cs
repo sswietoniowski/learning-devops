@@ -25,6 +25,15 @@ try
         .UseSerilog()
         .Build();
 
+    IConfiguration configuration = host.Services.GetRequiredService<IConfiguration>();
+
+    Log.Information("Starting worker");
+
+    var simpleProperty = configuration.GetValue<string>("SimpleProperty");
+
+    Log.ForContext("SimpleProperty", simpleProperty)
+        .Information("Loaded configuration!");
+
     host.Run();
 }
 catch (Exception ex)

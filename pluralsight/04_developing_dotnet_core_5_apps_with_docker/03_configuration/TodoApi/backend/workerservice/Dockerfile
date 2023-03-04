@@ -1,5 +1,6 @@
 FROM mcr.microsoft.com/dotnet/runtime:7.0 AS base
 WORKDIR /app
+ENV SimpleProperty="[BASE] hello-simple-property"
 
 # Creates a non-root user with an explicit UID and adds permission to access the /app folder
 # For more info, please refer to https://aka.ms/vscode-docker-dotnet-configure-containers
@@ -20,4 +21,6 @@ RUN dotnet publish "workerservice.csproj" -c Release -o /app/publish /p:UseAppHo
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
+# this value will not be used inside VS while debugging, because it is a release build
+ENV SimpleProperty="[FINAL] hello-simple-property" 
 ENTRYPOINT ["dotnet", "workerservice.dll"]
