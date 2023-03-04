@@ -142,4 +142,35 @@ Sample App (Carved Rock) Architecture
 
 Visual Studio & VS Code booth have Docker Compose support.
 
+Override files are used in Docker Compose to modify or add to the settings in a base `docker-compose.yml` file, without changing the original file. This is useful for customizing configurations for different environments or use cases, without having to maintain multiple versions of the same file.
+
+To create an override file, you can create a new file with the same name as the base file, but with an additional suffix that specifies the purpose of the override. By convention, the suffix is _override_ or _local_. For example, if your base file is called `docker-compose.yml`, you could create an override file called `docker-compose.override.yml`.
+
+Here's an example of how to create an override file:
+
+Suppose you have the following `docker-compose.yml` file:
+
+```yaml
+version: '3'
+services:
+  web:
+    image: nginx
+    ports:
+      - '8080:80'
+    volumes:
+      - ./html:/usr/share/nginx/html
+```
+
+To override the port mapping for the web service, you could create an override file called `docker-compose.override.yml` with the following content:
+
+```yaml
+version: '3'
+services:
+  web:
+    ports:
+      - '8081:80'
+```
+
+This override file would modify the web service's port mapping from 8080:80 to 8081:80. When you run `docker-compose up` with the override file present in the same directory as the base file, the settings in the override file will take precedence over those in the base file.
+
 Now you are ready to start developing .NET Core 5 apps with Docker :-).
