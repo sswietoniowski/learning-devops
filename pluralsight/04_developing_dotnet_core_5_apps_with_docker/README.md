@@ -101,6 +101,13 @@ Process:
 
 Great if the above process is automated, so we can build and push images to a registry automatically (for example with the help of GitHub Actions).
 
+[Container fast mode](https://itnext.io/understanding-the-visual-studio-docker-fastmode-integration-c0bccc08b8f9) (VS & VSCode):
+
+- first stage pulled/built,
+- volumes mapped for source, debugger, packages, SSL, secrets.
+
+We can disable fast mode or build for Release.
+
 ## Simplify Complex Solutions with Docker Compose
 
 Docker Compose:
