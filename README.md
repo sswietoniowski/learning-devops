@@ -44,6 +44,7 @@ Based on these (free) courses:
   - _[Translate a Docker Compose File to Kubernetes Resources](https://kubernetes.io/docs/tasks/configure-pod-container/translate-compose-kubernetes/)_,
 - Terraform:
   - [Using Terraform with Azure](https://youtu.be/JKVkblsp3cM),
+  - [Getting Started With Terraform on AWS](https://spacelift.io/blog/terraform-tutorial).
 - other:
   - _[Top 10 Docker Alternatives You Must Know](https://www.knowledgehut.com/blog/devops/docker-alternatives)_,
   - _[Replacing Docker with Podman for VSCode DevContainers](https://blog.lifeishao.com/2021/12/30/replacing-docker-with-podman-for-your-vscode-devcontainers/)_,
@@ -54,9 +55,8 @@ Based on these (free) courses:
   - [Infrastructure as Code, part 2: build Docker images and deploy to Kubernetes with Terraform](https://circleci.com/blog/learn-iac-part02/),
   - [Infrastructure as Code, part 3: automate Kubernetes deployments with CI/CD and Terraform](https://circleci.com/blog/learn-iac-part3/),
   - [Virtual Machines vs Containers](https://youtu.be/eyNBf1sqdBQ),
-  - [Best Docker Container Monitoring Tools - Free and open source](https://youtu.be/zxAmqY63eJE),
-  - [Getting Started With Terraform on AWS](https://spacelift.io/blog/terraform-tutorial).
-
+  - [Best Docker Container Monitoring Tools - Free and open source](https://youtu.be/zxAmqY63eJE).
+  
 Also used these (paid) courses & books:
 
 - Docker:
