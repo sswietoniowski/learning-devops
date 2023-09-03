@@ -2,6 +2,12 @@
 
 General introduction to the containers.
 
+## Table of Contents
+
+- [Containers in 4 Hours](#containers-in-4-hours)
+  - [Table of Contents](#table-of-contents)
+  - [Understanding Containers](#understanding-containers)
+
 ## Understanding Containers
 
 The purpose of a _container_ is to start an application.
