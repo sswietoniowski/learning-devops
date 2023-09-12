@@ -7,6 +7,12 @@ General introduction to the containers.
 - [Containers in 4 Hours](#containers-in-4-hours)
   - [Table of Contents](#table-of-contents)
   - [Understanding Containers](#understanding-containers)
+  - [What is a Container?](#what-is-a-container)
+  - [Container Registries](#container-registries)
+  - [Container Runtimes](#container-runtimes)
+  - [Using a Container Platform](#using-a-container-platform)
+  - [Managing Containers](#managing-containers)
+  - [Useful Commands](#useful-commands)
 
 ## Understanding Containers
 
@@ -28,158 +34,171 @@ Different solutions exist to run containers
 - **Systemd** nspawn,
 - different cloud platforms.
 
-- Containers started as chroot directories, and have been around for a long time
-  - "chroot-ing" a directory is used since the 1980's to ensure that processes can only see the contents of a specific directory
-  - This functionality has further evolved into Linux namespaces
-- Docker kickstarted the adoption of containers in 2013/2014
-- Docker originally was based on LXC, and became a huge success because it added the Docker Registry
-- Docker registry is an open platform used for distribution of container images
+Containers started as chroot directories, and have been around for a long time. "Chroot-ing" a directory is used since the 1980's to
+ensure that processes can only see the contents of a specific directory. This functionality has further evolved into Linux namespaces.
 
-- System Images are used as the foundation to build your own application containers. They are not a replacement for a virtual machine
-- Application Images are used to start just one application. Application containers are the standard
-- To run multiple connected containers, you need to create a microservice. Use docker-compose or Kubernetes Pods to do this in an efficient way
+Docker kickstarted the adoption of containers in 2013/2014.
 
-- Containers heavily rely upon features provided by the Linux kernel
-  - namespaces and chroot
-  - Cgroups
-- Containers on other platforms use a Linux virtual machine to provide these features
-  - Did you ever wonder why Microsoft started WSL?
-- Recent Windows Server can run Windows containers. which require custom Windows images
+Docker originally was based on LXC, and became a huge success because it added the Docker Registry.
 
-`  `![ref1]![ref4]
+Docker registry is an open platform used for distribution of container images.
 
-- A container is a running instance of an image
-- Images normally are obtained from a container registry
-- The image contains the application code, language runtime and libraries
-- The container does NOT include an operating system kernel
-- External libraries such as libc are typically provided by the host operating system, but in a container is included in the images
-- While starting a container, it adds a writable layer on the top to store any changes that are made while working with the container
+_System Images_ are used as the foundation to build your own application containers. They are not a replacement for a virtual machine.
 
-`  `![ref1]![ref4]
+_Application Images_ are used to start just one application. Application containers are the standard.
 
-- Container images are typically shared through public registries, or by sharing mechanisms to build them easily, such as Dockerfile
-- The Docker container image format has become the de facto standard image format
-- Open Container Initiative (OCI) has standardized the Docker container image format
+To run multiple connected containers, you need to create a microservice. Use `docker-compose` or Kubernetes Pods to do this in an efficient way.
 
-- To work with containers, you'll need to take care of distribution of images
-- Manual distribution using images in tar balls is possible, but NOT recommended
-- Use registries instead
-  - Storing in remote registries is common, and the DockerHub registry is very common (https://hub.docker.com)
-  - When using Red Hat, have a look at quay.io
-  - As an alternative, consider storing in local (private) registries
+Containers heavily rely upon features provided by the Linux kernel:
 
-`  `![ref1]![ref4]
+- namespaces and chroot,
+- Cgroups.
 
-- The container runtime is a specific part of the container engine, and two of them are commonly used:
-  - CRI-O: Red Hat
-  - containerd: originates from Docker
-- The container runtime is taking care of specific tasks
+Containers on other platforms use a Linux virtual machine to provide these features. Did you ever wonder why Microsoft started WSL?
+Recent Windows Server can run Windows containers which require custom Windows images.
 
-  - Provide the mount point
-  - Communicate with the kernel
-  - Set up cgroups and more
+## What is a Container?
 
-- runC is a lightweight universal container runtime
-- It is the default runtime defined by the Open Containers Initiative
-- It is the specific part that focusses on creating containers
-- As such, it's included in CRI-O as well as containerd
-- Where CRI-O and containerd are adding features, like container lifecycle management and container image management
+A container is a running instance of an image.
 
-`  `![ref1]![ref4]
+Images normally are obtained from a container registry.
 
-- To run containers in cloud, additional features are needed
-  - Flexible and scalable networking
-  - Scalable and flexible storage
-  - Methods to connect containers together
-  - Additional services for cluster-wide monitoring of service availability
-- To provide for all of these, an orchestration platform is needed
-- Kubernetes is the standard orchestration platform
-- Almost all other orchestration platforms are based on Kubernetes
-  - OpenShift
-  - Rancher
-- Docker swarm provides similar features but has become obsolete
+The image contains the application code, language runtime and libraries.
 
-1. Using a Container Platform
+The container does NOT include an operating system kernel.
 
-`  `![ref1]![ref4]
+External libraries such as `libc` are typically provided by the host operating system, but in a container is included in the images.
 
-- To test container in isolation from other parts of your OS, install Docker in a Linux virtual machine
-- Use Docker Desktop on top of your main computer OS to work with an integrated platform on MacOS or Windows
-- Alternatively, run **podman** directly on top of Red Hat family or other distributions
+While starting a container, it adds a writable layer on the top to store any changes that are made while working with the container.
 
-- RHEL 8 and later no longer support Docker
-- RHEL now provides **podman** to work with containers to run directly on top of RHEL in single-node use cases
-- **podman** also works on other distributions, like recent Ubuntu\*\*
-- **podman** and **docker** are fully OCI compliant, which makes replacement a non-issue\*\*
-- Use **sudo dnf install container-tools** to install all you need
-- **sudo dnf install podman-docker** provides docker like syntax in the podman command
+## Container Registries
 
-`  `![ref1]![ref4]
+Container images are typically shared through public registries, or by sharing mechanisms to build them easily, such as `Dockerfile`.
 
-- Why would you have to run containers with elevated privileges?
-- A rootless container runs with limited user privileges and can be started by non-root users
-- A root container runs with root privileges
-- Rootless containers do not get an IP address
-- Rootless containers cannot bind to a privileged port
-- Rootless containers have limited access to the filesystem
+The Docker container image format has become the de facto standard image format.
 
-`   `![ref1]![ref4]
+_Open Container Initiative (OCI)_ has standardized the Docker container image format.
 
-Use the most recent instructions at docker.com
+To work with containers, you'll need to take care of distribution of images.
 
-3. Managing Containers
+Manual distribution using images in tar balls is possible, but NOT recommended, use registries instead.
 
-`  `![ref1]![ref4]
+Storing in remote registries is common, and the DockerHub registry is very [common](https://hub.docker.com).
 
-- **docker** and **podman** are both OCI compliant and for that reason 99% compatible
-- Unless mentioned otherwise, replace "docker" with "podman" to perform commands mentioned here on podman
-- **podman** has a few features that don't exist in Docker - they will be covered separately
+When using Red Hat, have a look at [quay.io](https://quay.io).
 
-`    `![ref1]![ref4]
+As an alternative, consider storing in local (private) registries.
 
-- Users have to be a member of the **docker** system group in order to communicate with the Docker daemon and start and manage containers
-  - Use **sudo usermod –aG docker $(USERID)**
-- Do NOT run containers as root!
-- When using **podman** on Red Hat, rootless containers can be used and no additional configuration is required
+## Container Runtimes
 
-- To run containers, registry access must be available
-- When using **docker**, images are fetched from docker hub
-- When using **podman**, registries are specified in /etc/containers/ registries.conf
-- Use **docker search** to find the image you need
-- Or use the web interface available at [https://hub.docker.com](https://hub.docker.com/)
-- Run images from any registry by specifying the complete image URL: **docker run https://my.registry.com/mycontainer:latest**
+The container runtime is a specific part of the container engine, and two of them are commonly used:
 
-- Remember: containers are just a way to start an application
-  - **docker run fedora** will run the fedora:latest image, start its default application and immediately exit
-  - **docker run -it fedora bash** will run the fedora:latest image, start bash, and open an interactive terminal
-- Managing foreground and background state
-  - **docker run -it fedora bash** will run the container in the foreground
-    - Use Ctrl-p, Ctrl-q to disconnect
-    - Use **exit** to quit the main application
-  - **docker run -d nginx** will run the container in the background
-  - **docker attach container-name** will attach to the running container if it was started with **-d** as well as an interactive terminal (**-it**)
+- `CRI-O`: Red Hat,
+- `containerd`: originates from Docker,
+- the container runtime is taking care of specific tasks.
 
-`  `![ref1]![ref4]
+It is responsible for:
 
-- **docker ps** gives an overview of containers currently running
-- Notice the container name and ID
-  - If no name was provided, a name is automatically generated
-  - The container ID corresponds to the name of the directory on the local Linux file system where the container is stored
-- **docker ps -a** also gives an overview of containers that have been started earlier and currently are no longer running
+- provide the mount point,
+- communicate with the kernel,
+- set up `cgroups` and more.
 
-- A container stops when its primary application stops
-- Use **docker stop** to send SIGTERM to a container
-- Use **docker kill** to send SIGKILL to a container
-- After stopping a container, it does not disappear
-- Use **docker rm** to permanently remove it
+`runC` is a lightweight universal container runtime.
 
-`  `![ref1]![ref4]
+It is the default runtime defined by the Open Containers Initiative.
 
-- Use **docker inspect** to get details about containers
-- Use **docker logs** to get access to the primary application STDOUT
-- Use **docker stats** for a Linux **top**-like interface about real-time container statistics
+It is the specific part that focusses on creating containers, as such, it's included in CRI-O as well as containerd.
+Where CRI-O and containerd are adding features, like container lifecycle management and container image management.
 
-4. Performing Common Container Management
+To run containers in cloud, additional features are needed:
+
+- flexible and scalable networking,
+- scalable and flexible storage,
+- methods to connect containers together,
+- additional services for cluster-wide monitoring of service availability,
+- to provide for all of these, an orchestration platform is needed,
+- Kubernetes is the standard orchestration platform,
+- almost all other orchestration platforms are based on Kubernetes:
+  - OpenShift,
+  - Rancher,
+- Docker swarm provides similar features but has become obsolete.
+
+## Using a Container Platform
+
+To test container in isolation from other parts of your OS, install Docker in a Linux virtual machine.
+
+Use Docker Desktop on top of your main computer OS to work with an integrated platform on MacOS or Windows.
+
+Alternatively, run **podman** directly on top of Red Hat family or other distributions:
+
+- RHEL 8 and later no longer support Docker,
+- RHEL now provides **podman** to work with containers to run directly on top of RHEL in single-node use cases,
+- **podman** also works on other distributions, like recent Ubuntu,
+- **podman** and **docker** are fully OCI compliant, which makes replacement a non-issue,
+- use **sudo dnf install container-tools** to install all you need,
+- **sudo dnf install podman-docker** provides docker like syntax in the podman command.
+
+Why would you have to run containers with elevated privileges?
+
+- a rootless container runs with limited user privileges and can be started by non-root users,
+- a root container runs with root privileges,
+- rootless containers do not get an IP address,
+- rootless containers cannot bind to a privileged port,
+- rootless containers have limited access to the filesystem.
+
+Use the most recent instructions at docker.com.
+
+## Managing Containers
+
+**docker** and **podman** are both OCI compliant and for that reason 99% compatible.
+
+Unless mentioned otherwise, replace "docker" with "podman" to perform commands mentioned here on podman.
+
+**podman** has a few features that don't exist in Docker - they will be covered separately.
+
+Users have to be a member of the **docker** system group in order to communicate with the Docker daemon and start and manage containers:
+
+- use **sudo usermod –aG docker $(USERID)**,
+- do NOT run containers as root!
+- when using **podman** on Red Hat, rootless containers can be used and no additional configuration is required.
+
+To run containers, registry access must be available:
+
+- when using **docker**, images are fetched from docker hub,
+- when using **podman**, registries are specified in `/etc/containers/registries.conf`,
+- use **docker search** to find the image you need,
+- or use the web interface available at [https://hub.docker.com](https://hub.docker.com/),
+- run images from any registry by specifying the complete image URL: **docker run https://my.registry.com/mycontainer:latest**.
+
+## Useful Commands
+
+Remember: containers are just a way to start an application.
+
+Couple of useful commands:
+
+- **docker run fedora** will run the fedora:latest image, start its default application and immediately exit,
+- **docker run -it fedora bash** will run the fedora:latest image, start bash, and open an interactive terminal,
+- managing foreground and background state,
+- **docker run -it fedora bash** will run the container in the foreground,
+  - use Ctrl-p, Ctrl-q to disconnect,
+  - use **exit** to quit the main application,
+- **docker run -d nginx** will run the container in the background,
+- **docker attach container-name** will attach to the running container if it was started with **-d** as well as an interactive terminal (**-it**),
+- **docker ps** gives an overview of containers currently running,
+- notice the container name and ID:
+  - if no name was provided, a name is automatically generated,
+  - the container ID corresponds to the name of the directory on the local Linux file system where the container is stored,
+- **docker ps -a** also gives an overview of containers that have been started earlier and currently are no longer running,
+- a container stops when its primary application stops,
+- use **docker stop** to send SIGTERM to a container,
+- use **docker kill** to send SIGKILL to a container,
+- after stopping a container, it does not disappear,
+- use **docker rm** to permanently remove it,
+- use **docker inspect** to get details about containers,
+- use **docker logs** to get access to the primary application STDOUT,
+- use **docker stats** for a Linux **top**-like interface about real-time container statistics.
+
+1. Performing Common Container Management
 
 - By default, container applications are accessible from inside the container only
 - To make it accessible, you'll need to publish a port
