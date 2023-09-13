@@ -75,20 +75,32 @@ Also used these (paid) courses & books:
   - [Containers in 4 Hours](https://learning.oreilly.com/live-events/containers-in-4-hours/0636920239529/) [:file_folder:](https://on24static.akamaized.net/event/41/29/94/5/rt/1/documents/resourceList1688575690311/containers725231688575689731.pdf) [:file_folder:](https://github.com/sandervanvugt/containers),
   - [Hands-on Practical Docker](https://learning.oreilly.com/live-events/hands-on-practical-docker/0636920201922/),
   - [Integration Testing with Docker and Testcontainers](https://learning.oreilly.com/live-events/integration-testing-with-docker-and-testcontainers/0636920063105/) [:file_folder:](https://on24static.akamaized.net/event/42/35/66/7/rt/1/documents/resourceList1689021806698/slides.pdf) [:file_folder:](https://github.com/bmuschko/testcontainers-integration-testing),
-  - [Introduction to Docker Images—with Interactivity](https://learning.oreilly.com/live-events/introduction-to-docker-imageswith-interactivity/0636920255161/) [:file_folder:](https://on24static.akamaized.net/event/42/35/67/1/rt/1/documents/resourceList1689297753939/classdockerimages1689297751782.pdf) [:file_folder:](https://gist.github.com/spkane/a15467f50545483282496624629bc62e),
-- Kubernates:
+  - [Introduction to Docker Images - with Interactivity](https://learning.oreilly.com/live-events/introduction-to-docker-imageswith-interactivity/0636920255161/) [:file_folder:](https://on24static.akamaized.net/event/42/35/67/1/rt/1/documents/resourceList1689297753939/classdockerimages1689297751782.pdf) [:file_folder:](https://gist.github.com/spkane/a15467f50545483282496624629bc62e),
+  - [Docker Fundamentals in 4 Weeks — with Interactivity](https://learning.oreilly.com/live-events/docker-fundamentals-in-4-weekswith-interactivity/0636920061161/0636920091841/),
+- Kubernetes:
   - [Kubernetes for Developers: Core Concepts](https://app.pluralsight.com/library/courses/kubernetes-developers-core-concepts/table-of-contents) [:file_folder:](https://app.pluralsight.com/library/courses/kubernetes-developers-core-concepts/exercise-files) ▶️,
   - [Kubernetes for Developers: Deploying Your Code](https://app.pluralsight.com/library/courses/kubernetes-developers-deploying-code/table-of-contents) [:file_folder:](https://app.pluralsight.com/library/courses/kubernetes-developers-deploying-code/exercise-files),
   - [Kubernetes for Developers: Integrating Volumes and Using Multi-container Pods](https://app.pluralsight.com/library/courses/kubernetes-developers-integrating-volumes-using-multi-container-pods/table-of-contents) [:file_folder:](https://app.pluralsight.com/library/courses/kubernetes-developers-integrating-volumes-using-multi-container-pods/exercise-files),
   - [Kubernetes for Developers: Moving from Docker Compose to Kubernetes](https://app.pluralsight.com/library/courses/kubernetes-developers-docker-compose-kubernetes/table-of-contents) [:file_folder:](https://app.pluralsight.com/library/courses/kubernetes-developers-docker-compose-kubernetes/exercise-files),
   - [Kubernetes for Developers: Moving to the Cloud](https://app.pluralsight.com/library/courses/kubernetes-developers-moving-cloud/table-of-contents) [:file_folder:](https://app.pluralsight.com/library/courses/kubernetes-developers-moving-cloud/exercise-files),
+  - [Kubernetes in 4 Hours](https://learning.oreilly.com/live-events/kubernetes-in-4-hours/0636920056367/),
+  - [Kubernetes in 3 Weeks: Part 1 — Containers, Microservices, Pods, and Common Objects](https://learning.oreilly.com/live-events/kubernetes-in-3-weeks-part-1containers-microservices-pods-and-common-objects/0636920385158/),
+  - [Kubernetes GitOps With Flux and ArgoCD](https://learning.oreilly.com/live-events/kubernetes-gitops-with-flux-and-argocd/0636920078987/),
+  - [Continuous Delivery in Kubernetes with ArgoCD](https://learning.oreilly.com/live-events/continuous-delivery-in-kubernetes-with-argocd/0636920054359/),
 - Terraform:
   - [Terraform - Getting Started](https://app.pluralsight.com/library/courses/terraform-getting-started-2023/table-of-contents) [:file_folder:](https://app.pluralsight.com/library/courses/terraform-getting-started-2023/exercise-files) ▶️,
   - [Terraform Deep Dive](https://app.pluralsight.com/library/courses/terraform-deep-dive-2023/table-of-contents) [:file_folder:](https://app.pluralsight.com/library/courses/terraform-deep-dive-2023/exercise-files),
   - [Getting Started with Terraform Cloud](https://app.pluralsight.com/library/courses/terraform-cloud-getting-started/table-of-contents) [:file_folder:](https://app.pluralsight.com/library/courses/terraform-cloud-getting-started/exercise-files),
   - [Implementing Terraform on Microsoft Azure](https://app.pluralsight.com/library/courses/implementing-terraform-microsoft-azure/table-of-contents) [:file_folder:](https://app.pluralsight.com/library/courses/implementing-terraform-microsoft-azure/exercise-files),
   - [Implementing Terraform with AWS](https://app.pluralsight.com/library/courses/implementing-terraform-aws/table-of-contents) [:file_folder:](https://app.pluralsight.com/library/courses/implementing-terraform-aws/exercise-files),
-  - [Implementing Terraform with Google Cloud Platform](https://app.pluralsight.com/library/courses/terraform-google-cloud-platform-implementing/table-of-contents) [:file_folder:](https://app.pluralsight.com/library/courses/terraform-google-cloud-platform-implementing/exercise-files).
+  - [Implementing Terraform with Google Cloud Platform](https://app.pluralsight.com/library/courses/terraform-google-cloud-platform-implementing/table-of-contents) [:file_folder:](https://app.pluralsight.com/library/courses/terraform-google-cloud-platform-implementing/exercise-files),
+  - [Terraform: Getting Started](https://learning.oreilly.com/live-events/terraform-getting-started/0636920060088/),
+  - [Terraform Bootcamp in 3 Weeks](https://learning.oreilly.com/live-events/terraform-bootcamp-in-3-weeks/0636920085795/),
+  - [Learn Infrastructure as Code with Terraform](https://learning.oreilly.com/live-events/learn-infrastructure-as-code-with-terraform/0636920077731/),
+- other:
+  - [Git in 4 Weeks](https://learning.oreilly.com/live-events/git-in-4-weeks/0636920057275/0636920094825/),
+  - [GitHub Actions in 3 Hours](https://learning.oreilly.com/live-events/github-actions-in-3-hours/0636920093155/0636920093154/),
+  - [CI/CD and DevOps in 3 Weeks](https://learning.oreilly.com/live-events/cicd-and-devops-in-3-weeks/0636920072763/).
 
 ## Useful Tools & Other Resources
 
