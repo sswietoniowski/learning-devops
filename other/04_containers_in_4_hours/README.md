@@ -1,4 +1,15 @@
-﻿# Containers in 4 Hours
+﻿- [Containers in 4 Hours](#containers-in-4-hours)
+  - [Table of Contents](#table-of-contents)
+  - [Understanding Containers](#understanding-containers)
+  - [What is a Container?](#what-is-a-container)
+  - [Container Registries](#container-registries)
+  - [Container Runtimes](#container-runtimes)
+  - [Using a Container Platform](#using-a-container-platform)
+  - [Managing Containers](#managing-containers)
+  - [Useful Commands](#useful-commands)
+  - [Performing Common Container Management](#performing-common-container-management)
+  - [Managing Container Images](#managing-container-images)
+# Containers in 4 Hours
 
 General introduction to the containers.
 

@@ -56,7 +56,7 @@ Based on these (free) courses:
   - [Infrastructure as Code, part 3: automate Kubernetes deployments with CI/CD and Terraform](https://circleci.com/blog/learn-iac-part3/),
   - [Virtual Machines vs Containers](https://youtu.be/eyNBf1sqdBQ),
   - [Best Docker Container Monitoring Tools - Free and open source](https://youtu.be/zxAmqY63eJE).
-  
+
 Also used these (paid) courses & books:
 
 - Docker:
@@ -87,10 +87,11 @@ Also used these (paid) courses & books:
   - [Kubernetes for Developers: Integrating Volumes and Using Multi-container Pods](https://app.pluralsight.com/library/courses/kubernetes-developers-integrating-volumes-using-multi-container-pods/table-of-contents) [:file_folder:](https://app.pluralsight.com/library/courses/kubernetes-developers-integrating-volumes-using-multi-container-pods/exercise-files),
   - [Kubernetes for Developers: Moving from Docker Compose to Kubernetes](https://app.pluralsight.com/library/courses/kubernetes-developers-docker-compose-kubernetes/table-of-contents) [:file_folder:](https://app.pluralsight.com/library/courses/kubernetes-developers-docker-compose-kubernetes/exercise-files),
   - [Kubernetes for Developers: Moving to the Cloud](https://app.pluralsight.com/library/courses/kubernetes-developers-moving-cloud/table-of-contents) [:file_folder:](https://app.pluralsight.com/library/courses/kubernetes-developers-moving-cloud/exercise-files),
-  - [Kubernetes in 4 Hours](https://learning.oreilly.com/live-events/kubernetes-in-4-hours/0636920056367/),
-  - [Kubernetes in 3 Weeks: Part 1 — Containers, Microservices, Pods, and Common Objects](https://learning.oreilly.com/live-events/kubernetes-in-3-weeks-part-1containers-microservices-pods-and-common-objects/0636920385158/),
-  - [Kubernetes GitOps With Flux and ArgoCD](https://learning.oreilly.com/live-events/kubernetes-gitops-with-flux-and-argocd/0636920078987/),
-  - [Continuous Delivery in Kubernetes with ArgoCD](https://learning.oreilly.com/live-events/continuous-delivery-in-kubernetes-with-argocd/0636920054359/),
+  - O'Reilly Live Events:
+    - [Kubernetes in 4 Hours](https://learning.oreilly.com/live-events/kubernetes-in-4-hours/0636920056367/) [:file_folder:]() [:file_folder:](https://github.com/sandervanvugt/kubernetes),
+    - [Kubernetes in 3 Weeks: Part 1 — Containers, Microservices, Pods, and Common Objects](https://learning.oreilly.com/live-events/kubernetes-in-3-weeks-part-1containers-microservices-pods-and-common-objects/0636920385158/),
+    - [Kubernetes GitOps With Flux and ArgoCD](https://learning.oreilly.com/live-events/kubernetes-gitops-with-flux-and-argocd/0636920078987/),
+    - [Continuous Delivery in Kubernetes with ArgoCD](https://learning.oreilly.com/live-events/continuous-delivery-in-kubernetes-with-argocd/0636920054359/),
 - Terraform:
   - [Terraform - Getting Started](https://app.pluralsight.com/library/courses/terraform-getting-started-2023/table-of-contents) [:file_folder:](https://app.pluralsight.com/library/courses/terraform-getting-started-2023/exercise-files) ▶️,
   - [Terraform Deep Dive](https://app.pluralsight.com/library/courses/terraform-deep-dive-2023/table-of-contents) [:file_folder:](https://app.pluralsight.com/library/courses/terraform-deep-dive-2023/exercise-files),
