@@ -61,8 +61,8 @@ Also used these (paid) courses & books:
 
 - Docker:
   - ✅ [Docker and Kubernetes: The Big Picture](https://app.pluralsight.com/library/courses/docker-kubernetes-big-picture/table-of-contents) [:file_folder:](https://app.pluralsight.com/library/courses/docker-kubernetes-big-picture/exercise-files),
-  - Pluralsight: Docker Fundamentals for Developers:
-    - :white_checkmark: [Getting Started with Docker](https://app.pluralsight.com/library/courses/docker-getting-started-2023/table-of-contents) [:file_folder:](https://app.pluralsight.com/library/courses/docker-getting-started-2023/exercise-files) [:file_folder:](https://github.com/nigelpoulton/gsd),
+  - [Pluralsight: Docker Fundamentals for Developers](https://app.pluralsight.com/paths/skills/docker-fundamentals-for-developers):
+    - ✅ [Getting Started with Docker](https://app.pluralsight.com/library/courses/docker-getting-started-2023/table-of-contents) [:file_folder:](https://app.pluralsight.com/library/courses/docker-getting-started-2023/exercise-files) [:file_folder:](https://github.com/nigelpoulton/gsd),
     - ✅ [Building and Running Your First Docker App](https://app.pluralsight.com/library/courses/docker-building-running-first-app/table-of-contents) [:file_folder:](https://app.pluralsight.com/library/courses/docker-building-running-first-app/exercise-files) [:file_folder:](https://github.com/DanWahlin/NodeExpressMongoDBDockerApp),
     - ✅ [Building and Orchestrating Containers with Docker Compose](https://app.pluralsight.com/library/courses/docker-compose-building-orchestrating-containers/table-of-contents) [:file_folder:](https://app.pluralsight.com/library/courses/docker-compose-building-orchestrating-containers/exercise-files) [:file_folder:](https://github.com/DanWahlin/NodeExpressMongoDBDockerApp) [:file_folder:](https://github.com/DanWahlin/CodeWithDanDockerServices),
     - [Developing Docker Apps: Core Principles](https://app.pluralsight.com/library/courses/docker-apps-developing-core-principles-2023/table-of-contents) [:file_folder:](https://app.pluralsight.com/library/courses/docker-apps-developing-core-principles-2023/exercise-files),
