@@ -13,6 +13,8 @@ General introduction to the containers.
   - [Using a Container Platform](#using-a-container-platform)
   - [Managing Containers](#managing-containers)
   - [Useful Commands](#useful-commands)
+  - [Performing Common Container Management](#performing-common-container-management)
+  - [Managing Container Images](#managing-container-images)
 
 ## Understanding Containers
 
@@ -198,152 +200,129 @@ Couple of useful commands:
 - use **docker logs** to get access to the primary application STDOUT,
 - use **docker stats** for a Linux **top**-like interface about real-time container statistics.
 
-1. Performing Common Container Management
+## Performing Common Container Management
 
-- By default, container applications are accessible from inside the container only
-- To make it accessible, you'll need to publish a port
-- **docker container run --name web_server -d -p 8080:80 nginx** runs the nginx image, and configures port 8080 on the docker host to port forward to port 80 in the container
-- You cannot publish a port on a container that is already running
-- If you're running **podman**, you cannot map to a privileged port
+By default, container applications are accessible from inside the container only. To make it accessible, you'll need to publish a port:
 
-`  `![ref1]![ref4]
+- **docker container run --name web_server -d -p 8080:80 nginx** runs the nginx image, and configures port 8080 on the docker host to port forward to port 80 in the container,
 
-- As containers are just Linux processes, by default they'll have full access to the host system resources
-- The Linux kernel provides cgroups to put a limit to this
-- **docker run -d -p 8081:80 --memory="128m" nginx** sets a hard memory limit
-- **docker stats**
+You cannot publish a port on a container that is already running. If you're running **podman**, you cannot map to a privileged port.
 
-`  `![ref1]![ref4]
+As containers are just Linux processes, by default they'll have full access to the host system resources. The Linux kernel provides `cgroups` to put a limit to this:
 
-- Docker inherits the Linux kernel Cgroups notion of CPU Shares
-- If not specified, all containers get a CPU shares weight of 1024
-- When starting a container, a relative weight expressed in CPU shares can be specified
-  - **docker run -d --rm -c 512 --cpus 4 busybox dd if=/dev/zero of=/dev/null** will run the container on 4 CPUs, but with relative CPU shares set to 50% of available CPU resources
-- Containers can also be pinned to a specific cpu using **--cpuset-cpus**
-  - **docker run -d --rm --cpuset-cpus=0,2 --cpus 2 busybox dd=/dev/zero of=/dev/ null** will run the container on cores 0 and 2 only
-- To test: use different CPU shares on two containers and force them to run on the same CPU
+- **docker run -d -p 8081:80 --memory="128m" nginx** sets a hard memory limit,
+- **docker stats**.
 
-- Use **docker inspect <container-name-or-id>** to figure out what the container is supposed to be doing
-- Use **docker exec -it <container-name-or-id> sh** to open a shell on the container and run commands locally
-- Use **docker logs** to connect to the primary application STDOUT
+Docker inherits the Linux kernel Cgroups notion of CPU Shares. If not specified, all containers get a CPU shares weight of 1024.
 
-`  `![ref1]![ref4]
+When starting a container, a relative weight expressed in CPU shares can be specified:
 
-- **docker run --name mydb -d mariadb**
-- **docker ps; docker ps -a**
-- **docker logs mariadb**
-- **docker rm mydb**
-- **docker run --name mydb -d --env MARIADB_ROOT_PASSWORD=password mariadb**
+- **docker run -d --rm -c 512 --cpus 4 busybox dd if=/dev/zero of=/dev/null** will run the container on 4 CPUs, but with relative CPU shares set to 50% of available CPU resources,
+- containers can also be pinned to a specific cpu using **--cpuset-cpus**:
+  - **docker run -d --rm --cpuset-cpus=0,2 --cpus 2 busybox dd=/dev/zero of=/dev/ null** will run the container on cores 0 and 2 only,
+- to test: use different CPU shares on two containers and force them to run on the same CPU,
+- use **docker inspect <container-name-or-id>** to figure out what the container is supposed to be doing,
+- use **docker exec -it <container-name-or-id> sh** to open a shell on the container and run commands locally,
+- use **docker logs** to connect to the primary application STDOUT,
+- **docker run --name mydb -d mariadb**,
+- **docker ps; docker ps -a**,
+- **docker logs mariadb**,
+- **docker rm mydb**,
+- **docker run --name mydb -d --env MARIADB_ROOT_PASSWORD=password mariadb**.
 
-5. Managing Container Images
+## Managing Container Images
 
-`  `![ref1]![ref4]
+Images are what a container is started from. Ready to run container images are available in container registries.
 
-- Images are what a container is started from
-- Ready to run container images are available in container registries
-- Users can upload images to most container registries - accounts may be required
-- Alternatively, you can use private registries
-- Go to hub.docker.com to search for images
-- Or use **docker search** to search for images
+Users can upload images to most container registries - accounts may be required. Alternatively, you can use private registries.
 
-- Tags are used to specify information about a specific image version
-- Tags are aliases to the image ID and will show when using **docker images**
-- Tags are typically set when building the image (covered later):
-  - **docker build -t username/imagename:tagname**
-  - For private use, the **username** part is optional, when pushing it to a public registry it is mandatory
-- Alternatively, tags can be added to existing images using **docker tag**
-  - **docker tag source-image{:tag] targetimage[:tag]**
-  - When adding a tag, a pointer with the new tag is made to the existing image that was tagged
-- If no tag is applied, the tag **:latest** is automatically set
-  - **:latest** always points to the latest version of an image
-- Target image repositories can also be specified in the Docker tag
+Go to hub.docker.com to search for images or use **docker search** to search for images.
 
-- Tags allow you to assign multiple names to images
-  - A common tag is "latest", which allows you to run the latest
-- Manually tag images: **docker tag myapache myapache:1.0**
-  - Next, using **docker images | grep myapache** will show the same image listed twice, as 1.0 and as latest
-- Tags can also be used to identify the target registry
+Tags are used to specify information about a specific image version.
 
-  - **docker tag myapache localhost:5000/myapache:1.0**
+Tags are aliases to the image ID and will show when using **docker images**.
 
-- Roughly, there are three approaches to creating an image
-- Using a running container: a container is started and modifications are applied to the container. From the container, **docker** commands are used to write modifications
-- Using a Dockerfile: a Dockerfile contains instructions for building an image. Each instruction adds a new layer to the image, which offers more control which files are added to which layer
-- Use **buildah** on RHEL to create an image by executing commands within the image
+Tags are typically set when building the image (covered later):
 
-- Dockerfile is a way to automate container builds
-- Containerfile on RHEL is the same
-- Notice that **docker** does not work with Containerfile, it only works with Dockerfile
-- It contains all instructions required to build a container image
-- Use **docker build .** to build the container image based on the Dockerfile in the current directory
-- Images will be stored on your local system, but you can direct the image to be stored in a repository (covered later)
+- **docker build -t username/imagename:tagname**
+- for private use, the **username** part is optional, when pushing it to a public registry it is mandatory,
+- alternatively, tags can be added to existing images using **docker tag**:
+  - **docker tag source-image{:tag] targetimage[:tag]**,
+  - when adding a tag, a pointer with the new tag is made to the existing image that was tagged,
+- if no tag is applied, the tag **:latest** is automatically set:
+  - **:latest** always points to the latest version of an image,
+- target image repositories can also be specified in the Docker tag.
 
-`  `![ref1]![ref4]
+Tags allow you to assign multiple names to images:
 
-- FROM identifies the base image
-- COPY copies a file into the image
-- ADD copies a file into the image
-- RUN command that is executed while building the image
-- CMD command that is executed while starting the resulting image as a container
-- WORKDIR defines the working directory for the CMD
-- LABEL label, used as an identifier
-- EXPOSE indicates the port on which the container main app offers service
-- ENV provides environment variables
-- USER the user used to run the container application
+- a common tag is "latest", which allows you to run the latest,
+- manually tag images: **docker tag myapache myapache:1.0**:
+  - next, using **docker images | grep myapache** will show the same image listed twice, as 1.0 and as latest,
+- tags can also be used to identify the target registry:
+  - **docker tag myapache localhost:5000/myapache:1.0**.
 
-`  `![ref1]![ref4]
+Roughly, there are three approaches to creating an image, using a running container: a container is started and modifications are applied to the container. From the container, **docker** commands are used to write modifications.
 
-- Dockerfile demo is in https://github.com/sandervanvugt/containers/ dockerfile
-- Use **docker build -t nmap .** to run it from the current directory
-- Tip: use **docker build --no-cache -t nmap .** to ensure the complete procedure is performed again
-- Next, use **docker run nmap** to run it
-- For troubleshooting: **docker run -it nmap /bin/bash**
+Using a Dockerfile: a Dockerfile contains instructions for building an image. Each instruction adds a new layer to the image, which offers more control which files are added to which layer.
 
-  - WILL NOT WORK as entrypoint is not supposed to be overwritten
+Use **buildah** on RHEL to create an image by executing commands within the image:
 
-- ENTRYPOINT is the default command to be processed
-- If not specified, **/bin/sh -c** is executed as the default command
-- Arguments to the ENTRYPOINT command should be specified separately using CMD
-  - ENTRYPOINT ["command"]
-  - CMD ["arg1","arg2"]
-- If the default command is specified using CMD instead of ENTRYPOINT, the command is executed as an argument to the default entrypoint **sh -c** which can give unexpected results
-- If the arguments to the command are specified within the ENTRYPOINT, then they cannot be overwritten from the command line
+- Dockerfile is a way to automate container builds,
+- container file on RHEL is the same,
+- notice that **docker** does not work with container file, it only works with Dockerfile,
+- it contains all instructions required to build a container image,
+- use **docker build .** to build the container image based on the Dockerfile in the current directory
+- images will be stored on your local system, but you can direct the image to be stored in a repository (covered later).
+- FROM identifies the base image,
+- COPY copies a file into the image,
+- ADD copies a file into the image,
+- RUN command that is executed while building the image,
+- CMD command that is executed while starting the resulting image as a container,
+- WORKDIR defines the working directory for the CMD,
+- LABEL label, used as an identifier,
+- EXPOSE indicates the port on which the container main app offers service,
+- ENV provides environment variables,
+- USER the user used to run the container application.
 
-`   `**![ref1]![ref4]**
+Dockerfile demo is in https://github.com/sandervanvugt/containers/ dockerfile:
 
-- **docker run -d --name newnginx nginx**
-- **docker ps**
-- **docker exec -it newnginx sh**
-- **echo hello >> /tmp/testfile**
-- **Ctrl-p, Ctrl-q**
-- **docker diff newnginx**
-- **docker commit newnginx**
+- use **docker build -t nmap .** to run it from the current directory,
+- tip: use **docker build --no-cache -t nmap .** to ensure the complete procedure is performed again,
+- next, use **docker run nmap** to run it,
+- for troubleshooting: **docker run -it nmap /bin/bash**:
+  - WILL NOT WORK as entrypoint is not supposed to be overwritten,
+- ENTRYPOINT is the default command to be processed,
+- if not specified, **/bin/sh -c** is executed as the default command,
+- arguments to the ENTRYPOINT command should be specified separately using CMD:
+  - ENTRYPOINT ["command"],
+  - CMD ["arg1","arg2"],
+- if the default command is specified using CMD instead of ENTRYPOINT, the command is executed as an argument to the default entrypoint **sh -c** which can give unexpected results,
+- if the arguments to the command are specified within the ENTRYPOINT, then they cannot be overwritten from the command line,
+- **docker run -d --name newnginx nginx**,
+- **docker ps**,
+- **docker exec -it newnginx sh**,
+- **echo hello >> /tmp/testfile**,
+- **Ctrl-p, Ctrl-q**,
+- **docker diff newnginx**,
+- **docker commit newnginx**,
+- after making changes to a container, you can save it to an image,
+- use **docker commit** to do so:
+  - **docker commit -m "custom web server" -a "Sander van Vugt" myapache myapache**,
+  - use **docker images** to verify,
+- next, use **docker save -o myapache.tar myapache** and transport it to anywhere you'd like,
+- from another system, use **docker load -i myapache.tar** to import it as an image,
+- next, use **docker run myapache** to run it on that system,
+- **docker run -d -p 5000:5000 --restart=always --name registry registry:latest**,
+- **sudo ufw allow 5000/tcp**,
+- **docker pull fedora**,
+- **docker images**,
+- **docker tag fedora:latest localhost:5000/myfedora** (the tag is required to push it to your own image registry),
+- **docker push localhost:5000/myfedora**,
+- **docker rmi fedora**; also remove the image based on the tag you've just created,
+- **docker exec -it registry sh; find . -name "myfedora"**,
+- **docker pull localhost:5000/myfedora** downloads it again from your own local registry.
 
-`  `**![ref1]![ref4]**
-
-- After making changes to a container, you can save it to an image
-- Use **docker commit** to do so
-  - **docker commit -m "custom web server" -a "Sander van Vugt" myapache myapache**
-  - Use **docker images** to verify
-- Next, use **docker save -o myapache.tar myapache** and transport it to anywhere you'd like
-- From another system, use **docker load -i myapache.tar** to import it as an image
-- Next, use **docker run myapache** to run it on that system
-
-`  `![ref1]![ref4]
-
-- **docker run -d -p 5000:5000 --restart=always --name registry registry:latest**
-- **sudo ufw allow 5000/tcp**
-- **docker pull fedora**
-- **docker images**
-- **docker tag fedora:latest localhost:5000/myfedora** (the tag is required to push it to your own image registry)\*\*
-- **docker push localhost:5000/myfedora**
-- **docker rmi fedora**; also remove the image based on the tag you've just created
-- **docker exec -it registry sh; find . -name "myfedora"**
-- **docker pull localhost:5000/myfedora** downloads it again from your own local registry
-
-6. Managing Container Storage
-
-`  `![ref1]![ref4]
+1. Managing Container Storage
 
 - Container storage by nature is ephemeral, which means that it lasts for a very short time and nothing is done to guarantee its persistency
 - When files are written, they are written to a writable filesystem layer that is added to the container image
@@ -352,13 +331,9 @@ Couple of useful commands:
 - NFS is a common persistent storage type in non orchestrated environments
 - Advanced persistent storage solutions only exist in orchestration solutions
 
-`  `![ref1]![ref4]
-
 - One solution is to use a bind mount to a file system on the host OS: the storage is managed by the host OS in this case
 - Another solution is to connect to external (SAN or cloud-based) persistent storage solutions
 - To disconnect storage from the containers using it, Volumes are used, and specific drivers can specify which volume type to connect to
-
-`  `![ref1]![ref4]
 
 - Bind Mount storage is based on Linux bind mounts
 - The container mounts a directory or file from the host OS into the container
@@ -376,8 +351,6 @@ Bind mounts work when the host computer contains the files that need to be acces
 - Configuration files
 - Access to source code
 - Log files
-
-`  `![ref1]![ref4]
 
 - Using **--mount**
   - **mkdir bind1; docker run --rm -d --name=bind1 --mount type=bind,source="$ (pwd)"/bind1,target=/app nginx:latest**
@@ -437,18 +410,15 @@ Cl ick to edit Master title s tyle![ref1]![ref4]
 
 7. Managing Container Networking
 
-`  `![ref1]![ref4]
-
 - Container networking is pluggable and uses drivers
 - Default drivers provide core networking
+
   - bridge: the default networking, allowing applications in standalone containers to communicate
   - host: removes network isolation between host and containers and allows containers to use the host network directly. In Docker, only available in swarm
   - overlay: in Swarm, allows different Docker daemons to be connected using a software defined network. Allows standalone containers on different Docker hosts to communicate
   - macvlan: assigns a MAC address to a container, making it appear as a physical device on the network. Excellent for legacy applications
   - none: completely disables networking
   - plugins: uses third-party plugins, typically seen in orchestration software
-
-`  `![ref1]![ref4]
 
 - Bridge networking is the default: a container network is created on internal IP address 172.17.0.0/16
 - Containers will get an IP address in that range when started
