@@ -9,6 +9,9 @@
   - [Useful Commands](#useful-commands)
   - [Performing Common Container Management](#performing-common-container-management)
   - [Managing Container Images](#managing-container-images)
+  - [Managing Container Storage](#managing-container-storage)
+  - [Managing Container Networking](#managing-container-networking)
+
 # Containers in 4 Hours
 
 General introduction to the containers.
@@ -26,6 +29,8 @@ General introduction to the containers.
   - [Useful Commands](#useful-commands)
   - [Performing Common Container Management](#performing-common-container-management)
   - [Managing Container Images](#managing-container-images)
+  - [Managing Container Storage](#managing-container-storage)
+  - [Managing Container Networking](#managing-container-networking)
 
 ## Understanding Containers
 
@@ -333,7 +338,7 @@ Dockerfile demo is in https://github.com/sandervanvugt/containers/ dockerfile:
 - **docker exec -it registry sh; find . -name "myfedora"**,
 - **docker pull localhost:5000/myfedora** downloads it again from your own local registry.
 
-1. Managing Container Storage
+## Managing Container Storage
 
 - Container storage by nature is ephemeral, which means that it lasts for a very short time and nothing is done to guarantee its persistency
 - When files are written, they are written to a writable filesystem layer that is added to the container image
@@ -355,8 +360,6 @@ Dockerfile demo is in https://github.com/sandervanvugt/containers/ dockerfile:
   - **-v** is the old option, which combined multiple arguments in one field
   - **--mount** is newer and more verbose
 
-`    `![ref1]![ref4]
-
 Bind mounts work when the host computer contains the files that need to be accessible in the containers
 
 - Configuration files
@@ -370,8 +373,6 @@ Bind mounts work when the host computer contains the files that need to be acces
 - Use **docker inspect <containername>** to verify
 - Use **docker exec -it bind1 sh** to open a shell in the container and check
 
-`   `![ref1]![ref4]
-
 Volumes are the preferred way to work with persistent data as the volume survives the container lifetime
 
 - Multiple containers can get simultaneous access to the volumes
@@ -381,12 +382,8 @@ Volumes are the preferred way to work with persistent data as the volume survive
 - Volumes live outside of the container and for that reason don't increase container size
 - Volumes use drivers to specify how storage is accessed. Enterprise-grade drivers are available in Docker Swarm - not stand alone
 
-Cl ick to edit Master title s tyle![ref1]![ref4]
-
 - **docker run -it --name hackit --privileged -v /:/host ubi9 chroot /host**
 - Docker can run rootless containers, but this is currently complex and for that reason not commonly done: https://docs.docker.com/engine/security/ rootless/
-
-`   `![ref1]![ref4]
 
 - **docker volume create myvol** creates a simple volume that uses the local file system as the storage backend
 - **docker volume ls** will show the volume
@@ -397,16 +394,12 @@ Cl ick to edit Master title s tyle![ref1]![ref4]
 - **docker run -it --name voltest2 --rm --mount source=myvol,target=/data nginx:latest /bin/sh**
 - From the second container: **ls /data; touch /data/newfile; ctrl-p, ctrl-q**
 
-`   `![ref1]![ref4]
-
 - To just create a file in a volume, nothing special is needed and the volume can be accessed from multiple containers at the same time
 - To simultaneously access files on volumes from multiple containers, a special driver is needed
 - Recommended: use the **readonly** mount option to protect from file locking problems
   - **docker run -it --name voltest3 --rm --mount source=myvol,target=/ data,readonly nginx:latest /bin/sh**
 - Enterprise-grade drivers are available in Docker Swarm, or are provided through Kubernetes
 - For non-orchestrator use, consider using the local driver NFS type
-
-`      `![ref1]![ref4]
 
 - **sudo apt install nfs-server nfs-common**
 - **sudo mkdir /nfsdata**
@@ -419,7 +412,7 @@ Cl ick to edit Master title s tyle![ref1]![ref4]
 - **docker volume ls**
 - **docker volume inspect nfsvol**
 
-7. Managing Container Networking
+## Managing Container Networking
 
 - Container networking is pluggable and uses drivers
 - Default drivers provide core networking
@@ -438,20 +431,17 @@ Cl ick to edit Master title s tyle![ref1]![ref4]
 - There is no traffic between different bridge networks because of namespaces that provide strict isolation
 - You cannot create routes from one bridge network to another bridge network, and that is by design
 
-`    `![ref1]![ref4]
-
 - Create a custom network
   - **docker network create –driver bridge alpine-net**
   - **docker network ls**
   - **docker network inspect alpine-net**
 - Start containers on a specific network. Notice that while starting, a container can be connected to one network only. If it needs to be on two networks, you'll have to do that later
+
   - **docker run -dit --name alpine1 --network alpine-net alpine ash**
   - **docker run -dit --name alpine2 --network alpine-net alpine ash**
   - **docker run -dit --name alpine3 alpine ash**
   - **docker run -dit --name alpine4 --network alpine-net alpine ash**
   - **docker network connect bridge alpine4**
-
-`    `![ref1]![ref4]
 
 - Verify correct working
   - **docker container ls**
