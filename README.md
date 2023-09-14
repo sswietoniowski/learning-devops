@@ -88,7 +88,7 @@ Also used these (paid) courses & books:
   - [Kubernetes for Developers: Moving from Docker Compose to Kubernetes](https://app.pluralsight.com/library/courses/kubernetes-developers-docker-compose-kubernetes/table-of-contents) [:file_folder:](https://app.pluralsight.com/library/courses/kubernetes-developers-docker-compose-kubernetes/exercise-files),
   - [Kubernetes for Developers: Moving to the Cloud](https://app.pluralsight.com/library/courses/kubernetes-developers-moving-cloud/table-of-contents) [:file_folder:](https://app.pluralsight.com/library/courses/kubernetes-developers-moving-cloud/exercise-files),
   - O'Reilly Live Events:
-    - [Kubernetes in 4 Hours](https://learning.oreilly.com/live-events/kubernetes-in-4-hours/0636920056367/) [:file_folder:]() [:file_folder:](https://github.com/sandervanvugt/kubernetes),
+    - ✅ [Kubernetes in 4 Hours](https://learning.oreilly.com/live-events/kubernetes-in-4-hours/0636920056367/) [:file_folder:](https://on24static.akamaized.net/event/41/29/94/9/rt/1/documents/resourceList1688561051460/kubernetes36231688561042958.pdf) [:file_folder:](https://github.com/sandervanvugt/kubernetes),
     - [Kubernetes in 3 Weeks: Part 1 — Containers, Microservices, Pods, and Common Objects](https://learning.oreilly.com/live-events/kubernetes-in-3-weeks-part-1containers-microservices-pods-and-common-objects/0636920385158/),
     - [Kubernetes GitOps With Flux and ArgoCD](https://learning.oreilly.com/live-events/kubernetes-gitops-with-flux-and-argocd/0636920078987/),
     - [Continuous Delivery in Kubernetes with ArgoCD](https://learning.oreilly.com/live-events/continuous-delivery-in-kubernetes-with-argocd/0636920054359/),
