@@ -1,10 +1,10 @@
-# Kubernates in 4 Hours
+# Kubernetes in 4 Hours
 
 General introduction to Kubernates.
 
 ## Table of Contents
 
-- [Kubernates in 4 Hours](#kubernates-in-4-hours)
+- [Kubernetes in 4 Hours](#kubernetes-in-4-hours)
   - [Table of Contents](#table-of-contents)
   - [What is Kubernetes?](#what-is-kubernetes)
   - [What are Containers?](#what-are-containers)
