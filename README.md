@@ -130,6 +130,6 @@ Some useful tools & other resources:
   - [Kompose](https://kompose.io/),
   - [minikube](https://github.com/kubernetes/minikube),
 - Terraform:
-  - [Terraform](https://www.terraform.io/).
+  - [Terraform](https://www.terraform.io/),
 - others:
   - [Azure CLI](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli).
