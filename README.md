@@ -1,6 +1,6 @@
 # Learning Docker & Kubernates & Terraform
 
-This repository contains resources helping grasps the basics of Docker.
+This repository contains resources that help grasp the basics of Docker, Kubernetes, Terraform, etc.
 
 ## Repository Contents
 
@@ -10,7 +10,7 @@ This repository contains the following sub-directories:
   - Docker:
     - [Docker Fundamentals for Developers](https://app.pluralsight.com/paths/skills/docker-fundamentals-for-developers),
     - [Managing Docker in Production](https://app.pluralsight.com/paths/skill/managing-docker-in-production),
-  - Kubernates:
+  - Kubernetes:
     - [Using Kubernetes as a Developer](https://app.pluralsight.com/paths/skills/using-kubernetes-as-a-developer),
     - [Certified Kubernetes Application Developer (CKAD)](https://app.pluralsight.com/paths/certificate/certified-kubernetes-application-developer-ckad),
   - Terraform:
@@ -37,7 +37,7 @@ Based on these (free) courses:
   - ✅ [Step by step guide on utilising Docker Compose with Asp.Net Core, SQL Server](https://youtu.be/zrzdRINyYdM),
   - [The cleanest way to use Docker for testing in .NET](https://youtu.be/8IRNC7qZBmk) :arrow_forward:,
   - [Languages & Runtime Community Standup - .NET 8 + Containers = 💖](https://www.youtube.com/live/fMtQMYc_HlQ?si=eeaQL6mS9c9kfxS2),
-- Kubernates:
+- Kubernetes:
   - ✅ [What is Kubernetes](https://youtu.be/VnvRFRk_51k),
   - [Kubernetes Tutorial for Beginners](https://youtu.be/X48VuDVv0do),
   - [Kubernetes The Much Harder Way](https://youtu.be/bpp5tpgU6CE),
@@ -58,7 +58,7 @@ Based on these (free) courses:
   - [Virtual Machines vs Containers](https://youtu.be/eyNBf1sqdBQ),
   - [Best Docker Container Monitoring Tools - Free and open source](https://youtu.be/zxAmqY63eJE).
 
-Also used these (paid) courses & books:
+I also used these (paid) courses & books:
 
 - Docker:
   - ✅ [Docker and Kubernetes: The Big Picture](https://app.pluralsight.com/library/courses/docker-kubernetes-big-picture/table-of-contents) [:file_folder:](https://app.pluralsight.com/library/courses/docker-kubernetes-big-picture/exercise-files),
@@ -113,19 +113,23 @@ Also used these (paid) courses & books:
 
 Some useful tools & other resources:
 
-- [Docker](https://www.docker.com/),
-- [DockerHub](https://hub.docker.com/),
-- [Docker Desktop](https://www.docker.com/products/docker-desktop/),
-- [Labs - Play with Docker](https://labs.play-with-docker.com/),
-- [Docker in Visual Studio Code](https://code.visualstudio.com/docs/containers/overview) [:file_folder:](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker),
-- [Podman Desktop](https://podman-desktop.io/),
-- [Visual Studio Code Dev Containers](https://code.visualstudio.com/docs/devcontainers/create-dev-container),
-- [The Ultimate Docker Cheat Sheet](https://dockerlabs.collabnix.com/docker/cheatsheet/),
-- [Testcontainers](https://github.com/testcontainers/testcontainers-dotnet),
-- [wait-for-it](https://github.com/vishnubob/wait-for-it),
-- [Azure CLI](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli),
-- [Killercoda](https://killercoda.com/playgrounds/scenario/kubernetes) [:file_folder:](https://github.com/killercoda/scenario-examples),
-- [Play with Kubernetes](https://labs.play-with-k8s.com/),
-- [Kompose](https://kompose.io/),
-- [minikube](https://github.com/kubernetes/minikube),
-- [Terraform](https://www.terraform.io/).
+- Docker:
+  - [Docker](https://www.docker.com/),
+  - [DockerHub](https://hub.docker.com/),
+  - [Docker Desktop](https://www.docker.com/products/docker-desktop/),
+  - [Labs - Play with Docker](https://labs.play-with-docker.com/),
+  - [Docker in Visual Studio Code](https://code.visualstudio.com/docs/containers/overview) [:file_folder:](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker),
+  - [Visual Studio Code Dev Containers](https://code.visualstudio.com/docs/devcontainers/create-dev-container),
+  - [The Ultimate Docker Cheat Sheet](https://dockerlabs.collabnix.com/docker/cheatsheet/),
+  - [Testcontainers](https://github.com/testcontainers/testcontainers-dotnet),
+  - [wait-for-it](https://github.com/vishnubob/wait-for-it),
+  - [Podman Desktop](https://podman-desktop.io/),
+- Kubernetes:
+  - [Killercoda](https://killercoda.com/playgrounds/scenario/kubernetes) [:file_folder:](https://github.com/killercoda/scenario-examples),
+  - [Play with Kubernetes](https://labs.play-with-k8s.com/),
+  - [Kompose](https://kompose.io/),
+  - [minikube](https://github.com/kubernetes/minikube),
+- Terraform:
+  - [Terraform](https://www.terraform.io/).
+- others:
+  - [Azure CLI](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli).
