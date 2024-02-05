@@ -23,6 +23,7 @@ This repository contains the following sub-directories:
 Based on these (free) courses:
 
 - Docker:
+  - [Docker Containers and Kubernetes Fundamentals – Full Hands-On Course](https://youtu.be/kTp5xUtcalw?si=138s3imH6cmRn0Jg),
   - ✅ [Docker - Get Started](https://docs.docker.com/get-started/),
   - ✅ [Use Docker Tools in Visual Studio on Windows](https://learn.microsoft.com/en-us/dotnet/architecture/containerized-lifecycle/design-develop-containerized-apps/visual-studio-tools-for-docker),
   - ✅ [Prepare an application for Azure Kubernetes Service (AKS)](https://learn.microsoft.com/en-us/azure/aks/tutorial-kubernetes-prepare-app),
