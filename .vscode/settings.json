@@ -1,3 +1,4 @@
 {
-  "cSpell.words": ["expressite", "tailwindcss"]
+  "cSpell.words": ["expressite", "tailwindcss"],
+  "dotnet.defaultSolution": "disable"
 }
