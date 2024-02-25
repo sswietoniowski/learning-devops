@@ -13,7 +13,7 @@ Oops! It seems that git has problems with auto-merging the `main.py` file and wa
 CONFLICT (content): Merge conflict in main.py
 ```
 
-Open the `main.py` in an editor, fix the conflicts, and save the file. (Remove the lines with the conflict markers, <<<<<<<, =======, >>>>>>>)
+Open the `main.py` in an editor, fix the conflicts, and save the file. (Remove the lines with the conflict markers, <<<<<<<, =======, >>>>>>>).
 
 Then add the file to the git index (staging area), commit, and continue the rebase:
 
