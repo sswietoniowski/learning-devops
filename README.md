@@ -1,10 +1,15 @@
-# Learning Docker & Kubernates & Terraform
+# Learning DevOps
 
-This repository contains resources that help grasp the basics of Docker, Kubernetes, Terraform, etc.
+This repository contains resources that help grasp the basics of DevOps.
 
 ## Repository Contents
 
-This repository contains the following sub-directories:
+This repository contains dedicated subdirectories for different technologies, including:
+
+- [Git & GitHub](./git_and_github/),
+- [Docker](./docker/),
+- [Kubernetes](./kubernetes/),
+- [Terraform](./terraform/).
 
 - [pluralsight](pluralsight/) contains resources for the _Pluralsight_ paths:
   - Docker:
