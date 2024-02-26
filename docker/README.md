@@ -1,10 +1,18 @@
 # Docker
 
-This repository contains resources that help grasp the basics of Docker.
+This directory contains resources that help grasp the basics of Docker.
 
-## Repository Contents
+## Table of Contents
 
-This repository contains the following sub-directories:
+- [Docker](#docker)
+  - [Table of Contents](#table-of-contents)
+  - [Directory Contents](#directory-contents)
+  - [Learning Resources](#learning-resources)
+  - [Useful Tools \& Other Resources](#useful-tools--other-resources)
+
+## Directory Contents
+
+This directory contains the following sub-directories:
 
 - [projects](projects/) demo project(-s) created using Docker.
 
