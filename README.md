@@ -16,7 +16,8 @@ This repository contains the following sub-directories:
   - Terraform:
     - [Managing Infrastructure with Terraform](https://app.pluralsight.com/paths/skill/managing-infrastructure-with-terraform),
     - [HashiCorp Certified: Terraform Associate](https://app.pluralsight.com/paths/certificate/hashicorp-certified-terraform-associate),
-- [other](other/) some sample projects.
+- [other](other/) some sample projects,
+- [hyperskill](./hyperskill/) my solutions to [Hyperskill](https://hyperskill.org) projects from different tracks.
 
 ## Learning Resources
 
