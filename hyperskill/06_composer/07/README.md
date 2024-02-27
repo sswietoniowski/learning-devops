@@ -1,6 +1,6 @@
 # Objectives
 
-Stop the services, delete containers, networks, and volumes.
+Stop the services, and delete containers, networks, and volumes.
 
 Remove the `hyper-service` image from the system:
 
