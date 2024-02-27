@@ -1,0 +1,18 @@
+version: "3.1"
+services:
+  mongodb:
+    container_name: "hyper-mongo"
+    image: "mongo:6.0.8"
+    ports: ['27027:27017']
+    env_file:
+      - .env
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: ${MONGO_INITDB_ROOT_USERNAME}
+      MONGO_INITDB_ROOT_PASSWORD: ${MONGO_INITDB_ROOT_PASSWORD}
+    volumes: ['mongo-data:/data/db']
+    networks:
+        - hyper-task-manager-network
+volumes:
+    mongo-data:
+networks:
+    hyper-task-manager-network:
