@@ -41,3 +41,11 @@ My [certificate](https://hyperskill.org/certificates/d4607126-b3c3-4723-a849-239
 | [HyperNetwork](./07_hyper_network)    | Hard        | Completed |
 
 There are no certificates for this track yet.
+
+## Introduction to Command Line and Unix Shell Track
+
+[My](https://hyperskill.org/profile/7889902) solutions to [Hyperskill](https://hyperskill.org) projects from the [Introduction to Command Line and Unix Shell](https://hyperskill.org/tracks/26) track.
+
+| Project                           | Level | Status      |
+| --------------------------------- | ----- | ----------- |
+| [File Janitor](./08_file_janitor) | Easy  | In Progress |
