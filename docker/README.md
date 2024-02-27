@@ -14,7 +14,8 @@ This directory contains resources that help grasp the basics of Docker.
 
 This directory contains the following sub-directories:
 
-- [projects](projects/) demo project(-s) created using Docker.
+- [projects](projects/) demo project(-s) created using Docker,
+- [hyperskill](./hyperskill/) my solutions to [Hyperskill](https://hyperskill.org) projects from different tracks.
 
 ## Learning Resources
 
@@ -50,30 +51,28 @@ Based on these (free) courses:
 
 I also used these (paid) courses & books:
 
-- Docker:
-  - ✅ [Docker and Kubernetes: The Big Picture](https://app.pluralsight.com/library/courses/docker-kubernetes-big-picture/table-of-contents) [:file_folder:](https://app.pluralsight.com/library/courses/docker-kubernetes-big-picture/exercise-files),
-  - 🎥 Pluralsight: Docker Fundamentals for Developers:
-    - ✅ 🎥 [Getting Started with Docker](https://app.pluralsight.com/library/courses/docker-getting-started-2023/table-of-contents) [:file_folder:](https://app.pluralsight.com/library/courses/docker-getting-started-2023/exercise-files) [:file_folder:](https://github.com/nigelpoulton/gsd),
-    - ✅ 🎥 [Building and Running Your First Docker App](https://app.pluralsight.com/library/courses/docker-building-running-first-app/table-of-contents) [:file_folder:](https://app.pluralsight.com/library/courses/docker-building-running-first-app/exercise-files) [:file_folder:](https://github.com/DanWahlin/NodeExpressMongoDBDockerApp),
-    - ✅ 🎥 [Building and Orchestrating Containers with Docker Compose](https://app.pluralsight.com/library/courses/docker-compose-building-orchestrating-containers/table-of-contents) [:file_folder:](https://app.pluralsight.com/library/courses/docker-compose-building-orchestrating-containers/exercise-files) [:file_folder:](https://github.com/DanWahlin/NodeExpressMongoDBDockerApp) [:file_folder:](https://github.com/DanWahlin/CodeWithDanDockerServices),
-    - 🎥 [Developing Docker Apps: Core Principles](https://app.pluralsight.com/library/courses/docker-apps-developing-core-principles-2023/table-of-contents) [:file_folder:](https://app.pluralsight.com/library/courses/docker-apps-developing-core-principles-2023/exercise-files),
-    - 🎥 [Deploying Containerized Applications](https://app.pluralsight.com/library/courses/deploying-containerized-applications/table-of-contents) [:file_folder:](https://app.pluralsight.com/library/courses/deploying-containerized-applications/exercise-files),
-    - ✅ 🎥 [Developing .NET Core 5 Apps with Docker](https://app.pluralsight.com/library/courses/docker-dot-net-core-apps-developing/table-of-contents) [:file_folder:](https://app.pluralsight.com/library/courses/docker-dot-net-core-apps-developing/exercise-files),
-    - 🎥 [Developing Java Apps with Docker](https://app.pluralsight.com/library/courses/java-apps-docker-developing-2023/table-of-contents) [:file_folder:](https://app.pluralsight.com/library/courses/java-apps-docker-developing-2023/exercise-files),
-    - 🎥 [Developing Node.js Apps with Docker](https://app.pluralsight.com/library/courses/nodejs-docker-developing-apps/table-of-contents) [:file_folder:](https://app.pluralsight.com/library/courses/nodejs-docker-developing-apps/exercise-files),
-    - 🎥 [Developing Python 3 Apps with Docker](https://app.pluralsight.com/library/courses/python-apps-docker-developing/table-of-contents) [:file_folder:](https://app.pluralsight.com/library/courses/python-apps-docker-developing/exercise-files),
-    - ✅ 🎥 [Developing React.js Apps with Docker](https://app.pluralsight.com/library/courses/reactjs-apps-docker-developing/table-of-contents) [:file_folder:](https://app.pluralsight.com/library/courses/reactjs-apps-docker-developing/exercise-files) [:file_folder:](https://github.com/saravanan75/docker_react),
-    - 🎥 [Developing SQL 14 Server Databases with Docker 20](https://app.pluralsight.com/library/courses/sql-server-databases-docker-developing/table-of-contents) [:file_folder:](https://app.pluralsight.com/library/courses/sql-server-databases-docker-developing/exercise-files),
-    - 🎥 [Developing Go Apps with Docker 20.10](https://app.pluralsight.com/library/courses/docker-developing-go-apps/table-of-contents) [:file_folder:](https://app.pluralsight.com/library/courses/docker-developing-go-apps/exercise-files),
-  - 🎥 [Docker for Web Developers](https://app.pluralsight.com/library/courses/docker-web-development/table-of-contents) [:file_folder:](https://app.pluralsight.com/library/courses/docker-web-developers/exercise-files) :arrow_forward:,
-  - 🎥 [Docker Deep Dive](https://app.pluralsight.com/library/courses/docker-deep-dive-update/table-of-contents) [:file_folder:](https://app.pluralsight.com/library/courses/docker-deep-dive-update/exercise-files),
-  - O'Reilly Live Events:
-    - ✅ 🎥 [Containers in 4 Hours](https://learning.oreilly.com/live-events/containers-in-4-hours/0636920239529/) [:file_folder:](https://on24static.akamaized.net/event/41/29/94/5/rt/1/documents/resourceList1688575690311/containers725231688575689731.pdf) [:file_folder:](https://github.com/sandervanvugt/containers),
-    - 🎥 [Hands-on Practical Docker](https://learning.oreilly.com/live-events/hands-on-practical-docker/0636920201922/),
-    - 🎥 [Integration Testing with Docker and Testcontainers](https://learning.oreilly.com/live-events/integration-testing-with-docker-and-testcontainers/0636920063105/) [:file_folder:](https://on24static.akamaized.net/event/42/35/66/7/rt/1/documents/resourceList1689021806698/slides.pdf) [:file_folder:](https://github.com/bmuschko/testcontainers-integration-testing),
-    - 🎥 [Introduction to Docker Images - with Interactivity](https://learning.oreilly.com/live-events/introduction-to-docker-imageswith-interactivity/0636920255161/) [:file_folder:](https://on24static.akamaized.net/event/42/35/67/1/rt/1/documents/resourceList1689297753939/classdockerimages1689297751782.pdf) [:file_folder:](https://gist.github.com/spkane/a15467f50545483282496624629bc62e),
-    - ✅ 🎥 [Docker Fundamentals in 4 Weeks — with Interactivity](https://learning.oreilly.com/live-events/docker-fundamentals-in-4-weekswith-interactivity/0636920061161/0636920091841/) [:file_folder:](https://on24static.akamaized.net/event/42/73/13/8/rt/1/documents/resourceList1693925243918/studentsetup1683066899581.pdf) [:file_folder:](https://on24static.akamaized.net/event/42/73/13/7/rt/1/documents/resourceList1693070416012/classdocker4weeksday11693070413884.pdf) [:file_folder:](https://on24static.akamaized.net/event/42/73/13/8/rt/1/documents/resourceList1693924885224/classdocker4weeksday21693924884110.pdf) [:file_folder:](https://gist.github.com/spkane/686ae98467a840d73cd3e181da9b1194) [:file_folder:](https://learning.oreilly.com/scenarios/devops-tools-sandbox/9781098126469/).
-- other:
+- ✅ [Docker and Kubernetes: The Big Picture](https://app.pluralsight.com/library/courses/docker-kubernetes-big-picture/table-of-contents) [:file_folder:](https://app.pluralsight.com/library/courses/docker-kubernetes-big-picture/exercise-files),
+- 🎥 Pluralsight: Docker Fundamentals for Developers:
+  - ✅ 🎥 [Getting Started with Docker](https://app.pluralsight.com/library/courses/docker-getting-started-2023/table-of-contents) [:file_folder:](https://app.pluralsight.com/library/courses/docker-getting-started-2023/exercise-files) [:file_folder:](https://github.com/nigelpoulton/gsd),
+  - ✅ 🎥 [Building and Running Your First Docker App](https://app.pluralsight.com/library/courses/docker-building-running-first-app/table-of-contents) [:file_folder:](https://app.pluralsight.com/library/courses/docker-building-running-first-app/exercise-files) [:file_folder:](https://github.com/DanWahlin/NodeExpressMongoDBDockerApp),
+  - ✅ 🎥 [Building and Orchestrating Containers with Docker Compose](https://app.pluralsight.com/library/courses/docker-compose-building-orchestrating-containers/table-of-contents) [:file_folder:](https://app.pluralsight.com/library/courses/docker-compose-building-orchestrating-containers/exercise-files) [:file_folder:](https://github.com/DanWahlin/NodeExpressMongoDBDockerApp) [:file_folder:](https://github.com/DanWahlin/CodeWithDanDockerServices),
+  - 🎥 [Developing Docker Apps: Core Principles](https://app.pluralsight.com/library/courses/docker-apps-developing-core-principles-2023/table-of-contents) [:file_folder:](https://app.pluralsight.com/library/courses/docker-apps-developing-core-principles-2023/exercise-files),
+  - 🎥 [Deploying Containerized Applications](https://app.pluralsight.com/library/courses/deploying-containerized-applications/table-of-contents) [:file_folder:](https://app.pluralsight.com/library/courses/deploying-containerized-applications/exercise-files),
+  - ✅ 🎥 [Developing .NET Core 5 Apps with Docker](https://app.pluralsight.com/library/courses/docker-dot-net-core-apps-developing/table-of-contents) [:file_folder:](https://app.pluralsight.com/library/courses/docker-dot-net-core-apps-developing/exercise-files),
+  - 🎥 [Developing Java Apps with Docker](https://app.pluralsight.com/library/courses/java-apps-docker-developing-2023/table-of-contents) [:file_folder:](https://app.pluralsight.com/library/courses/java-apps-docker-developing-2023/exercise-files),
+  - 🎥 [Developing Node.js Apps with Docker](https://app.pluralsight.com/library/courses/nodejs-docker-developing-apps/table-of-contents) [:file_folder:](https://app.pluralsight.com/library/courses/nodejs-docker-developing-apps/exercise-files),
+  - 🎥 [Developing Python 3 Apps with Docker](https://app.pluralsight.com/library/courses/python-apps-docker-developing/table-of-contents) [:file_folder:](https://app.pluralsight.com/library/courses/python-apps-docker-developing/exercise-files),
+  - ✅ 🎥 [Developing React.js Apps with Docker](https://app.pluralsight.com/library/courses/reactjs-apps-docker-developing/table-of-contents) [:file_folder:](https://app.pluralsight.com/library/courses/reactjs-apps-docker-developing/exercise-files) [:file_folder:](https://github.com/saravanan75/docker_react),
+  - 🎥 [Developing SQL 14 Server Databases with Docker 20](https://app.pluralsight.com/library/courses/sql-server-databases-docker-developing/table-of-contents) [:file_folder:](https://app.pluralsight.com/library/courses/sql-server-databases-docker-developing/exercise-files),
+  - 🎥 [Developing Go Apps with Docker 20.10](https://app.pluralsight.com/library/courses/docker-developing-go-apps/table-of-contents) [:file_folder:](https://app.pluralsight.com/library/courses/docker-developing-go-apps/exercise-files),
+- 🎥 [Docker for Web Developers](https://app.pluralsight.com/library/courses/docker-web-development/table-of-contents) [:file_folder:](https://app.pluralsight.com/library/courses/docker-web-developers/exercise-files) :arrow_forward:,
+- 🎥 [Docker Deep Dive](https://app.pluralsight.com/library/courses/docker-deep-dive-update/table-of-contents) [:file_folder:](https://app.pluralsight.com/library/courses/docker-deep-dive-update/exercise-files),
+- O'Reilly Live Events:
+  - ✅ 🎥 [Containers in 4 Hours](https://learning.oreilly.com/live-events/containers-in-4-hours/0636920239529/) [:file_folder:](https://on24static.akamaized.net/event/41/29/94/5/rt/1/documents/resourceList1688575690311/containers725231688575689731.pdf) [:file_folder:](https://github.com/sandervanvugt/containers),
+  - 🎥 [Hands-on Practical Docker](https://learning.oreilly.com/live-events/hands-on-practical-docker/0636920201922/),
+  - 🎥 [Integration Testing with Docker and Testcontainers](https://learning.oreilly.com/live-events/integration-testing-with-docker-and-testcontainers/0636920063105/) [:file_folder:](https://on24static.akamaized.net/event/42/35/66/7/rt/1/documents/resourceList1689021806698/slides.pdf) [:file_folder:](https://github.com/bmuschko/testcontainers-integration-testing),
+  - 🎥 [Introduction to Docker Images - with Interactivity](https://learning.oreilly.com/live-events/introduction-to-docker-imageswith-interactivity/0636920255161/) [:file_folder:](https://on24static.akamaized.net/event/42/35/67/1/rt/1/documents/resourceList1689297753939/classdockerimages1689297751782.pdf) [:file_folder:](https://gist.github.com/spkane/a15467f50545483282496624629bc62e),
+  - ✅ 🎥 [Docker Fundamentals in 4 Weeks — with Interactivity](https://learning.oreilly.com/live-events/docker-fundamentals-in-4-weekswith-interactivity/0636920061161/0636920091841/) [:file_folder:](https://on24static.akamaized.net/event/42/73/13/8/rt/1/documents/resourceList1693925243918/studentsetup1683066899581.pdf) [:file_folder:](https://on24static.akamaized.net/event/42/73/13/7/rt/1/documents/resourceList1693070416012/classdocker4weeksday11693070413884.pdf) [:file_folder:](https://on24static.akamaized.net/event/42/73/13/8/rt/1/documents/resourceList1693924885224/classdocker4weeksday21693924884110.pdf) [:file_folder:](https://gist.github.com/spkane/686ae98467a840d73cd3e181da9b1194) [:file_folder:](https://learning.oreilly.com/scenarios/devops-tools-sandbox/9781098126469/).
   - [Git in 4 Weeks](https://learning.oreilly.com/live-events/git-in-4-weeks/0636920057275/0636920094825/),
   - [GitHub Actions in 3 Hours](https://learning.oreilly.com/live-events/github-actions-in-3-hours/0636920093155/0636920093154/),
   - [CI/CD and DevOps in 3 Weeks](https://learning.oreilly.com/live-events/cicd-and-devops-in-3-weeks/0636920072763/).
@@ -82,14 +81,13 @@ I also used these (paid) courses & books:
 
 Some useful tools & other resources:
 
-- Docker:
-  - [Docker](https://www.docker.com/),
-  - [DockerHub](https://hub.docker.com/),
-  - [Docker Desktop](https://www.docker.com/products/docker-desktop/),
-  - [Labs - Play with Docker](https://labs.play-with-docker.com/),
-  - [Docker in Visual Studio Code](https://code.visualstudio.com/docs/containers/overview) [:file_folder:](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker),
-  - [Visual Studio Code Dev Containers](https://code.visualstudio.com/docs/devcontainers/create-dev-container),
-  - [The Ultimate Docker Cheat Sheet](https://dockerlabs.collabnix.com/docker/cheatsheet/),
-  - [Testcontainers](https://github.com/testcontainers/testcontainers-dotnet),
-  - [wait-for-it](https://github.com/vishnubob/wait-for-it),
-  - [Podman Desktop](https://podman-desktop.io/),
+- [Docker](https://www.docker.com/),
+- [DockerHub](https://hub.docker.com/),
+- [Docker Desktop](https://www.docker.com/products/docker-desktop/),
+- [Labs - Play with Docker](https://labs.play-with-docker.com/),
+- [Docker in Visual Studio Code](https://code.visualstudio.com/docs/containers/overview) [:file_folder:](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker),
+- [Visual Studio Code Dev Containers](https://code.visualstudio.com/docs/devcontainers/create-dev-container),
+- [The Ultimate Docker Cheat Sheet](https://dockerlabs.collabnix.com/docker/cheatsheet/),
+- [Testcontainers](https://github.com/testcontainers/testcontainers-dotnet),
+- [wait-for-it](https://github.com/vishnubob/wait-for-it),
+- [Podman Desktop](https://podman-desktop.io/).
