@@ -14,8 +14,7 @@ This directory contains resources that help grasp the basics of Git & GitHub.
 
 This directory contains the following sub-directories:
 
-- [projects](projects/) demo project(-s) created using Git & GitHub,
-- [hyperskill](./hyperskill/) my solutions to [Hyperskill](https://hyperskill.org) projects from different tracks.
+- [projects](projects/) demo project(-s) created using Git & GitHub.
 
 ## Learning Resources
 
