@@ -30,15 +30,14 @@ My [certificate](https://hyperskill.org/certificates/d4607126-b3c3-4723-a849-239
 
 [My](https://hyperskill.org/profile/7889902) solutions to [Hyperskill](https://hyperskill.org) projects from the [DevOps Engineer](https://hyperskill.org/tracks/80) track.
 
-| Project                               | Level       | Status      |
-| ------------------------------------- | ----------- | ----------- |
-| [Gitman](./01_gitman)                 | Easy        | Completed   |
-| [Remo](./02_remo)                     | Easy        | Completed   |
-| [Tagger](./03_tagger)                 | Hard        | Completed   |
-| [Dolly](./04_dolly)                   | Challenging | Completed   |
-| [Run Docker Run](./05_run_docker_run) | Medium      | Completed   |
-| [Composer](./06_composer)             | Challenging | Completed   |
-| [HyperNetwork](./07_hyper_network)    | Hard        | Completed   |
-| [True or False](./08_true_or_false)   | Challenging | In Progress |
+| Project                               | Level       | Status    |
+| ------------------------------------- | ----------- | --------- |
+| [Gitman](./01_gitman)                 | Easy        | Completed |
+| [Remo](./02_remo)                     | Easy        | Completed |
+| [Tagger](./03_tagger)                 | Hard        | Completed |
+| [Dolly](./04_dolly)                   | Challenging | Completed |
+| [Run Docker Run](./05_run_docker_run) | Medium      | Completed |
+| [Composer](./06_composer)             | Challenging | Completed |
+| [HyperNetwork](./07_hyper_network)    | Hard        | Completed |
 
 There are no certificates for this track yet.
