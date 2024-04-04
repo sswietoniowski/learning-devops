@@ -54,4 +54,5 @@ Some useful tools & other resources:
 - [Kompose](https://kompose.io/) - convert Docker Compose files to Kubernetes resources,
 - [minikube](https://github.com/kubernetes/minikube) - run Kubernetes locally,
 - [Developer Sandbo for Red Hat OpenShift](https://developers.redhat.com/developer-sandbox) - free OpenShift cluster for 30 days,
-- [OKD](https://www.okd.io/) - the community distribution of Kubernetes that powers RedHat OpenShift.
+- [OKD](https://www.okd.io/) - the community distribution of Kubernetes that powers RedHat OpenShift,
+- [Red Hat OpenShift Local](https://developers.redhat.com/products/openshift-local/overview) - the quickest way to get started building OpenShift clusters.
