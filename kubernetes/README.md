@@ -49,7 +49,8 @@ I also used these (paid) courses & books:
 
 Some useful tools & other resources:
 
-- [Killercoda](https://killercoda.com/playgrounds/scenario/kubernetes) [:file_folder:](https://github.com/killercoda/scenario-examples) - Kubernetes playground,
-- [Play with Kubernetes](https://labs.play-with-k8s.com/) - Kubernetes playground,
+- [Killercoda](https://killercoda.com/playgrounds/scenario/kubernetes) [:file_folder:](https://github.com/killercoda/scenario-examples) - Kubernetes playground at **Killercoda**,
+- [Play with Kubernetes](https://labs.play-with-k8s.com/) - Kubernetes playground at **Play with Kubernetes**,
 - [Kompose](https://kompose.io/) - convert Docker Compose files to Kubernetes resources,
-- [minikube](https://github.com/kubernetes/minikube) - run Kubernetes locally.
+- [minikube](https://github.com/kubernetes/minikube) - run Kubernetes locally,
+- [Developer Sandbo for Red Hat OpenShift](https://developers.redhat.com/developer-sandbox) - free OpenShift cluster for 30 days.
