@@ -1,0 +1,28 @@
+﻿@page "/"
+@inject HttpClient HttpClient
+
+<PageTitle>Index</PageTitle>
+
+<h1>Hello, world!</h1>
+
+<button class="btn btn-primary" @onclick="GetPodcasts">Get Podcasts</button>
+
+@if (_podcasts is not null)
+{
+    <ul>
+        @foreach (var podcast in _podcasts)
+        {
+            <li>@podcast</li>
+        }
+    </ul>
+}
+
+@code {
+    private List<string>? _podcasts;
+
+    private async Task GetPodcasts()
+    {
+        _podcasts = await HttpClient.GetFromJsonAsync<List<string>>("http://localhost:17860/podcasts");
+    }
+
+}
