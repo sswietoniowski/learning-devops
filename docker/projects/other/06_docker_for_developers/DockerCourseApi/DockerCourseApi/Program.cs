@@ -11,7 +11,7 @@ app.UseCors(x => x.AllowAnyOrigin());
 
 app.MapGet("/podcasts", async () =>
 {
-    var db = new SqlConnection("Server=tcp:localhost;Initial Catalog=podcasts;Persist Security Info=False;User ID=sa;Password=Dometrain#123;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=True;Connection Timeout=30;");
+    var db = new SqlConnection("Server=tcp:database;Initial Catalog=podcasts;Persist Security Info=False;User ID=sa;Password=Dometrain#123;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=True;Connection Timeout=30;");
 
     return (await db.QueryAsync<Podcast>("SELECT * FROM Podcasts")).Select(x => x.Title);
 
