@@ -58,7 +58,8 @@ Based on these (free) courses:
   - [Infrastructure as Code, part 2: build Docker images and deploy to Kubernetes with Terraform](https://circleci.com/blog/learn-iac-part02/),
   - [Infrastructure as Code, part 3: automate Kubernetes deployments with CI/CD and Terraform](https://circleci.com/blog/learn-iac-part3/),
   - [Virtual Machines vs Containers](https://youtu.be/eyNBf1sqdBQ),
-  - [Best Docker Container Monitoring Tools - Free and open source](https://youtu.be/zxAmqY63eJE).
+  - [Best Docker Container Monitoring Tools - Free and open source](https://youtu.be/zxAmqY63eJE),
+  - [Tutorial: Automate releases and release notes with GitLab](https://about.gitlab.com/blog/2023/11/01/tutorial-automated-release-and-release-notes-with-gitlab/).
 
 I also used these (paid) courses & books:
 
