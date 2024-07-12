@@ -110,7 +110,8 @@ I also used these (paid) courses & books:
 - other:
   - [Git in 4 Weeks](https://learning.oreilly.com/live-events/git-in-4-weeks/0636920057275/0636920094825/),
   - [GitHub Actions in 3 Hours](https://learning.oreilly.com/live-events/github-actions-in-3-hours/0636920093155/0636920093154/),
-  - [CI/CD and DevOps in 3 Weeks](https://learning.oreilly.com/live-events/cicd-and-devops-in-3-weeks/0636920072763/).
+  - [CI/CD and DevOps in 3 Weeks](https://learning.oreilly.com/live-events/cicd-and-devops-in-3-weeks/0636920072763/),
+  - [Continuous Delivery: Reliable Software Releases through Build, Test, and Deployment Automation](https://learning.oreilly.com/library/view/continuous-delivery-reliable/9780321670250/).
 
 ## Useful Tools & Other Resources
 
