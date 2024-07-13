@@ -13,4 +13,9 @@ EXPOSE 80
 EXPOSE 443
 WORKDIR /app
 COPY --from=build /app/publish .
+
+# Change user to non-root (gecos means don't interactively prompt for various info about the user)
+RUN adduser --disabled-password --gecos '' appuser
+USER appuser
+
 ENTRYPOINT ["dotnet", "DockerCourseApi.dll"]
