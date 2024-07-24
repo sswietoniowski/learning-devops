@@ -26,6 +26,8 @@ Based on these (free) courses:
   - [Kubernetes The Much Harder Way](https://youtu.be/bpp5tpgU6CE),
   - ✅ [How to deploy .NET apps to Kubernetes](https://youtu.be/cNlxPKy_NPA),
   - ✅ [Translate a Docker Compose File to Kubernetes Resources](https://kubernetes.io/docs/tasks/configure-pod-container/translate-compose-kubernetes/),
+  - [Selecting Between Docker Desktop, Rancher Desktop and Podman Desktop](https://www.acorn.io/resources/blog/selecting-between-docker-desktop-rancher-desktop-and-podman-desktop),
+  - [Podman Desktop, an alternative to Docker Desktop](https://4sysops.com/archives/podman-desktop-an-alternative-to-docker-desktop/),
 - others:
   - [Infrastructure as Code, part 1: create a Kubernetes cluster with Terraform](https://circleci.com/blog/learn-iac-part1/),
   - [Infrastructure as Code, part 2: build Docker images and deploy to Kubernetes with Terraform](https://circleci.com/blog/learn-iac-part02/),
