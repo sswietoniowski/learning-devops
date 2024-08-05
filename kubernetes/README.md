@@ -32,6 +32,7 @@ Based on these (free) courses:
   - 📖 [Conference Application Helm Chart :: K8s](https://github.com/salaboy/platforms-on-k8s/tree/main/conference-application/helm/conference-app),
   - 📖 [Performing a Rolling Update](https://kubernetes.io/docs/tutorials/kubernetes-basics/update/update-intro/),
   - 📖 [Deploy and Access the Kubernetes Dashboard](https://kubernetes.io/docs/tasks/access-application-cluster/web-ui-dashboard/),
+  - 📖 [Tekton in Action](https://github.com/salaboy/platforms-on-k8s/tree/main/chapter-3/tekton),
 - others:
   - [Infrastructure as Code, part 1: create a Kubernetes cluster with Terraform](https://circleci.com/blog/learn-iac-part1/),
   - [Infrastructure as Code, part 2: build Docker images and deploy to Kubernetes with Terraform](https://circleci.com/blog/learn-iac-part02/),
