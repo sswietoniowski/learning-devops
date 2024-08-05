@@ -93,5 +93,12 @@ Some useful tools & other resources:
   - [Keycloak](https://www.keycloak.org/) - Open Source Identity and Access Management,
   - [Zitadel](https://zitadel.com/opensource) - the open source identity and access management solution,
   - [Duende Identity Server](https://duendesoftware.com/products/identityserver) - flexible and standards-compliant OpenID Connect and OAuth 2.0 framework for ASP.NET Core,
+- CI/CD Tools:
+  - [GitHub Actions](https://github.com/features/actions) - GitHub Actions makes it easy to automate all your software workflows,
+  - [GitLab CI/CD](https://docs.gitlab.com/ee/ci/) - a continuous and iterative process to build, test, and deploy,
+  - [Tekton](https://tekton.dev/) - a powerful and flexible open-source framework for creating CI/CD systems,
+  - [Dagger](https://dagger.io/) - powerful, programmable open source CI/CD engine that runs your pipelines in containers,
+  - [TeamCity](https://www.jetbrains.com/teamcity/) - an advanced CI/CD solution that allows for flexible workflows, collaboration, and development practices,
+  - [Octopus Deploy](https://octopus.com/) - deploy your software to multi-cloud, hybrid, and on-premises environments with ease,
 - Others:
   - [CNCF Buildpacks](https://buildpacks.io/) - Cloud Native Buildpacks transform your application source code into images that can run on any cloud.
