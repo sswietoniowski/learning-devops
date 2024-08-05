@@ -51,7 +51,8 @@ I also used these (paid) courses & books:
   - [Continuous Delivery in Kubernetes with ArgoCD](https://learning.oreilly.com/live-events/continuous-delivery-in-kubernetes-with-argocd/0636920054359/),
   - ✅ 🎥 [Getting Started with OpenShift](https://learning.oreilly.com/live-events/getting-started-with-openshift/0636920244301/) [:file_folder:](https://on24static.akamaized.net/event/42/49/56/5/rt/1/documents/resourceList1691176707348/openshiftfundamentals51691176706197.pdf) [:file_folder:](https://github.com/sandervanvugt/openshift),
 - 🎥 [From Zero to Hero: Kubernetes for Developers](https://dometrain.com/course/from-zero-to-hero-kubernetes-for-developers/),
-- 📖 [Platform Engineering on Kubernetes](https://learning.oreilly.com/library/view/platform-engineering-on/9781617299322/) [:file_folder:](https://github.com/salaboy/from-monolith-to-k8s).
+- 📖 [Platform Engineering on Kubernetes](https://learning.oreilly.com/library/view/platform-engineering-on/9781617299322/) [:file_folder:](https://github.com/salaboy/from-monolith-to-k8s),
+- 📖 [Grokking Continuous Delivery](https://learning.oreilly.com/library/view/grokking-continuous-delivery/9781617298257/).
 
 ## Useful Tools & Other Resources
 
