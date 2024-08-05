@@ -92,4 +92,6 @@ Some useful tools & other resources:
 - Identity Providers:
   - [Keycloak](https://www.keycloak.org/) - Open Source Identity and Access Management,
   - [Zitadel](https://zitadel.com/opensource) - the open source identity and access management solution,
-  - [Duende Identity Server](https://duendesoftware.com/products/identityserver) - flexible and standards-compliant OpenID Connect and OAuth 2.0 framework for ASP.NET Core.
+  - [Duende Identity Server](https://duendesoftware.com/products/identityserver) - flexible and standards-compliant OpenID Connect and OAuth 2.0 framework for ASP.NET Core,
+- Others:
+  - [CNCF Buildpacks](https://buildpacks.io/) - Cloud Native Buildpacks transform your application source code into images that can run on any cloud.
