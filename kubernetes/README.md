@@ -64,6 +64,13 @@ Some useful tools & other resources:
   - [Carvel YTT](https://carvel.dev/ytt/) - template and patch as needed to easily make your configuration reusable and extensible,
   - [Helm Templates](https://helm.sh/docs/chart_best_practices/templates/#helm),
 - [Kompose](https://kompose.io/) - convert Docker Compose files to Kubernetes resources,
+- Package Managers:
+  - [Imgpkg](https://carvel.dev/imgpkg/) - package, distribute, and relocate your Kubernetes configuration and dependent OCI images as one OCI artifact,
+  - [Kapp](https://carvel.dev/kapp/) - deploy and view groups of Kubernetes resources as "applications",
+  - [Helm](https://helm.sh/) - the package manager for Kubernetes,
+- Infrastructure as Code (IaC):
+  - [Terraform](https://www.terraform.io/) - infrastructure automation to provision and manage resources in any cloud or data center,
+  - [Pulumi](https://www.pulumi.com/) - infrastructure as Code in Any Programming Language,
 - [Developer Sandbox for Red Hat OpenShift](https://developers.redhat.com/developer-sandbox) - free OpenShift cluster for 30 days,
 - [OKD](https://www.okd.io/) - the community distribution of Kubernetes that powers RedHat OpenShift,
 - [Red Hat OpenShift Local](https://developers.redhat.com/products/openshift-local/overview) - the quickest way to get started building OpenShift clusters.
