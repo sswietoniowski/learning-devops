@@ -69,13 +69,14 @@ Some useful tools & other resources:
   - [Free Kubernetes](https://github.com/learnk8s/free-kubernetes) - list of Free Trials of Managed Kubernetes Services,
   - [Developer Sandbox for Red Hat OpenShift](https://developers.redhat.com/developer-sandbox) - free OpenShift cluster for 30 days,
 - Distributions:
-  - [OKD](https://www.okd.io/) - the community distribution of Kubernetes that powers RedHat OpenShift,
-  - [Red Hat OpenShift Local](https://developers.redhat.com/products/openshift-local/overview) - the quickest way to get started building OpenShift clusters.
+  - [Docker and Kubernetes](https://www.docker.com/resources/kubernetes-and-docker/) - replicate production environments on your local machine,
+  - [Red Hat OpenShift Local](https://developers.redhat.com/products/openshift-local/overview) - the quickest way to start building OpenShift clusters.
   - [minikube](https://github.com/kubernetes/minikube) - run Kubernetes locally,
   - [kind](https://kind.sigs.k8s.io/) - a tool for running local Kubernetes clusters using Docker container "nodes",
+  - [OKD](https://www.okd.io/) - the community distribution of Kubernetes that powers RedHat OpenShift,
 - Template Engines:
   - [Kustomize](https://kustomize.io/) - a template-free way to customize application configuration,
-  - [Carvel YTT](https://carvel.dev/ytt/) - template and patch as needed to easily make your configuration reusable and extensible,
+  - [Carvel YTT](https://carvel.dev/ytt/) - template and patch as needed to make your configuration reusable and extensible easily,
   - [Helm Templates](https://helm.sh/docs/chart_best_practices/templates/#helm),
 - [Kompose](https://kompose.io/) - convert Docker Compose files to Kubernetes resources,
 - Package Managers:
@@ -87,25 +88,25 @@ Some useful tools & other resources:
   - [Pulumi](https://www.pulumi.com/) - infrastructure as Code in Any Programming Language,
 - [Ingress Controllers](https://docs.google.com/spreadsheets/d/191WWNpjJ2za6-nbG4ZoUMXMpUK8KlCIosvQB0f-oq3k/edit?pli=1&gid=907731238#gid=907731238) - Kubernetes Ingress Controllers,
 - Management:
-  - [k9s](https://k9scli.io/) - a terminal based UI to interact with your Kubernetes clusters,
+  - [k9s](https://k9scli.io/) - a terminal-based UI to interact with your Kubernetes clusters,
   - [skooner](https://github.com/skooner-k8s/skooner) - simple Kubernetes real-time dashboard and management,
 - Observability:
   - [OpenTelemetry](https://opentelemetry.io/) - high-quality, ubiquitous, and portable telemetry to enable effective observability,
   - [Prometheus](https://prometheus.io/docs/introduction/overview/) - an open-source systems monitoring and alerting toolkit,
-  - [Grafana](https://grafana.com/) - collect, correlate, and visualize data with beautiful dashboards using our open source data visualization and monitoring solution,
+  - [Grafana](https://grafana.com/) - collect, correlate, and visualize data with beautiful dashboards using our open-source data visualization and monitoring solution,
 - Identity Providers:
   - [Keycloak](https://www.keycloak.org/) - Open Source Identity and Access Management,
-  - [Zitadel](https://zitadel.com/opensource) - the open source identity and access management solution,
+  - [Zitadel](https://zitadel.com/opensource) - the open-source identity and access management solution,
   - [Duende Identity Server](https://duendesoftware.com/products/identityserver) - flexible and standards-compliant OpenID Connect and OAuth 2.0 framework for ASP.NET Core,
 - CI/CD Tools:
   - [GitHub Actions](https://github.com/features/actions) - GitHub Actions makes it easy to automate all your software workflows,
   - [GitLab CI/CD](https://docs.gitlab.com/ee/ci/) - a continuous and iterative process to build, test, and deploy,
   - [Tekton](https://tekton.dev/) - a powerful and flexible open-source framework for creating CI/CD systems,
   - [Tekton Catalog](https://github.com/tektoncd/catalog) - a catalog of shared Tasks and Pipelines,
-  - [Tekton Hub](https://hub.tekton.dev/) - discover, search and share reusable Tasks and Pipelines,
-  - [Dagger](https://dagger.io/) - powerful, programmable open source CI/CD engine that runs your pipelines in containers,
+  - [Tekton Hub](https://hub.tekton.dev/) - discover, search, and share reusable Tasks and Pipelines,
+  - [Dagger](https://dagger.io/) - powerful, programmable open-source CI/CD engine that runs your pipelines in containers,
   - [TeamCity](https://www.jetbrains.com/teamcity/) - an advanced CI/CD solution that allows for flexible workflows, collaboration, and development practices,
   - [Octopus Deploy](https://octopus.com/) - deploy your software to multi-cloud, hybrid, and on-premises environments with ease,
-  - [Jenkins](https://www.jenkins.io/) - the leading open source automation server, Jenkins provides hundreds of plugins to support building, deploying and automating any project,
+  - [Jenkins](https://www.jenkins.io/) - the leading open-source automation server, Jenkins provides hundreds of plugins to support building, deploying, and automating any project,
 - Others:
   - [CNCF Buildpacks](https://buildpacks.io/) - Cloud Native Buildpacks transform your application source code into images that can run on any cloud.
