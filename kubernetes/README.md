@@ -100,6 +100,7 @@ Some useful tools & other resources:
   - [GitLab CI/CD](https://docs.gitlab.com/ee/ci/) - a continuous and iterative process to build, test, and deploy,
   - [Tekton](https://tekton.dev/) - a powerful and flexible open-source framework for creating CI/CD systems,
   - [Tekton Catalog](https://github.com/tektoncd/catalog) - a catalog of shared Tasks and Pipelines,
+  - [Tekton Hub](https://hub.tekton.dev/) - discover, search and share reusable Tasks and Pipelines,
   - [Dagger](https://dagger.io/) - powerful, programmable open source CI/CD engine that runs your pipelines in containers,
   - [TeamCity](https://www.jetbrains.com/teamcity/) - an advanced CI/CD solution that allows for flexible workflows, collaboration, and development practices,
   - [Octopus Deploy](https://octopus.com/) - deploy your software to multi-cloud, hybrid, and on-premises environments with ease,
