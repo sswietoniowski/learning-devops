@@ -68,7 +68,8 @@ Some useful tools & other resources:
   - [Play with Kubernetes](https://labs.play-with-k8s.com/) - Kubernetes playground at **Play with Kubernetes**,
   - [Free Kubernetes](https://github.com/learnk8s/free-kubernetes) - list of Free Trials of Managed Kubernetes Services,
   - [Developer Sandbox for Red Hat OpenShift](https://developers.redhat.com/developer-sandbox) - free OpenShift cluster for 30 days,
-- Distributions:
+- Distributions & Tools:
+  - [kubectl](https://kubernetes.io/docs/tasks/tools/) - the Kubernetes command-line tool,
   - [Docker and Kubernetes](https://www.docker.com/resources/kubernetes-and-docker/) - replicate production environments on your local machine,
   - [Red Hat OpenShift Local](https://developers.redhat.com/products/openshift-local/overview) - the quickest way to start building OpenShift clusters.
   - [minikube](https://github.com/kubernetes/minikube) - run Kubernetes locally,
