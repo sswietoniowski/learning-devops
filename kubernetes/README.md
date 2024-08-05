@@ -84,4 +84,6 @@ Some useful tools & other resources:
   - [k9s](https://k9scli.io/) - a terminal based UI to interact with your Kubernetes clusters,
   - [skooner](https://github.com/skooner-k8s/skooner) - simple Kubernetes real-time dashboard and management,
 - Observability:
-  - [OpenTelemetry](https://opentelemetry.io/).
+  - [OpenTelemetry](https://opentelemetry.io/) - high-quality, ubiquitous, and portable telemetry to enable effective observability,
+  - [Prometheus](https://prometheus.io/docs/introduction/overview/) - an open-source systems monitoring and alerting toolkit,
+  - [Grafana](https://grafana.com/) - collect, correlate, and visualize data with beautiful dashboards using our open source data visualization and monitoring solution.
