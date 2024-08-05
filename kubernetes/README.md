@@ -54,6 +54,7 @@ Some useful tools & other resources:
 
 - [Killercoda](https://killercoda.com/playgrounds/scenario/kubernetes) [:file_folder:](https://github.com/killercoda/scenario-examples) - Kubernetes playground at **Killercoda**,
 - [Play with Kubernetes](https://labs.play-with-k8s.com/) - Kubernetes playground at **Play with Kubernetes**,
+- [Free Kubernetes](https://github.com/learnk8s/free-kubernetes) - list of Free Trials of Managed Kubernetes Services,
 - [minikube](https://github.com/kubernetes/minikube) - run Kubernetes locally,
 - [kind](https://kind.sigs.k8s.io/) - a tool for running local Kubernetes clusters using Docker container "nodes",
 - [Kompose](https://kompose.io/) - convert Docker Compose files to Kubernetes resources,
