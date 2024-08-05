@@ -82,4 +82,6 @@ Some useful tools & other resources:
 - [Ingress Controllers](https://docs.google.com/spreadsheets/d/191WWNpjJ2za6-nbG4ZoUMXMpUK8KlCIosvQB0f-oq3k/edit?pli=1&gid=907731238#gid=907731238) - Kubernetes Ingress Controllers,
 - Management:
   - [k9s](https://k9scli.io/) - a terminal based UI to interact with your Kubernetes clusters,
-  - [skooner](https://github.com/skooner-k8s/skooner) - simple Kubernetes real-time dashboard and management.
+  - [skooner](https://github.com/skooner-k8s/skooner) - simple Kubernetes real-time dashboard and management,
+- Observability:
+  - [OpenTelemetry](https://opentelemetry.io/).
