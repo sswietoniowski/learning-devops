@@ -91,8 +91,9 @@ Some useful tools & other resources:
 - Management:
   - [k9s](https://k9scli.io/) - a terminal-based UI to interact with your Kubernetes clusters,
   - [skooner](https://github.com/skooner-k8s/skooner) - simple Kubernetes real-time dashboard and management,
-  - [Lens](https://k8slens.dev) [:file_folder:](https://github.com/lensapp/lens) - the way the world runs Kubernetes,
-  - [OpenLens](https://github.com/MuhammedKalkan/OpenLens) - OpenLens Binary Build Repository,
+  - [Lens](https://k8slens.dev) - the way the world runs Kubernetes,
+  - [OpenLens](https://github.com/MuhammedKalkan/OpenLens) [:file_folder:](https://github.com/lensapp/lens) - OpenLens Binary Build Repository,
+  - [VSCode Kubernetes Tools](https://marketplace.visualstudio.com/items?itemName=ms-kubernetes-tools.vscode-kubernetes-tools) - Kubernetes extension for Visual Studio Code,
 - Observability:
   - [OpenTelemetry](https://opentelemetry.io/) - high-quality, ubiquitous, and portable telemetry to enable effective observability,
   - [Prometheus](https://prometheus.io/docs/introduction/overview/) - an open-source systems monitoring and alerting toolkit,
