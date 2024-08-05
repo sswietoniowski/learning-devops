@@ -1,10 +1,10 @@
-# Docker
+# Kubernetes
 
-This directory contains resources that help grasp the basics of Docker.
+This directory contains resources that help grasp the basics of Kubernetes.
 
 ## Table of Contents
 
-- [Docker](#docker)
+- [Kubernetes](#kubernetes)
   - [Table of Contents](#table-of-contents)
   - [Directory Contents](#directory-contents)
   - [Learning Resources](#learning-resources)
@@ -86,4 +86,8 @@ Some useful tools & other resources:
 - Observability:
   - [OpenTelemetry](https://opentelemetry.io/) - high-quality, ubiquitous, and portable telemetry to enable effective observability,
   - [Prometheus](https://prometheus.io/docs/introduction/overview/) - an open-source systems monitoring and alerting toolkit,
-  - [Grafana](https://grafana.com/) - collect, correlate, and visualize data with beautiful dashboards using our open source data visualization and monitoring solution.
+  - [Grafana](https://grafana.com/) - collect, correlate, and visualize data with beautiful dashboards using our open source data visualization and monitoring solution,
+- Identity Providers:
+  - [Keycloak](https://www.keycloak.org/) - Open Source Identity and Access Management,
+  - [Zitadel](https://zitadel.com/opensource) - the open source identity and access management solution,
+  - [Duende Identity Server](https://duendesoftware.com/products/identityserver) - flexible and standards-compliant OpenID Connect and OAuth 2.0 framework for ASP.NET Core.
