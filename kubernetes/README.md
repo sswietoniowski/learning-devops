@@ -58,6 +58,10 @@ Some useful tools & other resources:
 - [Free Kubernetes](https://github.com/learnk8s/free-kubernetes) - list of Free Trials of Managed Kubernetes Services,
 - [minikube](https://github.com/kubernetes/minikube) - run Kubernetes locally,
 - [kind](https://kind.sigs.k8s.io/) - a tool for running local Kubernetes clusters using Docker container "nodes",
+- Template Engines:
+  - [Kustomize](https://kustomize.io/) - a template-free way to customize application configuration,
+  - [Carvel YTT](https://carvel.dev/ytt/) - template and patch as needed to easily make your configuration reusable and extensible,
+  - [Helm Templates](https://helm.sh/docs/chart_best_practices/templates/#helm),
 - [Kompose](https://kompose.io/) - convert Docker Compose files to Kubernetes resources,
 - [Developer Sandbox for Red Hat OpenShift](https://developers.redhat.com/developer-sandbox) - free OpenShift cluster for 30 days,
 - [OKD](https://www.okd.io/) - the community distribution of Kubernetes that powers RedHat OpenShift,
