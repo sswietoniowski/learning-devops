@@ -1,0 +1,62 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: hello-api
+  namespace: services-demo
+spec:
+  ingressClassName: nginx
+  tls:
+  - hosts:
+    - my-domain.com
+    secretName: my-tls-secret
+  rules:
+  - host: my-domain.com
+    http:
+      paths:
+        - path: /
+          pathType: Prefix
+          backend:
+            service:
+              name: hello-api
+              port:
+                number: 80
+
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: hello-api
+  namespace: services-demo
+spec:
+  type: ClusterIP
+  selector:
+    app: hello-api
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 8080
+
+---
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hello-api
+  namespace: services-demo
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: hello-api
+  template:
+    metadata:
+      labels:
+        app: hello-api
+    spec:
+      containers:
+      - name: hello-api
+        image: k8scourse/module6-hello-api:1
+        ports:
+        - containerPort: 8080
+        resources:
