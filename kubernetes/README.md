@@ -40,7 +40,7 @@ Based on these (free) courses & articles:
 - 📖 [Infrastructure as Code, part 2: build Docker images and deploy to Kubernetes with Terraform](https://circleci.com/blog/learn-iac-part02/),
 - 📖 [Infrastructure as Code, part 3: automate Kubernetes deployments with CI/CD and Terraform](https://circleci.com/blog/learn-iac-part3/),
 - 📖 [CNCF Platforms White Paper](https://tag-app-delivery.cncf.io/whitepapers/platforms/),
-- 🎥 [What is Platform Engineering and how it fits into DevOps and Cloud world](https://youtu.be/ghzsBm8vOms?si=1V4bRWcwMYQdgqLk),
+- ✅ 🎥 [What is Platform Engineering and how it fits into DevOps and Cloud world](https://youtu.be/ghzsBm8vOms?si=1V4bRWcwMYQdgqLk) :+1:,
 - 🎥 [DevOps vs SRE vs Platform Engineering | Clear Big Misconceptions](https://youtu.be/an8SrFtJBdM?si=MWQKZG2XUyBEUao_),
 - 🎥 [Platform Engineering as a (Community) Service](https://youtu.be/4N2ywun-wTE?si=i0mspvdugtL7cK2e),
 - 🎥 [Where Platform Engineering GOES WRONG](https://youtu.be/vw8PUPit7lc?si=ATLyKxbnXKv4sSix),
