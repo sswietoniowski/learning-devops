@@ -18,28 +18,27 @@ This directory contains the following sub-directories:
 
 ## Learning Resources
 
-Based on these (free) courses:
+Based on these (free) courses & articles:
 
-- courses:
-  - ✅ [What is Kubernetes](https://youtu.be/VnvRFRk_51k),
-  - [Kubernetes Tutorial for Beginners](https://youtu.be/X48VuDVv0do),
-  - [Kubernetes The Much Harder Way](https://youtu.be/bpp5tpgU6CE),
-  - ✅ [How to deploy .NET apps to Kubernetes](https://youtu.be/cNlxPKy_NPA),
-  - ✅ [Translate a Docker Compose File to Kubernetes Resources](https://kubernetes.io/docs/tasks/configure-pod-container/translate-compose-kubernetes/),
-  - 📖 [Selecting Between Docker Desktop, Rancher Desktop and Podman Desktop](https://www.acorn.io/resources/blog/selecting-between-docker-desktop-rancher-desktop-and-podman-desktop),
-  - 📖 [Podman Desktop, an alternative to Docker Desktop](https://4sysops.com/archives/podman-desktop-an-alternative-to-docker-desktop/),
-  - 📖 [Creating a local cluster with Kubernetes KinD](https://github.com/salaboy/platforms-on-k8s/tree/main/chapter-2#creating-a-local-cluster-with-kubernetes-kind),
-  - 📖 [Conference Application Helm Chart :: K8s](https://github.com/salaboy/platforms-on-k8s/tree/main/conference-application/helm/conference-app),
-  - 📖 [Performing a Rolling Update](https://kubernetes.io/docs/tutorials/kubernetes-basics/update/update-intro/),
-  - 📖 [Deploy and Access the Kubernetes Dashboard](https://kubernetes.io/docs/tasks/access-application-cluster/web-ui-dashboard/),
-  - 📖 [Tekton in Action](https://github.com/salaboy/platforms-on-k8s/tree/main/chapter-3/tekton),
-  - 📖 [Tekton for Service Pipelines](https://github.com/salaboy/platforms-on-k8s/tree/main/chapter-3/tekton#tekton-for-service-pipelines),
-  - 📖 [Dagger Quickstart](https://docs.dagger.io/quickstart/),
-  - 📖 [Dagger in Action](https://github.com/salaboy/platforms-on-k8s/blob/main/chapter-3/dagger/README.md),
-- others:
-  - [Infrastructure as Code, part 1: create a Kubernetes cluster with Terraform](https://circleci.com/blog/learn-iac-part1/),
-  - [Infrastructure as Code, part 2: build Docker images and deploy to Kubernetes with Terraform](https://circleci.com/blog/learn-iac-part02/),
-  - [Infrastructure as Code, part 3: automate Kubernetes deployments with CI/CD and Terraform](https://circleci.com/blog/learn-iac-part3/).
+- ✅ [What is Kubernetes](https://youtu.be/VnvRFRk_51k),
+- [Kubernetes Tutorial for Beginners](https://youtu.be/X48VuDVv0do),
+- [Kubernetes The Much Harder Way](https://youtu.be/bpp5tpgU6CE),
+- ✅ [How to deploy .NET apps to Kubernetes](https://youtu.be/cNlxPKy_NPA),
+- ✅ [Translate a Docker Compose File to Kubernetes Resources](https://kubernetes.io/docs/tasks/configure-pod-container/translate-compose-kubernetes/),
+- 📖 [Selecting Between Docker Desktop, Rancher Desktop and Podman Desktop](https://www.acorn.io/resources/blog/selecting-between-docker-desktop-rancher-desktop-and-podman-desktop),
+- 📖 [Podman Desktop, an alternative to Docker Desktop](https://4sysops.com/archives/podman-desktop-an-alternative-to-docker-desktop/),
+- 📖 [Creating a local cluster with Kubernetes KinD](https://github.com/salaboy/platforms-on-k8s/tree/main/chapter-2#creating-a-local-cluster-with-kubernetes-kind),
+- 📖 [Conference Application Helm Chart :: K8s](https://github.com/salaboy/platforms-on-k8s/tree/main/conference-application/helm/conference-app),
+- 📖 [Performing a Rolling Update](https://kubernetes.io/docs/tutorials/kubernetes-basics/update/update-intro/),
+- 📖 [Deploy and Access the Kubernetes Dashboard](https://kubernetes.io/docs/tasks/access-application-cluster/web-ui-dashboard/),
+- 📖 [Tekton in Action](https://github.com/salaboy/platforms-on-k8s/tree/main/chapter-3/tekton),
+- 📖 [Tekton for Service Pipelines](https://github.com/salaboy/platforms-on-k8s/tree/main/chapter-3/tekton#tekton-for-service-pipelines),
+- 📖 [Dagger Quickstart](https://docs.dagger.io/quickstart/),
+- 📖 [Dagger in Action](https://github.com/salaboy/platforms-on-k8s/blob/main/chapter-3/dagger/README.md),
+- 📖 [What is OpenGitOps](https://opengitops.dev/),
+- 📖 [Infrastructure as Code, part 1: create a Kubernetes cluster with Terraform](https://circleci.com/blog/learn-iac-part1/),
+- 📖 [Infrastructure as Code, part 2: build Docker images and deploy to Kubernetes with Terraform](https://circleci.com/blog/learn-iac-part02/),
+- 📖 [Infrastructure as Code, part 3: automate Kubernetes deployments with CI/CD and Terraform](https://circleci.com/blog/learn-iac-part3/).
 
 I also used these (paid) courses & books:
 
