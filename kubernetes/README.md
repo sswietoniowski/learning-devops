@@ -111,6 +111,7 @@ Some useful tools & other resources:
   - [Zitadel](https://zitadel.com/opensource) - the open-source identity and access management solution,
   - [Duende Identity Server](https://duendesoftware.com/products/identityserver) - flexible and standards-compliant OpenID Connect and OAuth 2.0 framework for ASP.NET Core,
 - CI/CD Tools:
+  - [Argo CD](https://argo-cd.readthedocs.io/en/stable/) - a declarative, GitOps continuous delivery tool for Kubernetes,
   - [GitHub Actions](https://github.com/features/actions) - GitHub Actions makes it easy to automate all your software workflows,
   - [GitLab CI/CD](https://docs.gitlab.com/ee/ci/) - a continuous and iterative process to build, test, and deploy,
   - [Tekton](https://tekton.dev/) - a powerful and flexible open-source framework for creating CI/CD systems,
