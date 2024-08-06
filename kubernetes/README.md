@@ -35,6 +35,7 @@ Based on these (free) courses & articles:
 - 📖 [Tekton for Service Pipelines](https://github.com/salaboy/platforms-on-k8s/tree/main/chapter-3/tekton#tekton-for-service-pipelines),
 - 📖 [Dagger Quickstart](https://docs.dagger.io/quickstart/),
 - 📖 [Dagger in Action](https://github.com/salaboy/platforms-on-k8s/blob/main/chapter-3/dagger/README.md),
+- 📖 [Environment Pipelines](https://github.com/salaboy/platforms-on-k8s/blob/main/chapter-4/README.md),
 - 📖 [What is OpenGitOps](https://opengitops.dev/),
 - 📖 [Infrastructure as Code, part 1: create a Kubernetes cluster with Terraform](https://circleci.com/blog/learn-iac-part1/),
 - 📖 [Infrastructure as Code, part 2: build Docker images and deploy to Kubernetes with Terraform](https://circleci.com/blog/learn-iac-part02/),
