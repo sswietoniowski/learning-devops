@@ -1,0 +1,37 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: name-api
+  namespace: services-demo
+spec:
+  type: ClusterIP
+  selector:
+    app: name-api
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 8080
+
+---
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: name-api
+  namespace: services-demo
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: name-api
+  template:
+    metadata:
+      labels:
+        app: name-api
+    spec:
+      containers:
+      - name: name-api
+        image: k8scourse/module6-name-api:1
+        ports:
+        - containerPort: 8080
+        resources:

@@ -1,0 +1,24 @@
+kind: Cluster
+apiVersion: kind.x-k8s.io/v1alpha4
+nodes:
+- role: control-plane
+  kubeadmConfigPatches:
+  - |
+    kind: InitConfiguration
+    nodeRegistration:
+      kubeletExtraArgs:
+        node-labels: "ingress-ready=true"
+  extraPortMappings:
+  # Note that 'containerPort' refers to the Kind container that represents nodes (Kind
+  # creates nodes as containers). So I've set the Nginx IC Service to explicitly use
+  # a Service of type NodePort using port 30000. All application services can remain
+  # as internal ClusterIP services, as everything else goes through the ingress.
+  - containerPort: 30000
+    hostPort: 30000
+    protocol: TCP
+  - containerPort: 30001
+    hostPort: 30001
+    protocol: TCP
+  - containerPort: 30002
+    hostPort: 30002
+    protocol: TCP
