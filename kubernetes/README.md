@@ -18,28 +18,34 @@ This directory contains the following sub-directories:
 
 ## Learning Resources
 
-Based on these (free) courses:
+Based on these (free) courses & articles:
 
-- courses:
-  - ✅ [What is Kubernetes](https://youtu.be/VnvRFRk_51k),
-  - [Kubernetes Tutorial for Beginners](https://youtu.be/X48VuDVv0do),
-  - [Kubernetes The Much Harder Way](https://youtu.be/bpp5tpgU6CE),
-  - ✅ [How to deploy .NET apps to Kubernetes](https://youtu.be/cNlxPKy_NPA),
-  - ✅ [Translate a Docker Compose File to Kubernetes Resources](https://kubernetes.io/docs/tasks/configure-pod-container/translate-compose-kubernetes/),
-  - 📖 [Selecting Between Docker Desktop, Rancher Desktop and Podman Desktop](https://www.acorn.io/resources/blog/selecting-between-docker-desktop-rancher-desktop-and-podman-desktop),
-  - 📖 [Podman Desktop, an alternative to Docker Desktop](https://4sysops.com/archives/podman-desktop-an-alternative-to-docker-desktop/),
-  - 📖 [Creating a local cluster with Kubernetes KinD](https://github.com/salaboy/platforms-on-k8s/tree/main/chapter-2#creating-a-local-cluster-with-kubernetes-kind),
-  - 📖 [Conference Application Helm Chart :: K8s](https://github.com/salaboy/platforms-on-k8s/tree/main/conference-application/helm/conference-app),
-  - 📖 [Performing a Rolling Update](https://kubernetes.io/docs/tutorials/kubernetes-basics/update/update-intro/),
-  - 📖 [Deploy and Access the Kubernetes Dashboard](https://kubernetes.io/docs/tasks/access-application-cluster/web-ui-dashboard/),
-  - 📖 [Tekton in Action](https://github.com/salaboy/platforms-on-k8s/tree/main/chapter-3/tekton),
-  - 📖 [Tekton for Service Pipelines](https://github.com/salaboy/platforms-on-k8s/tree/main/chapter-3/tekton#tekton-for-service-pipelines),
-  - 📖 [Dagger Quickstart](https://docs.dagger.io/quickstart/),
-  - 📖 [Dagger in Action](https://github.com/salaboy/platforms-on-k8s/blob/main/chapter-3/dagger/README.md),
-- others:
-  - [Infrastructure as Code, part 1: create a Kubernetes cluster with Terraform](https://circleci.com/blog/learn-iac-part1/),
-  - [Infrastructure as Code, part 2: build Docker images and deploy to Kubernetes with Terraform](https://circleci.com/blog/learn-iac-part02/),
-  - [Infrastructure as Code, part 3: automate Kubernetes deployments with CI/CD and Terraform](https://circleci.com/blog/learn-iac-part3/).
+- ✅ [What is Kubernetes](https://youtu.be/VnvRFRk_51k),
+- [Kubernetes Tutorial for Beginners](https://youtu.be/X48VuDVv0do),
+- [Kubernetes The Much Harder Way](https://youtu.be/bpp5tpgU6CE),
+- ✅ [How to deploy .NET apps to Kubernetes](https://youtu.be/cNlxPKy_NPA),
+- ✅ [Translate a Docker Compose File to Kubernetes Resources](https://kubernetes.io/docs/tasks/configure-pod-container/translate-compose-kubernetes/),
+- 📖 [Selecting Between Docker Desktop, Rancher Desktop and Podman Desktop](https://www.acorn.io/resources/blog/selecting-between-docker-desktop-rancher-desktop-and-podman-desktop),
+- 📖 [Podman Desktop, an alternative to Docker Desktop](https://4sysops.com/archives/podman-desktop-an-alternative-to-docker-desktop/),
+- 📖 [Creating a local cluster with Kubernetes KinD](https://github.com/salaboy/platforms-on-k8s/tree/main/chapter-2#creating-a-local-cluster-with-kubernetes-kind),
+- 📖 [Conference Application Helm Chart :: K8s](https://github.com/salaboy/platforms-on-k8s/tree/main/conference-application/helm/conference-app),
+- 📖 [Performing a Rolling Update](https://kubernetes.io/docs/tutorials/kubernetes-basics/update/update-intro/),
+- 📖 [Deploy and Access the Kubernetes Dashboard](https://kubernetes.io/docs/tasks/access-application-cluster/web-ui-dashboard/),
+- 📖 [Tekton in Action](https://github.com/salaboy/platforms-on-k8s/tree/main/chapter-3/tekton),
+- 📖 [Tekton for Service Pipelines](https://github.com/salaboy/platforms-on-k8s/tree/main/chapter-3/tekton#tekton-for-service-pipelines),
+- 📖 [Dagger Quickstart](https://docs.dagger.io/quickstart/),
+- 📖 [Dagger in Action](https://github.com/salaboy/platforms-on-k8s/blob/main/chapter-3/dagger/README.md),
+- 📖 [Environment Pipelines](https://github.com/salaboy/platforms-on-k8s/blob/main/chapter-4/README.md),
+- 📖 [What is OpenGitOps](https://opengitops.dev/),
+- 📖 [Infrastructure as Code, part 1: create a Kubernetes cluster with Terraform](https://circleci.com/blog/learn-iac-part1/),
+- 📖 [Infrastructure as Code, part 2: build Docker images and deploy to Kubernetes with Terraform](https://circleci.com/blog/learn-iac-part02/),
+- 📖 [Infrastructure as Code, part 3: automate Kubernetes deployments with CI/CD and Terraform](https://circleci.com/blog/learn-iac-part3/),
+- 📖 [CNCF Platforms White Paper](https://tag-app-delivery.cncf.io/whitepapers/platforms/),
+- ✅ 🎥 [What is Platform Engineering and how it fits into DevOps and Cloud world](https://youtu.be/ghzsBm8vOms?si=1V4bRWcwMYQdgqLk) :+1:,
+- 🎥 [DevOps vs SRE vs Platform Engineering | Clear Big Misconceptions](https://youtu.be/an8SrFtJBdM?si=MWQKZG2XUyBEUao_),
+- 🎥 [Platform Engineering as a (Community) Service](https://youtu.be/4N2ywun-wTE?si=i0mspvdugtL7cK2e),
+- 🎥 [Where Platform Engineering GOES WRONG](https://youtu.be/vw8PUPit7lc?si=ATLyKxbnXKv4sSix),
+- 🎥 [Platform Engineering vs DevOps](https://youtu.be/m1FBrO3ekkU?si=FKEotygghltyaH6O).
 
 I also used these (paid) courses & books:
 
@@ -84,9 +90,13 @@ Some useful tools & other resources:
   - [Imgpkg](https://carvel.dev/imgpkg/) - package, distribute, and relocate your Kubernetes configuration and dependent OCI images as one OCI artifact,
   - [Kapp](https://carvel.dev/kapp/) - deploy and view groups of Kubernetes resources as "applications",
   - [Helm](https://helm.sh/) - the package manager for Kubernetes,
+  - [helmfile](https://github.com/helmfile/helmfile) - declaratively deploy your Kubernetes manifests, Kustomize configs, and Charts as Helm releases,
 - Infrastructure as Code (IaC):
   - [Terraform](https://www.terraform.io/) - infrastructure automation to provision and manage resources in any cloud or data center,
   - [Pulumi](https://www.pulumi.com/) - infrastructure as Code in Any Programming Language,
+  - [Ansible](https://www.ansible.com/) - an open source IT automation engine that automates provisioning, configuration management, application deployment, orchestration, and many other IT processes,
+  - [Puppet](https://www.puppet.com/) - a freely available open source configuration management platform that allows you to automate your infrastructure as code,
+  - [Chef](https://www.chef.io/) - configure, deploy and manage your entire application infrastructure in a secure and compliant way,
 - [Ingress Controllers](https://docs.google.com/spreadsheets/d/191WWNpjJ2za6-nbG4ZoUMXMpUK8KlCIosvQB0f-oq3k/edit?pli=1&gid=907731238#gid=907731238) - Kubernetes Ingress Controllers,
 - Management:
   - [k9s](https://k9scli.io/) - a terminal-based UI to interact with your Kubernetes clusters,
@@ -103,6 +113,7 @@ Some useful tools & other resources:
   - [Zitadel](https://zitadel.com/opensource) - the open-source identity and access management solution,
   - [Duende Identity Server](https://duendesoftware.com/products/identityserver) - flexible and standards-compliant OpenID Connect and OAuth 2.0 framework for ASP.NET Core,
 - CI/CD Tools:
+  - [Argo CD](https://argo-cd.readthedocs.io/en/stable/) - a declarative, GitOps continuous delivery tool for Kubernetes,
   - [GitHub Actions](https://github.com/features/actions) - GitHub Actions makes it easy to automate all your software workflows,
   - [GitLab CI/CD](https://docs.gitlab.com/ee/ci/) - a continuous and iterative process to build, test, and deploy,
   - [Tekton](https://tekton.dev/) - a powerful and flexible open-source framework for creating CI/CD systems,
@@ -112,5 +123,6 @@ Some useful tools & other resources:
   - [TeamCity](https://www.jetbrains.com/teamcity/) - an advanced CI/CD solution that allows for flexible workflows, collaboration, and development practices,
   - [Octopus Deploy](https://octopus.com/) - deploy your software to multi-cloud, hybrid, and on-premises environments with ease,
   - [Jenkins](https://www.jenkins.io/) - the leading open-source automation server, Jenkins provides hundreds of plugins to support building, deploying, and automating any project,
+  - [Jenkins X](https://jenkins-x.io/) - Multi-cluster GitOps, Tekton pipelines, Secrets management, Pull Request ChatOps and Preview Environments,
 - Others:
   - [CNCF Buildpacks](https://buildpacks.io/) - Cloud Native Buildpacks transform your application source code into images that can run on any cloud.
