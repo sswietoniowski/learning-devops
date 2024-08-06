@@ -89,6 +89,7 @@ Some useful tools & other resources:
   - [Imgpkg](https://carvel.dev/imgpkg/) - package, distribute, and relocate your Kubernetes configuration and dependent OCI images as one OCI artifact,
   - [Kapp](https://carvel.dev/kapp/) - deploy and view groups of Kubernetes resources as "applications",
   - [Helm](https://helm.sh/) - the package manager for Kubernetes,
+  - [helmfile](https://github.com/helmfile/helmfile) - declaratively deploy your Kubernetes manifests, Kustomize configs, and Charts as Helm releases,
 - Infrastructure as Code (IaC):
   - [Terraform](https://www.terraform.io/) - infrastructure automation to provision and manage resources in any cloud or data center,
   - [Pulumi](https://www.pulumi.com/) - infrastructure as Code in Any Programming Language,
