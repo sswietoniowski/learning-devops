@@ -1,0 +1,138 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: hello-api
+  namespace: configmap-demo
+spec:
+  ingressClassName: nginx
+  rules:
+  - host: hello-api.com
+    http:
+      paths:
+        - path: /
+          pathType: Prefix
+          backend:
+            service:
+              name: hello-api
+              port:
+                number: 80
+
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: hello-api
+  namespace: configmap-demo
+spec:
+  type: ClusterIP
+  selector:
+    app: hello-api
+    version: env-example
+    #version: volume-example
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 8080
+
+---
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hello-api-env-example
+  namespace: configmap-demo
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: hello-api
+      version: env-example
+  template:
+    metadata:
+      labels:
+        app: hello-api
+        version: env-example
+    spec:
+      containers:
+      - name: hello-api
+        image: k8scourse/module8-hello-api:1
+        envFrom:
+        - configMapRef:
+            name: hello-api
+        # Alternate syntax, allowing cherry-picking and renaming specific fields...
+        # env:
+        # - name: SOME_OTHER_ENVVAR_NAME
+        #   valueFrom:
+        #     configMapKeyRef:
+        #       name: hello-api
+        #       key: NameApiUri
+        ports:
+        - containerPort: 8080
+        resources:
+
+---
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hello-api-volume-example
+  namespace: configmap-demo
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: hello-api
+      version: volume-example
+  template:
+    metadata:
+      labels:
+        app: hello-api
+        version: volume-example
+    spec:
+      containers:
+      - name: hello-api
+        image: k8scourse/module8-hello-api:1
+        volumeMounts:
+        - name: config-volume
+          mountPath: /app/appsettings.json
+          subPath: appsettings.json
+        ports:
+        - containerPort: 8080
+        resources:
+      volumes:
+        - name: config-volume
+          configMap:
+            name: hello-api-volume-example
+
+---
+
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: hello-api
+  namespace: configmap-demo
+data:
+  # Note: namespace in this URL is intentionally incorrect to
+  # demonstrate investigating a failure...
+  NameApiUri: http://name-api.services-demo.svc.cluster.local
+
+---
+
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: hello-api-volume-example
+  namespace: configmap-demo
+data:
+  appsettings.json: |
+    {
+      "Logging": {
+        "LogLevel": {
+          "Default": "Information",
+          "Microsoft.AspNetCore": "Warning"
+        }
+      },
+      "AllowedHosts": "*",
+      "NameApiUri": "http://name-api.configmap-demo.svc.cluster.local"
+    }

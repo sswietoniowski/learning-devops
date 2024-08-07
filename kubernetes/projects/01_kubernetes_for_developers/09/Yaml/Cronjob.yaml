@@ -1,0 +1,26 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: job-demo
+
+---
+
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: my-cronjob
+spec:
+  # Checkout https://crontab.guru/ for help with cron expressions
+  schedule: "* * * * *" # Every minute
+  # startingDeadlineSeconds: 200  # Deadline in seconds to start a job if a scheduled time is missed
+  # concurrencyPolicy: Replace    # Replaces currently running job with a new one
+  # successfulJobsHistoryLimit: 3 # Retain 3 completed jobs
+  # failedJobsHistoryLimit: 5     # Retain 5 failed jobs
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          containers:
+          - name: job-demo-console-app
+            image: k8scourse/module9-job-demo-console-app:1
+          restartPolicy: Never
