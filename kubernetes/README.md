@@ -134,4 +134,6 @@ Some useful tools & other resources:
   - [external-secrets](https://github.com/external-secrets/external-secrets) - External Secrets Operator reads information from a third-party service like AWS Secrets Manager and automatically injects the values as Kubernetes Secrets,
   - [HashiCorp Vault](https://www.vaultproject.io/) - secure, store, and tightly control access to tokens, passwords, certificates, and encryption keys for protecting secrets and other sensitive data using a UI, CLI, or HTTP API,
   - [Kratix](https://www.kratix.io/) - an open-source platform framework for building composable internal developer platforms (IDPs),
+  - [Dapr](https://dapr.io/) - provides integrated APIs for communication, state, and workflow, leverages industry best practices for security, resiliency, and observability, so you can focus on your code,
+  - [OpenFeature](https://openfeature.dev/) - standardizing Feature Flagging for Everyone, 
   - [CNCF Buildpacks](https://buildpacks.io/) - Cloud Native Buildpacks transform your application source code into images that can run on any cloud.
