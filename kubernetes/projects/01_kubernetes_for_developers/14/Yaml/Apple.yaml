@@ -1,0 +1,7 @@
+apiVersion: fruit.com/v1
+kind: Apple
+metadata:
+  name: my-apple
+spec:
+  colour: "red"
+  type: "Gala"
