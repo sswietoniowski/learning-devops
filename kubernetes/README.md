@@ -37,6 +37,7 @@ Based on these (free) courses & articles:
 - 📖 [Dagger in Action](https://github.com/salaboy/platforms-on-k8s/blob/main/chapter-3/dagger/README.md),
 - 📖 [Environment Pipelines](https://github.com/salaboy/platforms-on-k8s/blob/main/chapter-4/README.md),
 - 📖 [Multi-Cloud (App) Infrastructure](https://github.com/salaboy/platforms-on-k8s/tree/main/chapter-5),
+- 📖 [Let's build a Platform on top of Kubernetes](https://github.com/salaboy/platforms-on-k8s/tree/main/chapter-6),
 - 📖 [What is OpenGitOps](https://opengitops.dev/),
 - 📖 [Infrastructure as Code, part 1: create a Kubernetes cluster with Terraform](https://circleci.com/blog/learn-iac-part1/),
 - 📖 [Infrastructure as Code, part 2: build Docker images and deploy to Kubernetes with Terraform](https://circleci.com/blog/learn-iac-part02/),
