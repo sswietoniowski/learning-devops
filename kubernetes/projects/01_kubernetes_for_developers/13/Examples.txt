@@ -1,0 +1,17 @@
+# Add taint to node:
+kubectl taint nodes k8s-course-worker region-only=uk:NoSchedule
+
+# Remove taint from node
+kubectl taint nodes k8s-course-worker region-only=uk:NoSchedule-
+
+# Add label to node
+kubectl label nodes k8s-course-worker2 gpu=nvidia
+
+# Mark node as unschedulable
+kubectl cordon k8s-course-worker2
+
+# Unmark node as unschedulable
+kubectl uncordon k8s-course-worker2
+
+# Drain the node of pods
+kubectl drain k8s-course-worker2 --ignore-daemonsets --delete-emptydir-data

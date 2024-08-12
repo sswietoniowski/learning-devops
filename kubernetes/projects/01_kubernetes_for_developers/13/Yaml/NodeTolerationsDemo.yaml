@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: node-tolerations-demo
+  namespace: node-scheduling-demo
+spec:
+  replicas: 10
+  selector:
+    matchLabels:
+      app: nginx
+  template:
+    metadata:
+      labels:
+        app: nginx
+    spec:
+      tolerations:
+      - key: "region-only"
+        operator: "Equal"
+        value: "uk"
+        effect: "NoSchedule"
+      containers:
+      - name: nginx
+        image: nginx
+        resources:
