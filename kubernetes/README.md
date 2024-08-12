@@ -36,6 +36,8 @@ Based on these (free) courses & articles:
 - 📖 [Dagger Quickstart](https://docs.dagger.io/quickstart/),
 - 📖 [Dagger in Action](https://github.com/salaboy/platforms-on-k8s/blob/main/chapter-3/dagger/README.md),
 - 📖 [Environment Pipelines](https://github.com/salaboy/platforms-on-k8s/blob/main/chapter-4/README.md),
+- 📖 [Multi-Cloud (App) Infrastructure](https://github.com/salaboy/platforms-on-k8s/tree/main/chapter-5),
+- 📖 [Let's build a Platform on top of Kubernetes](https://github.com/salaboy/platforms-on-k8s/tree/main/chapter-6),
 - 📖 [What is OpenGitOps](https://opengitops.dev/),
 - 📖 [Infrastructure as Code, part 1: create a Kubernetes cluster with Terraform](https://circleci.com/blog/learn-iac-part1/),
 - 📖 [Infrastructure as Code, part 2: build Docker images and deploy to Kubernetes with Terraform](https://circleci.com/blog/learn-iac-part02/),
@@ -45,7 +47,8 @@ Based on these (free) courses & articles:
 - 🎥 [DevOps vs SRE vs Platform Engineering | Clear Big Misconceptions](https://youtu.be/an8SrFtJBdM?si=MWQKZG2XUyBEUao_),
 - 🎥 [Platform Engineering as a (Community) Service](https://youtu.be/4N2ywun-wTE?si=i0mspvdugtL7cK2e),
 - 🎥 [Where Platform Engineering GOES WRONG](https://youtu.be/vw8PUPit7lc?si=ATLyKxbnXKv4sSix),
-- 🎥 [Platform Engineering vs DevOps](https://youtu.be/m1FBrO3ekkU?si=FKEotygghltyaH6O).
+- 🎥 [Platform Engineering vs DevOps](https://youtu.be/m1FBrO3ekkU?si=FKEotygghltyaH6O),
+- 📖 [Cost-Effective Multi-tenancy on Kubernetes](https://www.salaboy.com/2023/06/19/cost-effective-multi-tenancy-on-kubernetes/).
 
 I also used these (paid) courses & books:
 
@@ -81,6 +84,7 @@ Some useful tools & other resources:
   - [minikube](https://github.com/kubernetes/minikube) - run Kubernetes locally,
   - [kind](https://kind.sigs.k8s.io/) - a tool for running local Kubernetes clusters using Docker container "nodes",
   - [OKD](https://www.okd.io/) - the community distribution of Kubernetes that powers RedHat OpenShift,
+  - [vCluster](https://www.vcluster.com/) - enabling the rapid creation of virtual clusters, which can isolate 100s of different tenant workloads within one cluster,
 - Template Engines:
   - [Kustomize](https://kustomize.io/) - a template-free way to customize application configuration,
   - [Carvel YTT](https://carvel.dev/ytt/) - template and patch as needed to make your configuration reusable and extensible easily,
@@ -97,6 +101,7 @@ Some useful tools & other resources:
   - [Ansible](https://www.ansible.com/) - an open source IT automation engine that automates provisioning, configuration management, application deployment, orchestration, and many other IT processes,
   - [Puppet](https://www.puppet.com/) - a freely available open source configuration management platform that allows you to automate your infrastructure as code,
   - [Chef](https://www.chef.io/) - configure, deploy and manage your entire application infrastructure in a secure and compliant way,
+  - [Crossplane](https://www.crossplane.io/) - build control planes without needing to write code,
 - [Ingress Controllers](https://docs.google.com/spreadsheets/d/191WWNpjJ2za6-nbG4ZoUMXMpUK8KlCIosvQB0f-oq3k/edit?pli=1&gid=907731238#gid=907731238) - Kubernetes Ingress Controllers,
 - Management:
   - [k9s](https://k9scli.io/) - a terminal-based UI to interact with your Kubernetes clusters,
@@ -125,4 +130,11 @@ Some useful tools & other resources:
   - [Jenkins](https://www.jenkins.io/) - the leading open-source automation server, Jenkins provides hundreds of plugins to support building, deploying, and automating any project,
   - [Jenkins X](https://jenkins-x.io/) - Multi-cluster GitOps, Tekton pipelines, Secrets management, Pull Request ChatOps and Preview Environments,
 - Others:
+  - [postgres-operator](https://github.com/zalando/postgres-operator) - Postgres operator creates and manages PostgreSQL clusters running in Kubernetes,
+  - [external-secrets](https://github.com/external-secrets/external-secrets) - External Secrets Operator reads information from a third-party service like AWS Secrets Manager and automatically injects the values as Kubernetes Secrets,
+  - [HashiCorp Vault](https://www.vaultproject.io/) - secure, store, and tightly control access to tokens, passwords, certificates, and encryption keys for protecting secrets and other sensitive data using a UI, CLI, or HTTP API,
+  - [Kratix](https://www.kratix.io/) - an open-source platform framework for building composable internal developer platforms (IDPs),
+  - [Dapr](https://dapr.io/) - provides integrated APIs for communication, state, and workflow, leverages industry best practices for security, resiliency, and observability, so you can focus on your code,
+  - [OpenFeature](https://openfeature.dev/) - standardizing Feature Flagging for Everyone,
+  - [KEDA](https://keda.sh/) - a Kubernetes-based Event Driven Autoscaler,
   - [CNCF Buildpacks](https://buildpacks.io/) - Cloud Native Buildpacks transform your application source code into images that can run on any cloud.
