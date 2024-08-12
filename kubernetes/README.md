@@ -125,4 +125,5 @@ Some useful tools & other resources:
   - [Jenkins](https://www.jenkins.io/) - the leading open-source automation server, Jenkins provides hundreds of plugins to support building, deploying, and automating any project,
   - [Jenkins X](https://jenkins-x.io/) - Multi-cluster GitOps, Tekton pipelines, Secrets management, Pull Request ChatOps and Preview Environments,
 - Others:
+  - [postgres-operator](https://github.com/zalando/postgres-operator) - Postgres operator creates and manages PostgreSQL clusters running in Kubernetes,
   - [CNCF Buildpacks](https://buildpacks.io/) - Cloud Native Buildpacks transform your application source code into images that can run on any cloud.
