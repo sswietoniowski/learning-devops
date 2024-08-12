@@ -97,6 +97,7 @@ Some useful tools & other resources:
   - [Ansible](https://www.ansible.com/) - an open source IT automation engine that automates provisioning, configuration management, application deployment, orchestration, and many other IT processes,
   - [Puppet](https://www.puppet.com/) - a freely available open source configuration management platform that allows you to automate your infrastructure as code,
   - [Chef](https://www.chef.io/) - configure, deploy and manage your entire application infrastructure in a secure and compliant way,
+  - [Crossplane](https://www.crossplane.io/) - build control planes without needing to write code,
 - [Ingress Controllers](https://docs.google.com/spreadsheets/d/191WWNpjJ2za6-nbG4ZoUMXMpUK8KlCIosvQB0f-oq3k/edit?pli=1&gid=907731238#gid=907731238) - Kubernetes Ingress Controllers,
 - Management:
   - [k9s](https://k9scli.io/) - a terminal-based UI to interact with your Kubernetes clusters,
