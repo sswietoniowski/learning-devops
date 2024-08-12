@@ -47,7 +47,8 @@ Based on these (free) courses & articles:
 - 🎥 [DevOps vs SRE vs Platform Engineering | Clear Big Misconceptions](https://youtu.be/an8SrFtJBdM?si=MWQKZG2XUyBEUao_),
 - 🎥 [Platform Engineering as a (Community) Service](https://youtu.be/4N2ywun-wTE?si=i0mspvdugtL7cK2e),
 - 🎥 [Where Platform Engineering GOES WRONG](https://youtu.be/vw8PUPit7lc?si=ATLyKxbnXKv4sSix),
-- 🎥 [Platform Engineering vs DevOps](https://youtu.be/m1FBrO3ekkU?si=FKEotygghltyaH6O).
+- 🎥 [Platform Engineering vs DevOps](https://youtu.be/m1FBrO3ekkU?si=FKEotygghltyaH6O),
+- 📖 [Cost-Effective Multi-tenancy on Kubernetes](https://www.salaboy.com/2023/06/19/cost-effective-multi-tenancy-on-kubernetes/).
 
 I also used these (paid) courses & books:
 
