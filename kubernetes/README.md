@@ -85,6 +85,7 @@ Some useful tools & other resources:
   - [kind](https://kind.sigs.k8s.io/) - a tool for running local Kubernetes clusters using Docker container "nodes",
   - [OKD](https://www.okd.io/) - the community distribution of Kubernetes that powers RedHat OpenShift,
   - [vCluster](https://www.vcluster.com/) - enabling the rapid creation of virtual clusters, which can isolate 100s of different tenant workloads within one cluster,
+  - [OperatorHub](https://operatorhub.io/) - a new home for the Kubernetes community to share Operators,
 - Template Engines:
   - [Kustomize](https://kustomize.io/) - a template-free way to customize application configuration,
   - [Carvel YTT](https://carvel.dev/ytt/) - template and patch as needed to make your configuration reusable and extensible easily,
