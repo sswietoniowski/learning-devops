@@ -1,0 +1,10 @@
+namespace: helm-demo
+
+helloApi:
+  hostname: hello-api.com
+  imageTag: 1
+  replicas: 1
+
+nameApi:
+  imageTag: 1
+  replicas: 1

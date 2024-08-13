@@ -1,0 +1,8 @@
+namespace: greetings-prod
+
+helloApi:
+  replicas: 3
+  hostname: hello-api.com
+
+nameApi:
+  replicas: 3

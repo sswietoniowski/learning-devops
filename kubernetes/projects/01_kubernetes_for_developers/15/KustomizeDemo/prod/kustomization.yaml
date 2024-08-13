@@ -1,0 +1,25 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+- ../base
+patches:
+- path: HelloApi-Ingress.yaml
+# - path: HelloApi-Configmap.yaml
+
+namespace: kustomize-demo-prod
+
+replicas:
+  - name: hello-api
+    count: 3
+  - name: name-api
+    count: 3
+
+configMapGenerator:
+- name: hello-api
+  # files:
+  # - appsettings.json
+  literals:
+  - NameApiUri=http://name-api.kustomize-demo-prod.svc.cluster.local
+
+# More examples of Kustomize features:
+# https://kubernetes.io/docs/tasks/manage-kubernetes-objects/kustomization/#kustomize-feature-list

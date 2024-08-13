@@ -1,0 +1,4 @@
+namespace: greetings-dev
+
+helloApi:
+  hostname: hello-api-dev.com
