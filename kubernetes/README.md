@@ -97,6 +97,7 @@ Some useful tools & other resources:
   - [Kapp](https://carvel.dev/kapp/) - deploy and view groups of Kubernetes resources as "applications",
   - [Helm](https://helm.sh/) - the package manager for Kubernetes,
   - [helmfile](https://github.com/helmfile/helmfile) - declaratively deploy your Kubernetes manifests, Kustomize configs, and Charts as Helm releases,
+  - [Artifact Hub](https://artifacthub.io/) - a web-based application that enables finding, installing, and publishing Cloud Native packages,
 - Infrastructure as Code (IaC):
   - [Terraform](https://www.terraform.io/) - infrastructure automation to provision and manage resources in any cloud or data center,
   - [Pulumi](https://www.pulumi.com/) - infrastructure as Code in Any Programming Language,
