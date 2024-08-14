@@ -64,7 +64,7 @@ I also used these (paid) courses & books:
   - [Continuous Delivery in Kubernetes with ArgoCD](https://learning.oreilly.com/live-events/continuous-delivery-in-kubernetes-with-argocd/0636920054359/),
   - ✅ 🎥 [Getting Started with OpenShift](https://learning.oreilly.com/live-events/getting-started-with-openshift/0636920244301/) [:file_folder:](https://on24static.akamaized.net/event/42/49/56/5/rt/1/documents/resourceList1691176707348/openshiftfundamentals51691176706197.pdf) [:file_folder:](https://github.com/sandervanvugt/openshift),
 - 🎥 [From Zero to Hero: Kubernetes for Developers](https://dometrain.com/course/from-zero-to-hero-kubernetes-for-developers/),
-- 📖 [Platform Engineering on Kubernetes](https://learning.oreilly.com/library/view/platform-engineering-on/9781617299322/) [:file_folder:](https://github.com/salaboy/from-monolith-to-k8s),
+- ✅ 📖 [Platform Engineering on Kubernetes](https://learning.oreilly.com/library/view/platform-engineering-on/9781617299322/) [:file_folder:](https://github.com/salaboy/from-monolith-to-k8s),
 - 📖 [Continuous Delivery: Reliable Software Releases through Build, Test, and Deployment Automation](https://learning.oreilly.com/library/view/continuous-delivery-reliable/9780321670250/),
 - 📖 [Grokking Continuous Delivery](https://learning.oreilly.com/library/view/grokking-continuous-delivery/9781617298257/).
 
@@ -97,6 +97,7 @@ Some useful tools & other resources:
   - [Kapp](https://carvel.dev/kapp/) - deploy and view groups of Kubernetes resources as "applications",
   - [Helm](https://helm.sh/) - the package manager for Kubernetes,
   - [helmfile](https://github.com/helmfile/helmfile) - declaratively deploy your Kubernetes manifests, Kustomize configs, and Charts as Helm releases,
+  - [Artifact Hub](https://artifacthub.io/) - a web-based application that enables finding, installing, and publishing Cloud Native packages,
 - Infrastructure as Code (IaC):
   - [Terraform](https://www.terraform.io/) - infrastructure automation to provision and manage resources in any cloud or data center,
   - [Pulumi](https://www.pulumi.com/) - infrastructure as Code in Any Programming Language,
