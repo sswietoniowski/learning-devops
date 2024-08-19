@@ -1,0 +1,54 @@
+apiVersion: opentelemetry.io/v1alpha1
+kind: OpenTelemetryCollector
+metadata:
+  name: my-collector
+  namespace: telemetry
+spec:
+  mode: deployment
+  config: |
+    receivers:
+      otlp:
+        protocols:
+          grpc:
+          http:
+
+    processors:
+      batch:
+
+    exporters:
+      logging:
+
+      otlp/jaeger: # Jaeger supports OTLP directly. The default port for OTLP/gRPC is 4317
+        endpoint: http://jaeger-collector:4317
+        tls:
+          insecure: true
+
+      prometheus:
+        endpoint: "0.0.0.0:8889"
+
+      prometheusremotewrite:
+        endpoint: "http://kube-prometheus-stack-prometheus:9090/api/v1/write"
+        resource_to_telemetry_conversion:
+          enabled: true
+
+      loki:
+        endpoint: http://loki-write:3100/loki/api/v1/push
+
+    service:
+      # telemetry:
+      #   logs:
+      #     level: "debug"
+
+      pipelines:
+        traces:
+          receivers: [otlp]
+          processors: []
+          exporters: [otlp/jaeger]
+        metrics:
+          receivers: [otlp]
+          processors: [batch]
+          exporters: [prometheusremotewrite]
+        logs:
+          receivers: [otlp]
+          processors: [batch]
+          exporters: [logging, loki]

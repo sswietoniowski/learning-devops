@@ -1,0 +1,15 @@
+# https://github.com/grafana/loki/blob/main/production/helm/loki/values.yaml
+
+read:
+  replicas: 1
+
+write:
+  replicas: 1
+
+backend:
+  replicas: 1
+
+loki:
+  auth_enabled: false
+  commonConfig:
+    replication_factor: 1

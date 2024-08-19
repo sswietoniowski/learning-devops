@@ -1,0 +1,12 @@
+# https://github.com/jaegertracing/helm-charts/blob/main/charts/jaeger/values.yaml
+
+provisionDataStore:
+  cassandra: false
+allInOne:
+  enabled: true
+agent:
+  enabled: false
+collector:
+  enabled: false
+query:
+  enabled: false

@@ -1,0 +1,8 @@
+# https://github.com/open-telemetry/opentelemetry-helm-charts/blob/main/charts/opentelemetry-operator/values.yaml
+
+admissionWebhooks:
+  create: false
+
+manager:
+  env:
+    ENABLE_WEBHOOKS: "false"
