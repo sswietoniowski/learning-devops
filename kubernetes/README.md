@@ -132,6 +132,11 @@ Some useful tools & other resources:
   - [Octopus Deploy](https://octopus.com/) - deploy your software to multi-cloud, hybrid, and on-premises environments with ease,
   - [Jenkins](https://www.jenkins.io/) - the leading open-source automation server, Jenkins provides hundreds of plugins to support building, deploying, and automating any project,
   - [Jenkins X](https://jenkins-x.io/) - Multi-cluster GitOps, Tekton pipelines, Secrets management, Pull Request ChatOps and Preview Environments,
+- Service Meshes:
+  - [Envoy](https://www.envoyproxy.io/) - a high performance C++ distributed proxy designed for single services and applications,
+  - [Istio](https://istio.io/) - Istio extends Kubernetes to establish a programmable, application-aware network,
+  - [Linkerd](https://linkerd.io/) - Linkerd adds security, observability, and reliability to any Kubernetes cluster. 100% open source, CNCF graduated, and written in Rust,
+  - [Open Service Mesh (OSM)](https://openservicemesh.io/) - a lightweight and extensible cloud native service mesh,
 - Others:
   - [postgres-operator](https://github.com/zalando/postgres-operator) - Postgres operator creates and manages PostgreSQL clusters running in Kubernetes,
   - [external-secrets](https://github.com/external-secrets/external-secrets) - External Secrets Operator reads information from a third-party service like AWS Secrets Manager and automatically injects the values as Kubernetes Secrets,
