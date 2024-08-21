@@ -79,16 +79,19 @@ Some useful tools & other resources:
   - [Developer Sandbox for Red Hat OpenShift](https://developers.redhat.com/developer-sandbox) - free OpenShift cluster for 30 days,
 - Distributions & Tools:
   - [kubectl](https://kubernetes.io/docs/tasks/tools/) - the Kubernetes command-line tool,
+  - [Rancher](https://www.rancher.com/) - Rancher is a complete software stack for teams adopting containers,
+  - [kubeadm](https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/create-cluster-kubeadm/) - a tool built to provide best-practice "fast paths" for creating Kubernetes clusters,
   - [Docker and Kubernetes](https://www.docker.com/resources/kubernetes-and-docker/) - replicate production environments on your local machine,
   - [Red Hat OpenShift Local](https://developers.redhat.com/products/openshift-local/overview) - the quickest way to start building OpenShift clusters.
+  - [Azure Kubernetes Service (AKS)](https://azure.microsoft.com/en-us/services/kubernetes-service/) - a managed Kubernetes service that lets you quickly deploy and manage clusters,
+  - [Google Kubernetes Engine (GKE)](https://cloud.google.com/kubernetes-engine) - a managed, production-ready environment for deploying containerized applications,
+  - [Amazon Elastic Kubernetes Service (EKS)](https://aws.amazon.com/eks/) - a managed service that makes it easy for you to run Kubernetes on AWS without needing to install and operate your own Kubernetes clusters,
   - [minikube](https://github.com/kubernetes/minikube) - run Kubernetes locally,
   - [kind](https://kind.sigs.k8s.io/) - a tool for running local Kubernetes clusters using Docker container "nodes",
   - [OKD](https://www.okd.io/) - the community distribution of Kubernetes that powers RedHat OpenShift,
   - [vCluster](https://www.vcluster.com/) - enabling the rapid creation of virtual clusters, which can isolate 100s of different tenant workloads within one cluster,
   - [OperatorHub](https://operatorhub.io/) - a new home for the Kubernetes community to share Operators,
   - [Operator SDK](https://sdk.operatorframework.io/) - the Operator SDK makes it easier to build Kubernetes native applications, a process that can require deep, application-specific operational knowledge,
-  - [Rancher](https://www.rancher.com/) - Rancher is a complete software stack for teams adopting containers,
-  - [kubeadm](https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/create-cluster-kubeadm/) - a tool built to provide best-practice "fast paths" for creating Kubernetes clusters,
 - Template Engines:
   - [Kustomize](https://kustomize.io/) - a template-free way to customize application configuration,
   - [Carvel YTT](https://carvel.dev/ytt/) - template and patch as needed to make your configuration reusable and extensible easily,
