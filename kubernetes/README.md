@@ -87,6 +87,7 @@ Some useful tools & other resources:
   - [Azure Kubernetes Service (AKS)](https://azure.microsoft.com/en-us/services/kubernetes-service/) - a managed Kubernetes service that lets you quickly deploy and manage clusters,
   - [Google Kubernetes Engine (GKE)](https://cloud.google.com/kubernetes-engine) - a managed, production-ready environment for deploying containerized applications,
   - [Amazon Elastic Kubernetes Service (EKS)](https://aws.amazon.com/eks/) - a managed service that makes it easy for you to run Kubernetes on AWS without needing to install and operate your own Kubernetes clusters,
+  - [k3s](https://k3s.io/) - a lightweight Kubernetes distribution,
   - [minikube](https://github.com/kubernetes/minikube) - run Kubernetes locally,
   - [kind](https://kind.sigs.k8s.io/) - a tool for running local Kubernetes clusters using Docker container "nodes",
   - [OKD](https://www.okd.io/) - the community distribution of Kubernetes that powers RedHat OpenShift,
