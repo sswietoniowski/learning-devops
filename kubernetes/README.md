@@ -82,6 +82,7 @@ Some useful tools & other resources:
   - [Rancher](https://www.rancher.com/) - Rancher is a complete software stack for teams adopting containers,
   - [kubeadm](https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/create-cluster-kubeadm/) - a tool built to provide best-practice "fast paths" for creating Kubernetes clusters,
   - [Docker and Kubernetes](https://www.docker.com/resources/kubernetes-and-docker/) - replicate production environments on your local machine,
+  - [Red Hat OpenShift](https://www.openshift.com/) - the Kubernetes platform that provides a foundation for on-premises, hybrid, and multicloud deployments,
   - [Red Hat OpenShift Local](https://developers.redhat.com/products/openshift-local/overview) - the quickest way to start building OpenShift clusters.
   - [Azure Kubernetes Service (AKS)](https://azure.microsoft.com/en-us/services/kubernetes-service/) - a managed Kubernetes service that lets you quickly deploy and manage clusters,
   - [Google Kubernetes Engine (GKE)](https://cloud.google.com/kubernetes-engine) - a managed, production-ready environment for deploying containerized applications,
