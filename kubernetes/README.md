@@ -87,6 +87,8 @@ Some useful tools & other resources:
   - [vCluster](https://www.vcluster.com/) - enabling the rapid creation of virtual clusters, which can isolate 100s of different tenant workloads within one cluster,
   - [OperatorHub](https://operatorhub.io/) - a new home for the Kubernetes community to share Operators,
   - [Operator SDK](https://sdk.operatorframework.io/) - the Operator SDK makes it easier to build Kubernetes native applications, a process that can require deep, application-specific operational knowledge,
+  - [Rancher](https://www.rancher.com/) - Rancher is a complete software stack for teams adopting containers,
+  - [kubeadm](https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/create-cluster-kubeadm/) - a tool built to provide best-practice "fast paths" for creating Kubernetes clusters,
 - Template Engines:
   - [Kustomize](https://kustomize.io/) - a template-free way to customize application configuration,
   - [Carvel YTT](https://carvel.dev/ytt/) - template and patch as needed to make your configuration reusable and extensible easily,
