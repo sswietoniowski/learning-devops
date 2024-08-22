@@ -1,0 +1,78 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: hello-api
+  namespace: demo-apis
+  annotations:
+    cert-manager.io/cluster-issuer: letsencrypt-staging
+    # cert-manager.io/cluster-issuer: letsencrypt-prod
+spec:
+  ingressClassName: nginx
+  tls:
+    - hosts:
+      - hello-api.com
+      secretName: tls-hello-api
+  rules:
+  - host: hello-api.com
+    http:
+      paths:
+        - path: /
+          pathType: Prefix
+          backend:
+            service:
+              name: hello-api
+              port:
+                number: 80
+
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: hello-api
+  namespace: demo-apis
+spec:
+  type: ClusterIP
+  selector:
+    app: hello-api
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 8080
+
+---
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hello-api
+  namespace: demo-apis
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: hello-api
+  template:
+    metadata:
+      labels:
+        app: hello-api
+    spec:
+      containers:
+      - name: hello-api
+        image: k8scourse/module17-hello-api:4
+        envFrom:
+        - configMapRef:
+            name: hello-api
+        ports:
+        - containerPort: 8080
+        resources:
+
+---
+
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: hello-api
+  namespace: demo-apis
+data:
+  NameApiUri: http://name-api.demo-apis.svc.cluster.local
