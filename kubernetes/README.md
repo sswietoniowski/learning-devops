@@ -63,7 +63,7 @@ I also used these (paid) courses & books:
   - [Kubernetes GitOps With Flux and ArgoCD](https://learning.oreilly.com/live-events/kubernetes-gitops-with-flux-and-argocd/0636920078987/),
   - [Continuous Delivery in Kubernetes with ArgoCD](https://learning.oreilly.com/live-events/continuous-delivery-in-kubernetes-with-argocd/0636920054359/),
   - ✅ 🎥 [Getting Started with OpenShift](https://learning.oreilly.com/live-events/getting-started-with-openshift/0636920244301/) [:file_folder:](https://on24static.akamaized.net/event/42/49/56/5/rt/1/documents/resourceList1691176707348/openshiftfundamentals51691176706197.pdf) [:file_folder:](https://github.com/sandervanvugt/openshift),
-- 🎥 [From Zero to Hero: Kubernetes for Developers](https://dometrain.com/course/from-zero-to-hero-kubernetes-for-developers/),
+- ✅ 🎥 [From Zero to Hero: Kubernetes for Developers](https://dometrain.com/course/from-zero-to-hero-kubernetes-for-developers/) [:trophy:](https://courses.dometrain.com/certificates/befuzn7pmd),
 - ✅ 📖 [Platform Engineering on Kubernetes](https://learning.oreilly.com/library/view/platform-engineering-on/9781617299322/) [:file_folder:](https://github.com/salaboy/from-monolith-to-k8s),
 - 📖 [Continuous Delivery: Reliable Software Releases through Build, Test, and Deployment Automation](https://learning.oreilly.com/library/view/continuous-delivery-reliable/9780321670250/),
 - 📖 [Grokking Continuous Delivery](https://learning.oreilly.com/library/view/grokking-continuous-delivery/9781617298257/).
@@ -152,4 +152,11 @@ Some useful tools & other resources:
   - [Dapr](https://dapr.io/) - provides integrated APIs for communication, state, and workflow, leverages industry best practices for security, resiliency, and observability, so you can focus on your code,
   - [OpenFeature](https://openfeature.dev/) - standardizing Feature Flagging for Everyone,
   - [KEDA](https://keda.sh/) - a Kubernetes-based Event Driven Autoscaler,
-  - [CNCF Buildpacks](https://buildpacks.io/) - Cloud Native Buildpacks transform your application source code into images that can run on any cloud.
+  - [CNCF Buildpacks](https://buildpacks.io/) - Cloud Native Buildpacks transform your application source code into images that can run on any cloud,
+  - [cert-manager](https://cert-manager.io/) - a powerful and extensible X.509 certificate controller for Kubernetes and OpenShift workloads,
+  - [Let's Encrypt](https://letsencrypt.org/) - a free, automated, and open Certificate Authority,
+  - [kubectx + kubens](https://github.com/ahmetb/kubectx) - a faster way to switch between clusters and namespaces in kubectl,
+  - [fzf](https://github.com/junegunn/fzf) - a command-line fuzzy finder,
+  - [Kubernetes Dashboard](https://github.com/kubernetes/dashboard) - a general purpose, web-based UI for Kubernetes clusters,
+  - [jq](https://jqlang.github.io/jq/) - a lightweight and flexible command-line JSON processor,
+  - [jq play](https://jqplay.org/) - an online playground for jq.
