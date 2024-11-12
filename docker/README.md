@@ -83,14 +83,17 @@ I also used these (paid) courses & books:
 
 Some useful tools & other resources:
 
-- Docker:
-  - [Docker](https://www.docker.com/),
-  - [DockerHub](https://hub.docker.com/),
-  - [Docker Desktop](https://www.docker.com/products/docker-desktop/),
-  - [Labs - Play with Docker](https://labs.play-with-docker.com/),
-  - [Docker in Visual Studio Code](https://code.visualstudio.com/docs/containers/overview) [:file_folder:](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker),
-  - [Visual Studio Code Dev Containers](https://code.visualstudio.com/docs/devcontainers/create-dev-container),
-  - [The Ultimate Docker Cheat Sheet](https://dockerlabs.collabnix.com/docker/cheatsheet/),
-  - [Testcontainers](https://github.com/testcontainers/testcontainers-dotnet),
-  - [wait-for-it](https://github.com/vishnubob/wait-for-it),
-  - [Podman Desktop](https://podman-desktop.io/),
+- [Docker](https://www.docker.com/),
+- [DockerHub](https://hub.docker.com/),
+- [Docker Desktop](https://www.docker.com/products/docker-desktop/),
+- [Podman Desktop](https://podman-desktop.io/),
+- [Rancher Desktop](https://rancherdesktop.io/),
+- [Labs - Play with Docker](https://labs.play-with-docker.com/),
+- [Docker in Visual Studio Code](https://code.visualstudio.com/docs/containers/overview) [:file_folder:](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker),
+- [Visual Studio Code Dev Containers](https://code.visualstudio.com/docs/devcontainers/create-dev-container),
+- [The Ultimate Docker Cheat Sheet](https://dockerlabs.collabnix.com/docker/cheatsheet/),
+- Images:
+  - [Testcontainers](https://github.com/testcontainers/testcontainers-dotnet) - a library to support tests with throwaway instances of Docker containers for all compatible .NET Standard versions,
+  - [wait-for-it](https://github.com/vishnubob/wait-for-it) - pure bash script to test and wait on the availability of a TCP host and port,
+  - [dockur/windows](https://github.com/dockur/windows) - Windows inside a Docker container,
+  - [dockur/macos](https://github.com/dockur/macos) - OSX (macOS) inside a Docker container.
