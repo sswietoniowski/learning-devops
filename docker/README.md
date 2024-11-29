@@ -83,7 +83,7 @@ I also used these (paid) courses & books:
 
 Some useful tools & other resources:
 
-- [Docker](https://www.docker.com/),
+- [Docker](https://www.docker.com/) [:file_folder:](https://github.com/moby/moby),
 - [DockerHub](https://hub.docker.com/),
 - [Harbor](https://goharbor.io/) - an open source registry that secures artifacts with policies and role-based access control, ensures images are scanned and free from vulnerabilities, and signs images as trusted,
 - [Docker Desktop](https://www.docker.com/products/docker-desktop/),
