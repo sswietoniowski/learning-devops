@@ -158,5 +158,6 @@ Some useful tools & other resources:
   - [kubectx + kubens](https://github.com/ahmetb/kubectx) - a faster way to switch between clusters and namespaces in kubectl,
   - [fzf](https://github.com/junegunn/fzf) - a command-line fuzzy finder,
   - [Kubernetes Dashboard](https://github.com/kubernetes/dashboard) - a general purpose, web-based UI for Kubernetes clusters,
+  - [Harbor](https://goharbor.io/) - an open source registry that secures artifacts with policies and role-based access control, ensures images are scanned and free from vulnerabilities, and signs images as trusted,
   - [jq](https://jqlang.github.io/jq/) - a lightweight and flexible command-line JSON processor,
   - [jq play](https://jqplay.org/) - an online playground for jq.
