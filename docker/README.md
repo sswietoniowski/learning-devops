@@ -85,6 +85,7 @@ Some useful tools & other resources:
 
 - [Docker](https://www.docker.com/),
 - [DockerHub](https://hub.docker.com/),
+- [Harbor](https://goharbor.io/) - an open source registry that secures artifacts with policies and role-based access control, ensures images are scanned and free from vulnerabilities, and signs images as trusted,
 - [Docker Desktop](https://www.docker.com/products/docker-desktop/),
 - [Podman Desktop](https://podman-desktop.io/),
 - [Rancher Desktop](https://rancherdesktop.io/),
