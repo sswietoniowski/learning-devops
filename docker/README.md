@@ -93,6 +93,7 @@ Some useful tools & other resources:
 - [Docker in Visual Studio Code](https://code.visualstudio.com/docs/containers/overview) [:file_folder:](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker),
 - [Visual Studio Code Dev Containers](https://code.visualstudio.com/docs/devcontainers/create-dev-container),
 - [The Ultimate Docker Cheat Sheet](https://dockerlabs.collabnix.com/docker/cheatsheet/),
+- [dive](https://github.com/wagoodman/dive) - a tool for exploring each layer in a docker image,
 - Images:
   - [Testcontainers](https://github.com/testcontainers/testcontainers-dotnet) - a library to support tests with throwaway instances of Docker containers for all compatible .NET Standard versions,
   - [wait-for-it](https://github.com/vishnubob/wait-for-it) - pure bash script to test and wait on the availability of a TCP host and port,
