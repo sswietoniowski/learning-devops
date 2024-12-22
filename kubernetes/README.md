@@ -88,7 +88,7 @@ Some useful tools & other resources:
   - [Rancher](https://www.rancher.com/) - Rancher is a complete software stack for teams adopting containers,
   - [kubeadm](https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/create-cluster-kubeadm/) - a tool built to provide best-practice "fast paths" for creating Kubernetes clusters,
   - [Docker and Kubernetes](https://www.docker.com/resources/kubernetes-and-docker/) - replicate production environments on your local machine,
-  - [Red Hat OpenShift](https://www.openshift.com/) - the Kubernetes platform that provides a foundation for on-premises, hybrid, and multicloud deployments,
+  - [Red Hat OpenShift](https://www.openshift.com/) - the Kubernetes platform that provides a foundation for on-premises, hybrid, and multi-cloud deployments,
   - [Red Hat OpenShift Local](https://developers.redhat.com/products/openshift-local/overview) - the quickest way to start building OpenShift clusters.
   - [Azure Kubernetes Service (AKS)](https://azure.microsoft.com/en-us/services/kubernetes-service/) - a managed Kubernetes service that lets you quickly deploy and manage clusters,
   - [Google Kubernetes Engine (GKE)](https://cloud.google.com/kubernetes-engine) - a managed, production-ready environment for deploying containerized applications,
@@ -104,7 +104,7 @@ Some useful tools & other resources:
   - [Kustomize](https://kustomize.io/) - a template-free way to customize application configuration,
   - [Carvel YTT](https://carvel.dev/ytt/) - template and patch as needed to make your configuration reusable and extensible easily,
   - [Helm Templates](https://helm.sh/docs/chart_best_practices/templates/#helm),
-- [Kompose](https://kompose.io/) - convert Docker Compose files to Kubernetes resources,
+  - [Kompose](https://kompose.io/) - convert Docker Compose files to Kubernetes resources,
 - Package Managers:
   - [Imgpkg](https://carvel.dev/imgpkg/) - package, distribute, and relocate your Kubernetes configuration and dependent OCI images as one OCI artifact,
   - [Kapp](https://carvel.dev/kapp/) - deploy and view groups of Kubernetes resources as "applications",
@@ -114,9 +114,9 @@ Some useful tools & other resources:
 - Infrastructure as Code (IaC):
   - [Terraform](https://www.terraform.io/) - infrastructure automation to provision and manage resources in any cloud or data center,
   - [Pulumi](https://www.pulumi.com/) - infrastructure as Code in Any Programming Language,
-  - [Ansible](https://www.ansible.com/) - an open source IT automation engine that automates provisioning, configuration management, application deployment, orchestration, and many other IT processes,
-  - [Puppet](https://www.puppet.com/) - a freely available open source configuration management platform that allows you to automate your infrastructure as code,
-  - [Chef](https://www.chef.io/) - configure, deploy and manage your entire application infrastructure in a secure and compliant way,
+  - [Ansible](https://www.ansible.com/) - an open-source IT automation engine that automates provisioning, configuration management, application deployment, orchestration, and many other IT processes,
+  - [Puppet](https://www.puppet.com/) - a freely available open-source configuration management platform that allows you to automate your infrastructure as code,
+  - [Chef](https://www.chef.io/) - configure, deploy, and manage your entire application infrastructure in a secure and compliant way,
   - [Crossplane](https://www.crossplane.io/) - build control planes without needing to write code,
 - [Ingress Controllers](https://docs.google.com/spreadsheets/d/191WWNpjJ2za6-nbG4ZoUMXMpUK8KlCIosvQB0f-oq3k/edit?pli=1&gid=907731238#gid=907731238) - Kubernetes Ingress Controllers,
 - Management:
@@ -153,9 +153,9 @@ Some useful tools & other resources:
 - Others:
   - [postgres-operator](https://github.com/zalando/postgres-operator) - Postgres operator creates and manages PostgreSQL clusters running in Kubernetes,
   - [external-secrets](https://github.com/external-secrets/external-secrets) - External Secrets Operator reads information from a third-party service like AWS Secrets Manager and automatically injects the values as Kubernetes Secrets,
-  - [HashiCorp Vault](https://www.vaultproject.io/) - secure, store, and tightly control access to tokens, passwords, certificates, and encryption keys for protecting secrets and other sensitive data using a UI, CLI, or HTTP API,
+  - [HashiCorp Vault](https://www.vaultproject.io/) - secure, store, and tightly control access to tokens, passwords, certificates, and encryption keys for protecting secrets and other sensitive data using a UI, CLI or HTTP API,
   - [Kratix](https://www.kratix.io/) - an open-source platform framework for building composable internal developer platforms (IDPs),
-  - [Dapr](https://dapr.io/) - provides integrated APIs for communication, state, and workflow, leverages industry best practices for security, resiliency, and observability, so you can focus on your code,
+  - [Dapr](https://dapr.io/) - provides integrated APIs for communication, state, and workflow, leverages industry best practices for security, resiliency, and observability so that you can focus on your code,
   - [OpenFeature](https://openfeature.dev/) - standardizing Feature Flagging for Everyone,
   - [KEDA](https://keda.sh/) - a Kubernetes-based Event Driven Autoscaler,
   - [CNCF Buildpacks](https://buildpacks.io/) - Cloud Native Buildpacks transform your application source code into images that can run on any cloud,
@@ -163,7 +163,7 @@ Some useful tools & other resources:
   - [Let's Encrypt](https://letsencrypt.org/) - a free, automated, and open Certificate Authority,
   - [kubectx + kubens](https://github.com/ahmetb/kubectx) - a faster way to switch between clusters and namespaces in kubectl,
   - [fzf](https://github.com/junegunn/fzf) - a command-line fuzzy finder,
-  - [Kubernetes Dashboard](https://github.com/kubernetes/dashboard) - a general purpose, web-based UI for Kubernetes clusters,
+  - [Kubernetes Dashboard](https://github.com/kubernetes/dashboard) - a general-purpose, web-based UI for Kubernetes clusters,
   - [Harbor](https://goharbor.io/) - an open source registry that secures artifacts with policies and role-based access control, ensures images are scanned and free from vulnerabilities, and signs images as trusted,
   - [jq](https://jqlang.github.io/jq/) - a lightweight and flexible command-line JSON processor,
   - [jq play](https://jqplay.org/) - an online playground for jq.
