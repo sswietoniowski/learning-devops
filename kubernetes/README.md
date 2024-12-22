@@ -52,20 +52,20 @@ Based on these (free) courses & articles:
 
 I also used these (paid) courses & books:
 
-- 📖 [Kubernetes for Developers](https://learning.oreilly.com/library/view/kubernetes-for-developers/9781617297175/) [:file_folder:](https://github.com/WilliamDenniss/kubernetes-for-developers),
+- ✅ 🎥 [From Zero to Hero: Kubernetes for Developers](https://dometrain.com/course/from-zero-to-hero-kubernetes-for-developers/) [:trophy:](https://courses.dometrain.com/certificates/befuzn7pmd),
 - 🎥 [Pluralsight - Using Kubernetes as a Developer Path](https://app.pluralsight.com/paths/skills/using-kubernetes-as-a-developer):
   - 🎥 [Kubernetes for Developers: Core Concepts](https://app.pluralsight.com/library/courses/kubernetes-developers-core-concepts/table-of-contents) [:file_folder:](https://app.pluralsight.com/library/courses/kubernetes-developers-core-concepts/exercise-files) [:file_folder:](https://github.com/DanWahlin/DockerAndKubernetesCourseCode),
   - 🎥 [Kubernetes for Developers: Deploying Your Code](https://app.pluralsight.com/library/courses/kubernetes-developers-deploying-code/table-of-contents) [:file_folder:](https://app.pluralsight.com/library/courses/kubernetes-developers-deploying-code/exercise-files),
   - 🎥 [Kubernetes for Developers: Integrating Volumes and Using Multi-container Pods](https://app.pluralsight.com/library/courses/kubernetes-developers-integrating-volumes-using-multi-container-pods/table-of-contents) [:file_folder:](https://app.pluralsight.com/library/courses/kubernetes-developers-integrating-volumes-using-multi-container-pods/exercise-files),
   - 🎥 [Kubernetes for Developers: Moving from Docker Compose to Kubernetes](https://app.pluralsight.com/library/courses/kubernetes-developers-docker-compose-kubernetes/table-of-contents) [:file_folder:](https://app.pluralsight.com/library/courses/kubernetes-developers-docker-compose-kubernetes/exercise-files),
   - 🎥 [Kubernetes for Developers: Moving to the Cloud](https://app.pluralsight.com/library/courses/kubernetes-developers-moving-cloud/table-of-contents) [:file_folder:](https://app.pluralsight.com/library/courses/kubernetes-developers-moving-cloud/exercise-files),
+- 📖 [Kubernetes for Developers](https://learning.oreilly.com/library/view/kubernetes-for-developers/9781617297175/) [:file_folder:](https://github.com/WilliamDenniss/kubernetes-for-developers),
 - O'Reilly Live Events:
   - ✅ 🎥 [Kubernetes in 4 Hours](https://learning.oreilly.com/live-events/kubernetes-in-4-hours/0636920056367/) [:file_folder:](https://on24static.akamaized.net/event/41/29/94/9/rt/1/documents/resourceList1688561051460/kubernetes36231688561042958.pdf) [:file_folder:](https://github.com/sandervanvugt/kubernetes),
   - 🎥 [Kubernetes in 3 Weeks: Part 1 — Containers, Microservices, Pods, and Common Objects](https://learning.oreilly.com/live-events/kubernetes-in-3-weeks-part-1containers-microservices-pods-and-common-objects/0636920385158/),
   - 🎥 [Kubernetes GitOps With Flux and ArgoCD](https://learning.oreilly.com/live-events/kubernetes-gitops-with-flux-and-argocd/0636920078987/),
   - 🎥 [Continuous Delivery in Kubernetes with ArgoCD](https://learning.oreilly.com/live-events/continuous-delivery-in-kubernetes-with-argocd/0636920054359/),
   - ✅ 🎥 [Getting Started with OpenShift](https://learning.oreilly.com/live-events/getting-started-with-openshift/0636920244301/) [:file_folder:](https://on24static.akamaized.net/event/42/49/56/5/rt/1/documents/resourceList1691176707348/openshiftfundamentals51691176706197.pdf) [:file_folder:](https://github.com/sandervanvugt/openshift),
-- ✅ 🎥 [From Zero to Hero: Kubernetes for Developers](https://dometrain.com/course/from-zero-to-hero-kubernetes-for-developers/) [:trophy:](https://courses.dometrain.com/certificates/befuzn7pmd),
 - ✅ 📖 [Platform Engineering on Kubernetes](https://learning.oreilly.com/library/view/platform-engineering-on/9781617299322/) [:file_folder:](https://github.com/salaboy/from-monolith-to-k8s),
 - 📖 [Continuous Delivery: Reliable Software Releases through Build, Test, and Deployment Automation](https://learning.oreilly.com/library/view/continuous-delivery-reliable/9780321670250/),
 - 📖 [Grokking Continuous Delivery](https://learning.oreilly.com/library/view/grokking-continuous-delivery/9781617298257/).
