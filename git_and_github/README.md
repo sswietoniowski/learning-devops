@@ -5,4 +5,5 @@ TODO:
 - [dependabot-gitlab](https://dependabot-gitlab.gitlab.io/dependabot/) [:file_folder:](https://gitlab.com/dependabot-gitlab/dependabot) - an orchestrator for dependabot-core library to create dependency update merge requests for GitLab projects.
 - [From Zero to Hero: Git](https://dometrain.com/courses/take/from-zero-to-hero-git) [:trophy:](https://courses.dometrain.com/certificates/oevgf6kh0a),
 - [From Zero to Hero: GitHub Actions](https://dometrain.com/courses/take/from-zero-to-hero-github-actions),
-- [Excluding content from GitHub Copilot](https://docs.github.com/en/copilot/managing-copilot/configuring-and-auditing-content-exclusion/excluding-content-from-github-copilot).
+- [Excluding content from GitHub Copilot](https://docs.github.com/en/copilot/managing-copilot/configuring-and-auditing-content-exclusion/excluding-content-from-github-copilot),
+- [GitHub Actions Hero](https://github-actions-hero.vercel.app/) - small, interactive tutorial for the GitHub Actions workflow syntax with an emulated workflow parser and runner.
