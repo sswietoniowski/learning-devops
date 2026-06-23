@@ -98,7 +98,7 @@ I also used these (paid) courses & books:
     - ✅ [Kubernetes GitOps With Flux and ArgoCD](https://learning.oreilly.com/live-events/kubernetes-gitops-with-flux-and-argocd/0636920078987/),
     - ✅ [Continuous Delivery in Kubernetes with ArgoCD](https://learning.oreilly.com/live-events/continuous-delivery-in-kubernetes-with-argocd/0636920054359/),
 - Terraform:
-  - [Terraform - Getting Started](https://app.pluralsight.com/library/courses/terraform-getting-started-2023/table-of-contents) [:file_folder:](https://app.pluralsight.com/library/courses/terraform-getting-started-2023/exercise-files) ▶️,
+  - [Terraform - Getting Started](https://app.pluralsight.com/library/courses/terraform-getting-started-2023/table-of-contents) [:file_folder:](https://app.pluralsight.com/library/courses/terraform-getting-started-2023/exercise-files),
   - [Terraform Deep Dive](https://app.pluralsight.com/library/courses/terraform-deep-dive-2023/table-of-contents) [:file_folder:](https://app.pluralsight.com/library/courses/terraform-deep-dive-2023/exercise-files),
   - [Getting Started with Terraform Cloud](https://app.pluralsight.com/library/courses/terraform-cloud-getting-started/table-of-contents) [:file_folder:](https://app.pluralsight.com/library/courses/terraform-cloud-getting-started/exercise-files),
   - [Implementing Terraform on Microsoft Azure](https://app.pluralsight.com/library/courses/implementing-terraform-microsoft-azure/table-of-contents) [:file_folder:](https://app.pluralsight.com/library/courses/implementing-terraform-microsoft-azure/exercise-files),
