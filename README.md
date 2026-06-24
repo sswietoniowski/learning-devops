@@ -53,13 +53,13 @@ Based on these (free) courses:
   - ✅ [Replacing Docker with Podman for VSCode DevContainers](https://blog.lifeishao.com/2021/12/30/replacing-docker-with-podman-for-your-vscode-devcontainers/),
   - ✅ [Publish Container Images to Docker Hub / Image registry with Podman](https://computingforgeeks.com/how-to-publish-docker-image-to-docker-hub-with-podman/),
   - ✅ [Full Course - Infrastructure as Code with Terraform, Azure DevOps, Azure, Github, Docker and .Net 5](https://youtu.be/q4xNBqvD1uU),
-  - [Getting Started with Terraform on Windows 10](https://thomgreene.com/post/2020/2020-06-15-terraform-getting-started-windows/),
-  - [Infrastructure as Code, part 1: create a Kubernetes cluster with Terraform](https://circleci.com/blog/learn-iac-part1/),
-  - [Infrastructure as Code, part 2: build Docker images and deploy to Kubernetes with Terraform](https://circleci.com/blog/learn-iac-part02/),
-  - [Infrastructure as Code, part 3: automate Kubernetes deployments with CI/CD and Terraform](https://circleci.com/blog/learn-iac-part3/),
-  - [Virtual Machines vs Containers](https://youtu.be/eyNBf1sqdBQ),
-  - [Best Docker Container Monitoring Tools - Free and open source](https://youtu.be/zxAmqY63eJE),
-  - [Tutorial: Automate releases and release notes with GitLab](https://about.gitlab.com/blog/2023/11/01/tutorial-automated-release-and-release-notes-with-gitlab/).
+  - ✅ [Getting Started with Terraform on Windows 10](https://thomgreene.com/post/2020/2020-06-15-terraform-getting-started-windows/),
+  - ✅ [Infrastructure as Code, part 1: create a Kubernetes cluster with Terraform](https://circleci.com/blog/learn-iac-part1/),
+  - ✅ [Infrastructure as Code, part 2: build Docker images and deploy to Kubernetes with Terraform](https://circleci.com/blog/learn-iac-part02/),
+  - ✅ [Infrastructure as Code, part 3: automate Kubernetes deployments with CI/CD and Terraform](https://circleci.com/blog/learn-iac-part3/),
+  - ✅ [Virtual Machines vs Containers](https://youtu.be/eyNBf1sqdBQ),
+  - ✅ [Best Docker Container Monitoring Tools - Free and open source](https://youtu.be/zxAmqY63eJE),
+  - ✅ [Tutorial: Automate releases and release notes with GitLab](https://about.gitlab.com/blog/2023/11/01/tutorial-automated-release-and-release-notes-with-gitlab/).
 
 I also used these (paid) courses & books:
 
