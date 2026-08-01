@@ -12,7 +12,7 @@
     "cookie-parser": "^1.4.6",
     "debug": "^4.3.3",
     "express": "^4.22.2",
-    "express-handlebars": "5.3.1",
+    "express-handlebars": "9.0.1",
     "handlebars": "^4.7.9",
     "mongoose": "^8.22.1",
     "morgan": "^1.11.0",
@@ -22,6 +22,6 @@
     "serve-favicon": "^2.5.0"
   },
   "devDependencies": {
-    "tailwindcss": "^2.2.19"
+    "tailwindcss": "^4.3.3"
   }
 }
