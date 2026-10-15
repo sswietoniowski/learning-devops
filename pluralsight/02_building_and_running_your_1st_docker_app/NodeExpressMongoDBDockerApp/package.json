@@ -22,6 +22,6 @@
     "serve-favicon": "^2.5.0"
   },
   "devDependencies": {
-    "tailwindcss": "^2.2.19"
+    "tailwindcss": "^4.3.3"
   }
 }
